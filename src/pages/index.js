@@ -76,62 +76,32 @@ function Home() {
         className="bootstrap-wrapper"
       >
         <br/>
-        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h1>
+        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Fandora Wiki</h1>
 
 
         <div className="container">
-
-<Tabs
-defaultValue="beginner"
-className="tabs"
-values={[
-{label: 'Choose a Hub', value: 'beginner'},
-{label: 'Browse by Product', value: 'products'},
-]}>
-
-<TabItem value="beginner">
-<div className="row pt-40">
-{networkBanner &&
-networkBanner.length &&
-networkBanner.map((props, idx) => (
- <NetworkBanner key={idx} {...props} />
-))}{" "}
-</div>
-  <div id="Get Started" className="row">
-    {firstRow &&
-      firstRow.length &&
-      firstRow.map((props, idx) => (
-        <FirstRow key={idx} {...props} />
-      ))}{" "}
-  </div>
-<div className="row pt-40">
-    {networkBanner &&
-      networkBanner.length &&
-      networkBanner.map((props, idx) => (
-        <NetworkBanner key={idx} {...props} />
-      ))}{" "}
-  </div>
-</TabItem>
-<TabItem value="products">
-<div className="row pt-40">
-    {networkBanner &&
-      networkBanner.length &&
-      networkBanner.map((props, idx) => (
-        <NetworkBanner key={idx} {...props} />
-      ))}{" "}
-  </div>
-  <div className="row">
-    {secondRow &&
-      secondRow.length &&
-      secondRow.map((props, idx) => (
-        <SecondRow key={idx} {...props} />
-      ))}{" "}
-  </div>
-</TabItem>
-</Tabs>
-  <br/>
-  <br/>
- </div>
+          <div className="row pt-40">
+            {networkBanner &&
+                networkBanner.length &&
+                networkBanner.map((props, idx) => (
+                    <NetworkBanner key={idx} {...props} />
+                ))}{" "}
+          </div>
+          <div id="Get Started" className="row">
+            {firstRow &&
+                firstRow.length &&
+                firstRow.map((props, idx) => (
+                    <FirstRow key={idx} {...props} />
+                ))}{" "}
+          </div>
+          <div className="row pt-40">
+            {networkBanner &&
+                networkBanner.length &&
+                networkBanner.map((props, idx) => (
+                    <NetworkBanner key={idx} {...props} />
+                ))}{" "}
+          </div>
+       </div>
 </div>
 </Layout>
 );
