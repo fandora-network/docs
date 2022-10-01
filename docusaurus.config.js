@@ -14,7 +14,7 @@ module.exports = {
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ko'],
+    locales: ['en'],
     path: 'i18n',
     localeConfigs: {
       en: {
@@ -24,13 +24,13 @@ module.exports = {
         calendar: 'gregory',
         path: 'en',
       },
-      ko: {
-        label: '한국어',
-        direction: 'ltr',
-        htmlLang: 'ko-KR',
-        calendar: 'gregory',
-        path: 'ko',
-      },
+      // ko: {
+      //   label: '한국어',
+      //   direction: 'ltr',
+      //   htmlLang: 'ko-KR',
+      //   calendar: 'gregory',
+      //   path: 'ko',
+      // },
     },
   },
   plugins: [
@@ -226,7 +226,7 @@ module.exports = {
       src: 'img/fandora/fandora-white.svg',
       href: 'https://fandora.network/',
     },
-    copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
+    copyright: `Copyright © ${new Date().getFullYear()} Fandora Technology`,
     },
     image: "https://matic.network/banners/matic-network-16x9.png",
     prism: {
@@ -245,7 +245,7 @@ module.exports = {
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: "Polygon logo",
+        alt: "Fandora logo",
         src: "/img/fandora/fandora-logo.svg",
         srcDark: "/img/fandora/fandora-white.svg",
         // width: 100,
