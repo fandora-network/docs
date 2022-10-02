@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Polygon Basics",
+      label: "Fandora Basics",
       link: {
         type: "generated-index",
       },
