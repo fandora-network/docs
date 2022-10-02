@@ -2,15 +2,15 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: "Polygon Technology | Documentation",
-  tagline: "Welcome to Polygon developer documentation",
-  url: "https://wiki.polygon.technology",
+  title: "Fandora Technology | Documentation",
+  tagline: "Welcome to Fandora developer documentation",
+  url: "https://docs.fandora.network",
   baseUrl: "/",
-  favicon: "img/polygon/polygon-logo.svg",
-  organizationName: "Polygon Technology",
-  projectName: "matic-docs",
+  favicon: "img/fandora/favicon.svg",
+  organizationName: "Fandora Technology",
+  projectName: "fandora-docs",
   customFields: {
-    description: "Build your next blockchain app on Polygon.",
+    description: "Build your next blockchain app on Fandora.",
   },
   i18n: {
     defaultLocale: 'en',
