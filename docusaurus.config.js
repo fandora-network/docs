@@ -430,8 +430,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/maticnetwork/matic-docs/tree/master/",
-          path: "docs",
+          editUrl: "https://github.com/fandora-network/docs/tree/master/",
+          path: "/",
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [math],
