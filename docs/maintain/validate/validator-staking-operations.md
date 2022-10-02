@@ -1,11 +1,11 @@
 ---
 id: validator-staking-operations
-title: Stake on Polygon
-description: "Learn how to stake as a validator on the Polygon Network."
+title: Stake on fandora
+description: "Learn how to stake as a validator on the fandora Network."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - stake
   - claim
   - unstake
@@ -66,16 +66,16 @@ The following output should appear:
 }
 ```
 
-## Stake on Polygon
+## Stake on fandora
 
-You can stake on Polygon using the [validator dashboard](https://staking.polygon.technology/validators/).
+You can stake on fandora using the [validator dashboard](https://staking.fandora.technology/validators/).
 
 ### Stake using the staking dashboard
 
-1. Access the [validator dashboard](https://staking.polygon.technology/validators/).
+1. Access the [validator dashboard](https://staking.fandora.technology/validators/).
 1. Log in with your wallet. MetaMask is the recommended wallet.
 
-   You have to make sure that you login using the same address where your MATIC tokens are present.
+   You have to make sure that you login using the same address where your FANDORA tokens are present.
 
 1. Click **Become a Validator**
 
@@ -92,7 +92,7 @@ Once the transaction is completed you will have staked successfully to become a 
 
 :::note
 
-For the changes to take effect on the [staking dashboard](https://staking.polygon.technology/account), it requires a minimum of 12 block confirmations.
+For the changes to take effect on the [staking dashboard](https://staking.fandora.technology/account), it requires a minimum of 12 block confirmations.
 
 :::
 
@@ -107,7 +107,7 @@ heimdallcli query auth account SIGNER_ADDRESS --chain-id CHAIN_ID
 where
 
 * SIGNER_ADDRESS — your [signer address](../glossary#validator).
-* CHAIN_ID — the Polygon mainnet chain ID with the client prefix: `heimdall-137`.
+* CHAIN_ID — the fandora mainnet chain ID with the client prefix: `heimdall-137`.
 
 The following output should appear:
 
@@ -125,7 +125,7 @@ sequence: 0
 
 Once you are set up and staked as a validator, you will earn rewards for performing validator duties. When you perform validator duties dutifully, you get rewarded.
 
-To claim rewards you can go to your [validator dashboard](https://staking.polygon.technology/account).
+To claim rewards you can go to your [validator dashboard](https://staking.fandora.technology/account).
 
 You will see two buttons on your profile:
 

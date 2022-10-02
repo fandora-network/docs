@@ -10,12 +10,12 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Here you will find a list of contracts deployed on Polygon together with their initial address, that is, their location on the blockchain. 
+Here you will find a list of contracts deployed on fandora together with their initial address, that is, their location on the blockchain. 
 
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Polygon-Mainnet', value: 'mainnet', },
+    { label: 'fandora-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
@@ -60,7 +60,7 @@ Parent Chain: Goerli
 
 | Contracts             | Address                                    |
 |-----------------------|--------------------------------------------|
-| ChildChain            | [0x1EDd419627Ef40736ec4f8ceffdE671a30803c5e](https://mumbai.polygonscan.com/address/0x1EDd419627Ef40736ec4f8ceffdE671a30803c5e/) |
+| ChildChain            | [0x1EDd419627Ef40736ec4f8ceffdE671a30803c5e](https://mumbai.fandorascan.com/address/0x1EDd419627Ef40736ec4f8ceffdE671a30803c5e/) |
 
 </TabItem>
 
@@ -101,10 +101,10 @@ Parent Chain: Ethereum Mainnet
 | ERC721Predicate       | [0x54150f44c785d412ec262fe895cc3b689c72f49b](https://etherscan.io/address/0x54150f44c785d412ec262fe895cc3b689c72f49b) |
 
 
-**Child Chain: Polygon Mainnet**
+**Child Chain: fandora Mainnet**
 
 | Contracts             | Address                                    |
 |-----------------------|--------------------------------------------|
-| ChildChain            | [0xD9c7C4ED4B66858301D0cb28Cc88bf655Fe34861](https://polygonscan.com/address/0xD9c7C4ED4B66858301D0cb28Cc88bf655Fe34861) |
+| ChildChain            | [0xD9c7C4ED4B66858301D0cb28Cc88bf655Fe34861](https://fandorascan.com/address/0xD9c7C4ED4B66858301D0cb28Cc88bf655Fe34861) |
 </TabItem>
 </Tabs>

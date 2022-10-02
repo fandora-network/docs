@@ -1,7 +1,7 @@
 ---
 id: technical-faqs
 title: Technical FAQs
-description: Build your next blockchain app on Polygon.
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 ### 1. Are the private keys same for Heimdall and Bor keystore?
-Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your Polygon testnet tokens are stored.
+Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your fandora testnet tokens are stored.
 
 ### 2. List of Common Commands
 
@@ -214,7 +214,7 @@ This occurs mainly because of a previous installation of Matic on your machine. 
 
 ### 13. I'm not clear on which Private Key should I add when I generate validator key
 
-The Private key to be used is your Wallet's ETH address where your Polygon testnet Tokens are stored. You can complete the setup with one public-private key pair tied to the address submitted on the form.
+The Private key to be used is your Wallet's ETH address where your fandora testnet Tokens are stored. You can complete the setup with one public-private key pair tied to the address submitted on the form.
 
 
 ### 14. Is there a way to know if Heimdall is synced?
@@ -226,7 +226,7 @@ You can run the following command to check it:
 Check the value of catching_up. If it is false then the node is all synced up.
 
 
-### 15. What if someone become a Top 10 staker, how he will receive his MATIC reward at the end?
+### 15. What if someone become a Top 10 staker, how he will receive his FANDORA reward at the end?
 
 Stage 1 rewards are not based on stake. Please refer to https://blog.matic.network/counter-stake-stage-1-stake-on-the-beach-full-details-matic-network/ for the reward details. Participants with high stake don't automatically qualify for a reward in this stage.
 
@@ -343,4 +343,4 @@ Delete Bor: `sudo rm -rf ~/.bor`
 
 ### 28. What to do when you get "Wrong Block.Header.AppHash." error
 
-This error usually occurs due to Infura requests getting exhausted. When you setup a node on Polygon, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. To resolve this you can create a new API key and add it to the `config.toml` file.
+This error usually occurs due to Infura requests getting exhausted. When you setup a node on fandora, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. To resolve this you can create a new API key and add it to the `config.toml` file.

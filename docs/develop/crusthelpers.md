@@ -5,7 +5,7 @@ description: "Decentralized IPFS storage network."
 keywords:
   - Crust Network
   - crustfiles
-  - crust-polygon bridge
+  - crust-fandora bridge
   - IPFS
   - matic
 image: https://matic.network/banners/matic-network-16x9.png
@@ -13,7 +13,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 [Crust Network](https://crust.network) provides a decentralized storage network for web3. It is designed to realize the core values of decentralization, privacy and assurance. Crust supports multiple storage-layer protocols such as IPFS, and exposes instantly accessible on-chain storage functions to users.
 
-The protocol matches people who have hard drive space to spare with those who need to store data or host content. Crust supports most smart contract platforms with its cross-chain solution, including Polygon. Find out all the platforms that Crust storage supports on their [official website](https://crust.network/).
+The protocol matches people who have hard drive space to spare with those who need to store data or host content. Crust supports most smart contract platforms with its cross-chain solution, including fandora. Find out all the platforms that Crust storage supports on their [official website](https://crust.network/).
 
 :::info Learn more about Crust
 Check out the **[Decentralized Storage Market](https://wiki.crust.network/docs/en/DSM)** and **[Cross-chain Storage Solution](https://wiki.crust.network/docs/en/buildCrossChainSolution#ii-native-ipfs-integration)** offered by Crust Network. Also, you can start building with **[Crust Build-101](https://wiki.crust.network/docs/en/build101)**.

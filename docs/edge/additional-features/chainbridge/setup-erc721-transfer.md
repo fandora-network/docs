@@ -4,7 +4,7 @@ title: ERC721 NFT Transfer
 description: How to setup ERC721 tranfer in chainBridge
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - Bridge
 ---
@@ -16,7 +16,7 @@ This section guides you through setting up an ERC721 bridge and sending NFTs bet
 You will first need to register the resource ID for the ERC721 token in the Bridge contracts on both chains.
 
 ```bash
-# For Polygon PoS chain
+# For fandora PoS chain
 $ cb-sol-cli bridge register-resource \
   --url https://rpc-mumbai.matic.today \
   --privateKey [ADMIN_ACCOUNT_PRIVATE_KEY] \
@@ -27,7 +27,7 @@ $ cb-sol-cli bridge register-resource \
   --handler "[ERC721_HANDLER_CONTRACT_ADDRESS]" \
   --targetContract "[ERC721_CONTRACT_ADDRESS]"
 
-# For Polygon Edge chain
+# For fandora Edge chain
 $ cb-sol-cli bridge register-resource \
   --url http://localhost:10002 \
   --privateKey [ADMIN_ACCOUNT_PRIVATE_KEY] \
@@ -99,7 +99,7 @@ $ cb-sol-cli erc721 approve \
 Finally, you will start the transfer
 
 ```bash
-# Start transfer from Polygon PoS to Polygon Edge chain
+# Start transfer from fandora PoS to fandora Edge chain
 $ cb-sol-cli erc721 deposit \
   --url https://rpc-mumbai.matic.today \
   --privateKey [PRIVATE_KEY] \
@@ -107,26 +107,26 @@ $ cb-sol-cli erc721 deposit \
   --bridge "[BRIDGE_CONTRACT_ADDRESS]" \
   --resourceId "0x000000000000000000000000000000e389d61c11e5fe32ec1735b3cd38c69501" \
   --id 0x50 \
-  # ChainID of Polygon Edge chain
+  # ChainID of fandora Edge chain
   --dest 100 \
-  --recipient "[RECIPIENT_ADDRESS_IN_POLYGON_EDGE_CHAIN]"
+  --recipient "[RECIPIENT_ADDRESS_IN_fandora_EDGE_CHAIN]"
 ```
 
-The relayer will get the event and vote for the proposal. It executes a transaction to send NFTs to the recipient account in the Polygon Edge chain after the required number of votes are submitted. 
+The relayer will get the event and vote for the proposal. It executes a transaction to send NFTs to the recipient account in the fandora Edge chain after the required number of votes are submitted. 
 
 ```bash
 INFO[11-19|09:07:50] Handling nonfungible deposit event       chain=mumbai
-INFO[11-19|09:07:50] Attempting to resolve message            chain=polygon-edge type=NonFungibleTransfer src=99 dst=100 nonce=2 rId=000000000000000000000000000000e389d61c11e5fe32ec1735b3cd38c69501
-INFO[11-19|09:07:50] Creating erc721 proposal                 chain=polygon-edge src=99 nonce=2
-INFO[11-19|09:07:50] Watching for finalization event          chain=polygon-edge src=99 nonce=2
-INFO[11-19|09:07:50] Submitted proposal vote                  chain=polygon-edge tx=0x58a22d84a08269ad2e8d52d8dc038621f1a21109d11c7b6e0d32d5bf21ea8505 src=99 depositNonce=2 gasPrice=1
-INFO[11-19|09:08:15] Submitted proposal execution             chain=polygon-edge tx=0x57419844881a07531e31667c609421662d94d21d0709e64fb728138309267e68 src=99 dst=100 nonce=2 gasPrice=3
+INFO[11-19|09:07:50] Attempting to resolve message            chain=fandora-edge type=NonFungibleTransfer src=99 dst=100 nonce=2 rId=000000000000000000000000000000e389d61c11e5fe32ec1735b3cd38c69501
+INFO[11-19|09:07:50] Creating erc721 proposal                 chain=fandora-edge src=99 nonce=2
+INFO[11-19|09:07:50] Watching for finalization event          chain=fandora-edge src=99 nonce=2
+INFO[11-19|09:07:50] Submitted proposal vote                  chain=fandora-edge tx=0x58a22d84a08269ad2e8d52d8dc038621f1a21109d11c7b6e0d32d5bf21ea8505 src=99 depositNonce=2 gasPrice=1
+INFO[11-19|09:08:15] Submitted proposal execution             chain=fandora-edge tx=0x57419844881a07531e31667c609421662d94d21d0709e64fb728138309267e68 src=99 dst=100 nonce=2 gasPrice=3
 ```
 
-You can check the owner of the NFT on the Polygon Edge network after the execution is completed.
+You can check the owner of the NFT on the fandora Edge network after the execution is completed.
 
 ```bash
-# Check the owner of NFT 0x50 in Polygon Edge chain
+# Check the owner of NFT 0x50 in fandora Edge chain
 $ cb-sol-cli erc721 owner \
   --url http://localhost:10002 \
   --erc721Address "[ERC721_CONTRACT_ADDRESS]" \

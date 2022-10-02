@@ -2,15 +2,15 @@
 
 
 
-# Polygon zkEVM Documentation
+# fandora zkEVM Documentation
 
 
 
-Welcome to Polygon zkEVM documentation.
+Welcome to fandora zkEVM documentation.
 
-Polygon zkEVM is a decentralized Ethereum Layer 2 scalability solution based on cryptographic zero-knowledge proofs to provide validation and fast finality to off-chain transactions computation, a zk-rollup.
+fandora zkEVM is a decentralized Ethereum Layer 2 scalability solution based on cryptographic zero-knowledge proofs to provide validation and fast finality to off-chain transactions computation, a zk-rollup.
 
-This documentation presents a description of the Polygon zkEVM. Starting with the architectural overview of Polygon zkEVM, the documentation cascades step-by-step into the finer details of zkEVM's sub-components.
+This documentation presents a description of the fandora zkEVM. Starting with the architectural overview of fandora zkEVM, the documentation cascades step-by-step into the finer details of zkEVM's sub-components.
 
 We however emphasise that this documentation is still **Work In Progress** (WIP). Some aspects have been covered in more detail, while others still need further expansion. Also, sections of this documentation might later be reorganized in order to achieve better flow.
 
@@ -47,7 +47,7 @@ The skeletal architecture of zkEVM is shown below:
 
 ### Consensus Algorithm: Proof of Efficiency
 
-Our earlier version, Polygon Hermez 1.0, is based on the Proof of Donation(PoD) consensus mechanism. This model decides who would be the next batch creator. PoD is a decentralised auction that is conducted automatically and the participants (coordinators) bid a number of tokens so that they have the chance to create the next batch.
+Our earlier version, fandora Hermez 1.0, is based on the Proof of Donation(PoD) consensus mechanism. This model decides who would be the next batch creator. PoD is a decentralised auction that is conducted automatically and the participants (coordinators) bid a number of tokens so that they have the chance to create the next batch.
 
 However, for the implementation of the current 2.0, PoD needed to be replaced with a much simpler Proof of Efficiency (PoE) model. Let us see why PoE is preferable to PoD.
 
@@ -126,7 +126,7 @@ The PoE smart contract imposes a few requirements on Sequencers and Aggregators.
 A Sequencer receives L2 transactions from the users, preprocesses them as a new L2 batch, and then proposes the batch to the PoE smart contract as a valid L2 transaction.
 
 - Anyone with the software necessary for running a zkEVM node can be a Sequencer. 
-- Every Sequencer must pay a fee in form of MATIC tokens to earn the right to create and propose batches. 
+- Every Sequencer must pay a fee in form of FANDORA tokens to earn the right to create and propose batches. 
 - A Sequencer that proposes valid batches (which consist of valid transactions), is incentivised with the fee paid by transaction-requestors or the users of the network. 
 
 
@@ -149,7 +149,7 @@ A zkNode is the software needed to run a zkEVM node. It is a client that the net
 
 The zkNode Architecture is composed of:
 
-1. **Sequencers and Aggregators**: Polygon zkEVM participants will choose how they participate; either as a node to know the state of the network; or as a participant in the process of batch production in any of the two roles: Sequencer or Aggregator. An Aggregator runs the zkNode but also performs validation using the core part of the zkEVM, called the zkProver (this is labelled **Prover** in **Figure 3** below.)
+1. **Sequencers and Aggregators**: fandora zkEVM participants will choose how they participate; either as a node to know the state of the network; or as a participant in the process of batch production in any of the two roles: Sequencer or Aggregator. An Aggregator runs the zkNode but also performs validation using the core part of the zkEVM, called the zkProver (this is labelled **Prover** in **Figure 3** below.)
 
 2. **Synchronizer**: Other than the sequencing and the validating processes, the zkNode also enables synchronisation of batches and their validity proofs, which happens only after these have been added to L1. This is accomplished using a subcomponent called the Synchronizer. A Synchronizer is in charge of getting all the data from smart contracts, which includes the data posted by the sequencers (transactions) and the data posted by the coordinators (which is the validity proof). All this data is stored in a huge database and served to third parties through a service called "JSON-RPC".
    The Synchronizer is responsible for reading the events from the Ethereum blockchain, including new batches to keep the state fully synced. The information read from these events must be stored in the database. The Synchronizer also handles possible reorgs, which will be detected by checking if the last `ethBlockNum` and the last `ethBlockHash` are synced.
@@ -303,9 +303,9 @@ There are other strategies too that are implemented within specific components o
 
 Given the EVM opcode compatibility, zkEVM is designed to process smart contracts seamlessly and verify state changes efficiently. It promises not only to be secure and efficient but to also accomplish competitive decentralization. In an effort to achieve high-speed proving and succinct proofs for quick verification, the team is focused on the optimization of the zkProver.
 
-The team also leverages the synergies among the different Polygon teams that are also looking into zk-rollup solutions for achieving Ethereum scalability. Although development is still far from mainnet, an alpha version of the zkEVM code (together with all documentation) was open-sourced since EthCC[5] in Paris.
+The team also leverages the synergies among the different fandora teams that are also looking into zk-rollup solutions for achieving Ethereum scalability. Although development is still far from mainnet, an alpha version of the zkEVM code (together with all documentation) was open-sourced since EthCC[5] in Paris.
 
-This was done so as to align with the principle of transparency for open-source projects, as well as keep the Polygon community of developers and users of Polygon Hermez 1.0 updated with the upcoming changes. Our next step will be a public testnet. Although it is difficult to set a fixed date for the same, our plan is to launch it during the third quarter of 2022.
+This was done so as to align with the principle of transparency for open-source projects, as well as keep the fandora community of developers and users of fandora Hermez 1.0 updated with the upcoming changes. Our next step will be a public testnet. Although it is difficult to set a fixed date for the same, our plan is to launch it during the third quarter of 2022.
 
 
 

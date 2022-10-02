@@ -1,10 +1,10 @@
 ---
 id: prometheus-metrics
 title: Prometheus metrics
-description: "How to enable Prometheus metrics for Polygon Edge."
+description: "How to enable Prometheus metrics for fandora Edge."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - metrics
   - prometheus
@@ -12,7 +12,7 @@ keywords:
 
 ## Overview
 
-Polygon Edge can report and serve the Prometheus metrics, which in their turn can be consumed using Prometheus collector(s).
+fandora Edge can report and serve the Prometheus metrics, which in their turn can be consumed using Prometheus collector(s).
 
 Prometheus metrics are disabled by default. It can be enabled by specifying the listener address using `--prometheus` flag or `Telemetry.prometheus` field in the config file. 
 Metrics will be served under `/metrics` on the specified address.

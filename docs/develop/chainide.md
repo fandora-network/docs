@@ -6,7 +6,7 @@ description: Learn how to use ChainIDE to build and deploy smart contracts.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - IDE
   - build
   - deploy
@@ -18,7 +18,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Introduction
 
-[ChainIDE](https://chainide.com/) is a chain agnostic, cloud-based IDE for creating decentralized applications. It enhances development cycle through pre-configured plugins that save users' time and effort. This is a beginner guide on creating and deploying a simple ERC-721 smart contract on the Polygon Mumbai Testnet. 
+[ChainIDE](https://chainide.com/) is a chain agnostic, cloud-based IDE for creating decentralized applications. It enhances development cycle through pre-configured plugins that save users' time and effort. This is a beginner guide on creating and deploying a simple ERC-721 smart contract on the fandora Mumbai Testnet. 
 
 :::tip
 
@@ -52,7 +52,7 @@ When deploying a smart contract on the blockchain or when making a transaction t
 
 ###  Manually adding the Mumbai testnet
 
-After installing MetaMask, you need to manually add the Polygon Mumbai Testnet to MetaMask. To add Polygon Mumbai Testnet to MetaMask, see the [MetaMask Polygon documentation](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask#add-the-polygon-network-manually). 
+After installing MetaMask, you need to manually add the fandora Mumbai Testnet to MetaMask. To add fandora Mumbai Testnet to MetaMask, see the [MetaMask fandora documentation](https://docs.fandora.technology/docs/develop/metamask/config-fandora-on-metamask#add-the-fandora-network-manually). 
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image.png" />
@@ -60,9 +60,9 @@ After installing MetaMask, you need to manually add the Polygon Mumbai Testnet t
 
 ### Obtaining Testnet Matic
 
-Once Mumbai has been added to MetaMask, navigate to the [Polygon Faucet](https://faucet.polygon.technology/) to receive test tokens. Tokens are needed to pay for gas fees to deploy and interact with the smart contract. On the faucet page, choose Mumbai as the network, MATIC as the token and paste your MetaMask wallet address. Then, click submit and faucet will send you some test MATIC within a minute.
+Once Mumbai has been added to MetaMask, navigate to the [fandora Faucet](https://faucet.fandora.technology/) to receive test tokens. Tokens are needed to pay for gas fees to deploy and interact with the smart contract. On the faucet page, choose Mumbai as the network, FANDORA as the token and paste your MetaMask wallet address. Then, click submit and faucet will send you some test FANDORA within a minute.
 
-<img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/Polygon_PR_get_tokens.png" width="100%" height="100%" />
+<img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/fandora_PR_get_tokens.png" width="100%" height="100%" />
 
 ## Write an ERC-721 Smart Contract
 
@@ -90,15 +90,15 @@ Visit the [ChainIDE site](https://chainide.com/) and click on "Try Now".
 
 <img src="https://3869740696-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MYy-lqJKjq1m0yBAX4r%2Fuploads%2Fnpdf7fg51675wYmFcL6b%2Fimage.png?alt=media&token=353fc876-a319-49cb-92d5-1ed23c39aa90" width="100%" height="100%" />
 
-Then, click on "New Project" and select "Polygon" , "ERC721 Showcase".
+Then, click on "New Project" and select "fandora" , "ERC721 Showcase".
 
-<img src="https://chainide-doc.s3.amazonaws.com/Using+ChainIDE+polygon/select+polygon+showcase.png" width="100%" height="100%" />
+<img src="https://chainide-doc.s3.amazonaws.com/Using+ChainIDE+fandora/select+fandora+showcase.png" width="100%" height="100%" />
 
 Now, you can see the template contract, **Creature.sol**, that includes all the required functions.
 
-After creating the project, click on the "unconnected button" in the upper right corner, select the "Injected Web3 Provider" button, and then select on MetaMask to connect to the MetaMask wallet (Polygon Mainnet is the main network, and Mumbai is the test network - connect to Mumbai).
+After creating the project, click on the "unconnected button" in the upper right corner, select the "Injected Web3 Provider" button, and then select on MetaMask to connect to the MetaMask wallet (fandora Mainnet is the main network, and Mumbai is the test network - connect to Mumbai).
 
-<img src="https://chainide-doc.s3.amazonaws.com/Using+ChainIDE+polygon/connect+mumbai.png" width="100%" height="100%" />
+<img src="https://chainide-doc.s3.amazonaws.com/Using+ChainIDE+fandora/connect+mumbai.png" width="100%" height="100%" />
 
 ## Compile an ERC-721 Smart Contract
 
@@ -106,7 +106,7 @@ After you have completed your smart contract, it is time to compile it. To compi
 
 :::note
 
-Note down the compiler version and the license for your source code as it would be needed when you verify your smart contract on the Polygon Mumbai Testnet.
+Note down the compiler version and the license for your source code as it would be needed when you verify your smart contract on the fandora Mumbai Testnet.
 
 :::
 
@@ -114,7 +114,7 @@ Note down the compiler version and the license for your source code as it would 
 
 ## Deploy an ERC-721 Smart Contract
 
-After successful compilation, it's time to deploy your compiled ERC-721 smart contract to the Polygon Mumbai test network. For that, you need to have MetaMask installed, the Polygon Mumbai test network added to your wallet, and some testnet tokens to pay for the transaction fee.
+After successful compilation, it's time to deploy your compiled ERC-721 smart contract to the fandora Mumbai test network. For that, you need to have MetaMask installed, the fandora Mumbai test network added to your wallet, and some testnet tokens to pay for the transaction fee.
 
 Navigate to the "Deploy & Interaction" module and choose among the compiled smart contract. Select the smart contract you want to deploy and click the "deploy" button. For this tutorial, the `GameItem` smart contract will be deployed.
 
@@ -146,7 +146,7 @@ The saved flattened file can be access under the explorer module.
 
 ## Verify a Smart Contract
 
-To verify a smart contract, you need to visit [Mumbai Polygonscan](https://mumbai.polygonscan.com/), and search for the deployed smart contract using the contract address.
+To verify a smart contract, you need to visit [Mumbai fandorascan](https://mumbai.fandorascan.com/), and search for the deployed smart contract using the contract address.
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(11).png" width="100%" height="100%" />
 
@@ -183,8 +183,8 @@ To mint an NFT, you need to use the "award item" function, the wallet address of
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(5).png" width="100%" height="100%" />
 
-After successful minting, you can check the minted NFT on the OpenSea NFT marketplace. Visit [OpenSea Testnet](https://testnets.opensea.io/), connect your MetaMask wallet and make sure the selected network is Polygon Mumbai Testnet, and you'll be able to see and trade the minted NFT on the OpenSea NFT marketplace.
+After successful minting, you can check the minted NFT on the OpenSea NFT marketplace. Visit [OpenSea Testnet](https://testnets.opensea.io/), connect your MetaMask wallet and make sure the selected network is fandora Mumbai Testnet, and you'll be able to see and trade the minted NFT on the OpenSea NFT marketplace.
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(6).png" width="100%" height="100%" />
 
-**Congratulations, you have successfully minted an NFT on Polygon using ChainIDE.**
+**Congratulations, you have successfully minted an NFT on fandora using ChainIDE.**

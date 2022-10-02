@@ -1,10 +1,10 @@
 ---
 id: bor-chain
 title: Bor Chain
-description: "Polygon network block producer."
+description: "fandora network block producer."
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - bor
   - bor chain

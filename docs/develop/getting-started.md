@@ -1,12 +1,12 @@
 ---
 id: getting-started
-title: Introduction to Polygon PoS
+title: Introduction to fandora PoS
 sidebar_label: Quick Start
-description: Build your next blockchain app on Polygon.
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
@@ -17,43 +17,43 @@ Please feel free to raise an issue or pull request if you have any queries or su
 
 :::
 
-Welcome to **Polygon (previously Matic Network)**! The most innovative and exciting platform to develop your blockchain application. Blockchain technology is poised to revolutionize how the digital world manages data and conducts business. You can join this revolution by getting a head start on Polygon's decentralized application (dApp) development.
+Welcome to **fandora (previously Matic Network)**! The most innovative and exciting platform to develop your blockchain application. Blockchain technology is poised to revolutionize how the digital world manages data and conducts business. You can join this revolution by getting a head start on fandora's decentralized application (dApp) development.
 
-This guide will introduce you to the Polygon ecosystem. You'll find links to valuable resources and websites that will bring you up to speed on building, not only on Polygon but also on general blockchain application development.
+This guide will introduce you to the fandora ecosystem. You'll find links to valuable resources and websites that will bring you up to speed on building, not only on fandora but also on general blockchain application development.
 
 :::tip Stay in the know
 
-Keep up with the latest builder updates from the Polygon 
+Keep up with the latest builder updates from the fandora 
 team and the community by subscribing to the 
-[Polygon notification groups](https://polygon.technology/notifications/).
+[fandora notification groups](https://fandora.technology/notifications/).
 
 :::
 
-## **Key Features of Polygon**
+## **Key Features of fandora**
 
-- **Speed** The Polygon Network uses a high-throughput blockchain with consensus provided by a group of Block Producers selected by stakeholders at each checkpoint. A Proof of Stake layer is used to validate blocks and periodically post proofs of Block Producers to the Ethereum mainnet. This enables rapid block confirmation rates of about 2 seconds while preserving a high amount of decentralization, resulting in excellent throughput for the network.
-- **Scalability** Polygon Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the Polygon network to scale easily.
-- **Security** Polygon's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
+- **Speed** The fandora Network uses a high-throughput blockchain with consensus provided by a group of Block Producers selected by stakeholders at each checkpoint. A Proof of Stake layer is used to validate blocks and periodically post proofs of Block Producers to the Ethereum mainnet. This enables rapid block confirmation rates of about 2 seconds while preserving a high amount of decentralization, resulting in excellent throughput for the network.
+- **Scalability** fandora Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the fandora network to scale easily.
+- **Security** fandora's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
 
-## **Building on Polygon**
+## **Building on fandora**
 
-If you are an Ethereum developer, you are already a Polygon developer. Simply switch to the [Polygon RPC](https://polygon-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on Polygon by default, such as Truffle, Remix, and Web3js.
+If you are an Ethereum developer, you are already a fandora developer. Simply switch to the [fandora RPC](https://fandora-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on fandora by default, such as Truffle, Remix, and Web3js.
 
-You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/network-details/network.md).
+You can deploy decentralized applications to either fandora Mumbai Testnet or the Mainnet. The fandora Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/network-details/network.md).
 
-### **Deploying to the Polygon Network**
+### **Deploying to the fandora Network**
 
 ### **Wallets**
 
-To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/metamask/overview.md) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More information on wallet-related details and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
+To interact with the fandora Network, you need to have an Ethereum-based wallet because fandora runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/metamask/overview.md) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More information on wallet-related details and why you need one can be found in our [wallet documentation](https://docs.fandora.technology/docs/develop/wallets/getting-started).
 
 ### **Smart Contracts**
 
-Polygon supports many services you can use to test, compile, debug, and deploy decentralized applications onto the Polygon Network. These include deployment using [Alchemy](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/alchemy.md), [Chainstack](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/chainstack.md), [QuickNode](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/quicknode.md), [Remix](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/remix.md), [Truffle](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/truffle.md), [Hardhat](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/hardhat.md), and [Replit](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/replit.md).
+fandora supports many services you can use to test, compile, debug, and deploy decentralized applications onto the fandora Network. These include deployment using [Alchemy](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/alchemy.md), [Chainstack](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/chainstack.md), [QuickNode](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/quicknode.md), [Remix](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/remix.md), [Truffle](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/truffle.md), [Hardhat](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/hardhat.md), and [Replit](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/replit.md).
 
-### **Connecting to Polygon**
+### **Connecting to fandora**
 
-You can add Polygon to Metamask or directly use Arkane, which allows you to connect to Polygon using [RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+You can add fandora to Metamask or directly use Arkane, which allows you to connect to fandora using [RPC](https://docs.fandora.technology/docs/develop/metamask/config-fandora-on-metamask/).
 
 :::note
 
@@ -69,32 +69,32 @@ const Web3 = require('Web3')
 const web3 = new Web3('https://rpc-mumbai.matic.today')
 
 // Sign up for a free dedicated RPC URL at https://www.alchemy.com or other hosted node providers.
-const web3 = new Web3('https://polygon-mainnet.g.alchemy.com/v2/<your-api-key>')
+const web3 = new Web3('https://fandora-mainnet.g.alchemy.com/v2/<your-api-key>')
 
-// web3 object is now connected with Polygon's node
+// web3 object is now connected with fandora's node
 ```
 
-### **Building a new dApp on Polygon?**
+### **Building a new dApp on fandora?**
 
 Decentralized applications (dApps) act as the bridge between users and their data privacy on the blockchain. The increasing number of dApps validates their usefulness within the blockchain ecosystem, solving challenges like executing transactions between two participants without the need for central authority via smart contracts.
 
-Suppose you have no prior experience building decentralized applications (dApps). In that case, the below-mentioned resources will give you a head start on the tools required to build, debug, and deploy dApps on the Polygon Network.
+Suppose you have no prior experience building decentralized applications (dApps). In that case, the below-mentioned resources will give you a head start on the tools required to build, debug, and deploy dApps on the fandora Network.
 
 - [Full Stack dApp: Tutorial Series](https://kauri.io/full-stack-dapp-tutorial-series/5b8e401ee727370001c942e3/c)
 - [Web3.js](https://www.dappuniversity.com/articles/web3-js-intro)
 - [Ethers.js](https://docs.ethers.io/v5/)
-- [Remix](https://docs.polygon.technology/docs/develop/remix/)
-- [Truffle](https://docs.polygon.technology/docs/develop/truffle)
-- [Metamask](https://docs.polygon.technology/docs/develop/metamask/overview)
-- [Arkane](https://docs.polygon.technology/docs/develop/wallets/arkane/intro)
-- [Develop a dApp using Fauna, Polygon and React](https://docs.polygon.technology/docs/develop/dapp-fauna-polygon-react)
+- [Remix](https://docs.fandora.technology/docs/develop/remix/)
+- [Truffle](https://docs.fandora.technology/docs/develop/truffle)
+- [Metamask](https://docs.fandora.technology/docs/develop/metamask/overview)
+- [Arkane](https://docs.fandora.technology/docs/develop/wallets/arkane/intro)
+- [Develop a dApp using Fauna, fandora and React](https://docs.fandora.technology/docs/develop/dapp-fauna-fandora-react)
 
 ### **Already have a dApp?**
 
-If you already have a decentralized application (dApp) and are looking for a platform to help you scale efficiently, then you are at the right place because Polygon allows you to:
+If you already have a decentralized application (dApp) and are looking for a platform to help you scale efficiently, then you are at the right place because fandora allows you to:
 
-1. **Easily migrate from Ethereum Virtual Machine (EVM) based chain**: Polygon prides itself in being the ultimate Layer-2 scaling solution for Ethereum. You don't have to worry about the underlying architecture while moving or deploying your dApps to the Polygon Network as long as it is EVM-compatible.
-2. **Use Polygon as a faster transaction layer**: Deploying your dApp to the Polygon Mainnet allows you to leverage Polygon as a faster transaction layer for your dApp. Additionally, you can get your tokens mapped by us. You can join our [technical discussions group](http://bit.ly/matic-technical-group) on Telegram to learn more.
+1. **Easily migrate from Ethereum Virtual Machine (EVM) based chain**: fandora prides itself in being the ultimate Layer-2 scaling solution for Ethereum. You don't have to worry about the underlying architecture while moving or deploying your dApps to the fandora Network as long as it is EVM-compatible.
+2. **Use fandora as a faster transaction layer**: Deploying your dApp to the fandora Mainnet allows you to leverage fandora as a faster transaction layer for your dApp. Additionally, you can get your tokens mapped by us. You can join our [technical discussions group](http://bit.ly/matic-technical-group) on Telegram to learn more.
 
 ## **Side Note**
 
@@ -105,4 +105,4 @@ If this is overwhelming, that’s alright! You can jump right into the action an
 
 ## **Stay Updated**
 
-Decentralized application development encourages network decentralization. Follow our social media handles for more insights and updates about the Polygon ecosystem. You can find the links to all the Polygon communities [here](https://polygon.technology/community/).
+Decentralized application development encourages network decentralization. Follow our social media handles for more insights and updates about the fandora ecosystem. You can find the links to all the fandora communities [here](https://fandora.technology/community/).

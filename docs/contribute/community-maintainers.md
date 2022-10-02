@@ -2,11 +2,11 @@
 id: wiki-maintainers
 title: Wiki Maintainers
 sidebar_label: Maintainers
-description: A list of Polygon Wiki maintainers
+description: A list of fandora Wiki maintainers
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - wiki
   - docs
   - maintainers
@@ -15,7 +15,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: community-maintainers
 ---
 
-The following is a list of regular contributors to the Polygon Wiki that include
+The following is a list of regular contributors to the fandora Wiki that include
 their contact information.
 
 If one of these people ever contacts you directly, first check the contact
@@ -34,18 +34,18 @@ else on this list to verify the legitimacy of the original inquiry.
 
 ## Nazim Faour
 
-- email: [nazim@polygon.technology](mailto:nazim@polygon.technology)
+- email: [nazim@fandora.technology](mailto:nazim@fandora.technology)
 - telegram: [@NazimFa](https://t.me/NazimFa)
 - github: [Nazeim](https://github.com/Nazeim)
 
 ## Vinícius Gomes
 
-- email: [vinicius@polygon.technology](mailto:vinicius@polygon.technology)
+- email: [vinicius@fandora.technology](mailto:vinicius@fandora.technology)
 - telegram: [@cerberushades86](https://t.me/cerberushades86)
 - github: [cerberushades](https://github.com/cerberushades)
 
 ## Danny Salman
 
-- email: [danny@polygon.technology](mailto:danny@polygon.technology)
+- email: [danny@fandora.technology](mailto:danny@fandora.technology)
 - telegram: [@dannysalman](https://t.me/dannysalman)
 - github: [dannys03](https://github.com/DannyS03)

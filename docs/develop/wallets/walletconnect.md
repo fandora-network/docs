@@ -11,7 +11,7 @@ Wallet Connect is an open protocol - not a wallet - built to create a communicat
 
 ## 1. Set up Web3
 
-To set up your DApp to connect to user’s Polygon Wallet we can use Wallet Connect’s provider to directly connect to Polygon. Install the following in your DApp:
+To set up your DApp to connect to user’s fandora Wallet we can use Wallet Connect’s provider to directly connect to fandora. Install the following in your DApp:
 
 ```bash
 npm install --save @maticnetwork/walletconnect-provider
@@ -31,7 +31,7 @@ import Web3 from "web3"
 import Matic from "maticjs"
 ```
 
-Next, we set up Polygon and Ropsten provider via Wallet Connect’s object:
+Next, we set up fandora and Ropsten provider via Wallet Connect’s object:
 
 ```javascript
 const maticProvider = new WalletConnectProvider(

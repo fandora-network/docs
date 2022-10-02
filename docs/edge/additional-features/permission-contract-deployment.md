@@ -4,7 +4,7 @@ title: Permission smart contract deployment
 description: How to add permission smart contract deployment.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - smart contract
   - permission
@@ -32,11 +32,11 @@ You can find all cli commands related to the deployment whitelist in the [CLI Co
 
 There are 2 ways to find addresses from the deployment whitelist.
 1. Looking at the `genesis.json` where whitelists are saved
-2. Executing `whitelist show`, which prints information for all whitelists supported by Polygon Edge
+2. Executing `whitelist show`, which prints information for all whitelists supported by fandora Edge
 
 ```bash
 
-./polygon-edge whitelist show 
+./fandora-edge whitelist show 
 
 [WHITELISTS]
 
@@ -51,7 +51,7 @@ To add a new address to the deployment whitelist execute `whitelist deployment -
 
 ```bash
 
-./polygon-edge whitelist deployment --add 0x5383Cb489FaCa92365Bb6f9f1FB40bD032E6365d --add 0x30ea4435167Ee91f9f874b5a894F3282A956C3FF
+./fandora-edge whitelist deployment --add 0x5383Cb489FaCa92365Bb6f9f1FB40bD032E6365d --add 0x30ea4435167Ee91f9f874b5a894F3282A956C3FF
  
 
 [CONTRACT DEPLOYMENT WHITELIST]
@@ -69,7 +69,7 @@ To remove an address from the deployment whitelist execute `whitelist deployment
 
 ```bash
 
-./polygon-edge whitelist deployment --remove 0x5383Cb489FaCa92365Bb6f9f1FB40bD032E6365d --remove 0x30ea4435167Ee91f9f874b5a894F3282A956C3FF
+./fandora-edge whitelist deployment --remove 0x5383Cb489FaCa92365Bb6f9f1FB40bD032E6365d --remove 0x30ea4435167Ee91f9f874b5a894F3282A956C3FF
  
 
 [CONTRACT DEPLOYMENT WHITELIST]

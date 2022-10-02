@@ -5,7 +5,6 @@ description: "Major types of blockchain networks."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 Following are the major types of blockchain networks:

@@ -5,7 +5,7 @@ description: "System requirements to run a validator node."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - prerequisites
   - requirements
 slug: validator-node-system-requirements

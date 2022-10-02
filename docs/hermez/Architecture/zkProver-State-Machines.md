@@ -5,7 +5,7 @@
 
 
 
-Core to the integrity of the Polygon zkEVM is its zero-knowledge prover, dubbed the zkProver.
+Core to the integrity of the fandora zkEVM is its zero-knowledge prover, dubbed the zkProver.
 
 This document seeks to provide a more detailed architectural description of the zkProver without delving  deep into its technical complexities, as well as to introduce the zkProver's state machines in a cursory manner. It is therefore a prelude to the state machines' documentation. 
 
@@ -17,11 +17,11 @@ This document seeks to provide a more detailed architectural description of the 
 
 
 
-The design paradigm at Polygon Hermez has shifted to developing a zero-knowledge virtual machine (zkEVM) that emulates the Ethereum Virtual Machine (EVM).
+The design paradigm at fandora Hermez has shifted to developing a zero-knowledge virtual machine (zkEVM) that emulates the Ethereum Virtual Machine (EVM).
 
 Proving and verification of transactions in Hermez 2.0 are all handled by a zero-knowledge prover-component dubbed the **zkProver**.
 
-But before delving deep into the state machines, note that the zkProver is but a component in the Polygon Hermez zkEVM, and the only one responsible for proving.
+But before delving deep into the state machines, note that the zkProver is but a component in the fandora Hermez zkEVM, and the only one responsible for proving.
 
 In order to lay the context for the state machines, recall that the zkProver mainly interacts with two other components, the Node and the Database (DB).
 
@@ -96,7 +96,7 @@ There are some natural dependencies such as between;
 
 
 
-The Polygon Hermez team has created two novel languages especially for the zkProver; The Zero-Knowledge Assembly language and the Polynomial Identity Language. 
+The fandora Hermez team has created two novel languages especially for the zkProver; The Zero-Knowledge Assembly language and the Polynomial Identity Language. 
 
 Since adopting the state machines paradigm means switching from highlevel programming to low-level programming, it is not suprising for the zkProve to employ an especially designed language for the firmware and another for the hardware.
 
@@ -123,7 +123,7 @@ Recall that the aim of this project is creating the most effective solution to t
 All PIL codes, in the zkProver's state machines, therefore form the very DNA of the verifier code. 
 
 
-These two languages, zkASM and PIL, were designed mindful of prospects for broader adoption outside Polygon zkEVM.
+These two languages, zkASM and PIL, were designed mindful of prospects for broader adoption outside fandora zkEVM.
 
 
 
@@ -169,7 +169,7 @@ There are two secondary state machines specialising with hashing; The Keccak Sta
 
 
 
-The deployment of the Keccak hash function is not surprising given the fact that it is deployed in Ethereum, and Polygon Hermez is a zk-rollup, an L2 scaling solution for Ethereum.
+The deployment of the Keccak hash function is not surprising given the fact that it is deployed in Ethereum, and fandora Hermez is a zk-rollup, an L2 scaling solution for Ethereum.
 
 The Keccak state machine is a gates state machine, and thus has a set of logic gates (the hardware) and a set of connections between the gates (the logic). It is a secondary state machine composed of the Keccak SM Hash Generator and the Keccak PIL code, where the latter is for validation purposes.
 

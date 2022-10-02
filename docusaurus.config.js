@@ -2,15 +2,15 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: "Polygon Technology | Documentation",
-  tagline: "Welcome to Polygon developer documentation",
-  url: "https://wiki.polygon.technology",
+  title: "Fandora Technology | Documentation",
+  tagline: "Welcome to Fandora developer documentation",
+  url: "https://docs.fandora.network/",
   baseUrl: "/",
-  favicon: "img/polygon/polygon-logo.svg",
-  organizationName: "Polygon Technology",
-  projectName: "matic-docs",
+  favicon: "img/fandora/favicon.svg",
+  organizationName: "Fandora Technology",
+  projectName: "fandora-docs",
   customFields: {
-    description: "Build your next blockchain app on Polygon.",
+    description: "Build your next blockchain app on Fandora.",
   },
   i18n: {
     defaultLocale: 'en',
@@ -113,36 +113,36 @@ module.exports = {
     //       title: "Scaling Solutions",
     //       items: [
     //       {
-    //           label: "Polygon PoS",
-    //           href: "https://polygon.technology/solutions/polygon-pos/"
+    //           label: "fandora PoS",
+    //           href: "https://fandora.technology/solutions/fandora-pos/"
     //       },
     //       {
-    //         label: "Polygon Edge",
-    //         href: "https://polygon.technology/solutions/polygon-edge/"
+    //         label: "fandora Edge",
+    //         href: "https://fandora.technology/solutions/fandora-edge/"
     //       },
     //       {
-    //           label: "Polygon Supernets",
-    //           href: "https://polygon.technology/polygon-edge-supernets/"
+    //           label: "fandora Supernets",
+    //           href: "https://fandora.technology/fandora-edge-supernets/"
     //       },
     //       {
-    //         label: "Polygon Hermez",
-    //         href: "https://polygon.technology/solutions/polygon-hermez/"
+    //         label: "fandora Hermez",
+    //         href: "https://fandora.technology/solutions/fandora-hermez/"
     //       },
     //       {
-    //         label: "Polygon Avail",
-    //         href: "https://polygon.technology/solutions/polygon-avail/"
+    //         label: "fandora Avail",
+    //         href: "https://fandora.technology/solutions/fandora-avail/"
     //       },
     //       {
-    //           label: "Polygon Nightfall",
-    //           href: "https://polygon.technology/solutions/polygon-nightfall/"
+    //           label: "fandora Nightfall",
+    //           href: "https://fandora.technology/solutions/fandora-nightfall/"
     //       },
     //       {
-    //         label: "Polygon Zero",
-    //         href: "https://polygon.technology/solutions/polygon-zero/"
+    //         label: "fandora Zero",
+    //         href: "https://fandora.technology/solutions/fandora-zero/"
     //       },
     //       {
-    //         label: "Polygon Miden",
-    //         href: "https://polygon.technology/solutions/polygon-miden/"
+    //         label: "fandora Miden",
+    //         href: "https://fandora.technology/solutions/fandora-miden/"
     //       },
     //    ]
     //    },
@@ -151,31 +151,31 @@ module.exports = {
     //       items: [
     //       {
     //           label: "Get Started",
-    //           href: "https://wiki.polygon.technology/docs/develop/getting-started/"
+    //           href: "https://wiki.fandora.technology/docs/develop/getting-started/"
     //       },
     //       {
     //           label: "Advocate Program",
-    //           href: "https://polygon.technology/advocate-program/"
+    //           href: "https://fandora.technology/advocate-program/"
     //       },
     //       {
-    //         label: "Polygon Funds",
-    //         href: "https://polygon.technology/funds/"
+    //         label: "fandora Funds",
+    //         href: "https://fandora.technology/funds/"
     //       },
     //       {
-    //         label: "Polygon Studios",
-    //         href: "https://polygonstudios.com/"
+    //         label: "fandora Studios",
+    //         href: "https://fandorastudios.com/"
     //       },
     //       {
     //           label: "Bug Bounty",
-    //           href: "https://immunefi.com/bounty/polygon/"
+    //           href: "https://immunefi.com/bounty/fandora/"
     //       },
     //       {
     //         label: "dApps",
-    //         href: "https://polygon.technology/ecosystem/"
+    //         href: "https://fandora.technology/ecosystem/"
     //       },
     //       {
-    //         label: "Polygon Lightpaper",
-    //         href: "https://polygon.technology/lightpaper-polygon.pdf"
+    //         label: "fandora Lightpaper",
+    //         href: "https://fandora.technology/lightpaper-fandora.pdf"
     //       },
     //       {
     //         label: "Matic Whitepaper",
@@ -188,35 +188,35 @@ module.exports = {
     //   items: [
     //   {
     //     label: "About Us",
-    //     href: "https://polygon.technology/about/"
+    //     href: "https://fandora.technology/about/"
     //   },
     //   {
     //     label: "Contact",
-    //     href: "https://polygon.technology/contact-us/"
+    //     href: "https://fandora.technology/contact-us/"
     //   },
     //   {
     //     label: "Transparency Sheet",
-    //     href: "https://polygon.technology/transparency-sheet/"
+    //     href: "https://fandora.technology/transparency-sheet/"
     // },
     //   {
     //       label: "Blogs",
-    //       href: "https://blog.polygon.technology/"
+    //       href: "https://blog.fandora.technology/"
     //   },
     //   {
     //     label: "Brand Kit",
-    //     href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+    //     href: "https://www.notion.so/fandoratechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
     //   },
     //   {
     //     label: "Media Kit",
-    //     href: "https://www.notion.so/polygontechnology/Polygon-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+    //     href: "https://www.notion.so/fandoratechnology/fandora-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
     //   },
     //   {
     //       label: "Careers",
-    //       href: "https://polygon.technology/careers/"
+    //       href: "https://fandora.technology/careers/"
     //   },
     //   {
     //     label: "Ecosystem Careers",
-    //     href: "https://ecosystemjobs.polygon.technology/jobs/"
+    //     href: "https://ecosystemjobs.fandora.technology/jobs/"
     // },
     // ]
     // },
@@ -250,7 +250,7 @@ module.exports = {
         srcDark: "/img/fandora/fandora-white.svg",
         // width: 100,
         // height: 500,
-        // href: 'https://wiki.polygon.technology/', // default to siteConfig.baseUrl
+        // href: 'https://wiki.fandora.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
@@ -259,31 +259,31 @@ module.exports = {
         //   position: "right",
         //   items: [
         //           {
-        //             href: 'https://wallet.polygon.technology/login?next=%2Fwallet',
+        //             href: 'https://wallet.fandora.technology/login?next=%2Fwallet',
         //             label: 'PoS Wallet',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://wallet.polygon.technology/login?next=%2Fbridge',
+        //             href: 'https://wallet.fandora.technology/login?next=%2Fbridge',
         //             label: 'PoS Bridge',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://polygon.technology/staking',
+        //             href: 'https://fandora.technology/staking',
         //             label: 'PoS Staking',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://wallet.polygon.technology/login?next=%2Fwidget-dashboard',
+        //             href: 'https://wallet.fandora.technology/login?next=%2Fwidget-dashboard',
         //             label: 'PoS Widget',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://polygonscan.com/',
+        //             href: 'https://fandorascan.com/',
         //             label: 'PoS Explorer',
         //             target: '_blank',
         //             rel: null,
@@ -303,7 +303,7 @@ module.exports = {
         //         ],
         // },
         // {
-        //   href: 'https://polygon.technology/developers/',
+        //   href: 'https://fandora.technology/developers/',
         //   label: "Developer Resources",
         //   position: "right",
         // },
@@ -312,37 +312,37 @@ module.exports = {
         //   position: "right",
         //   items: [
         //           {
-        //             href: 'https://discord.com/invite/0xPolygon',
+        //             href: 'https://discord.com/invite/0xfandora',
         //             label: 'Discord',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://forum.polygon.technology/',
+        //             href: 'https://forum.fandora.technology/',
         //             label: 'Forum',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://www.reddit.com/r/0xPolygon/',
+        //             href: 'https://www.reddit.com/r/0xfandora/',
         //             label: 'Reddit',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://twitter.com/0xPolygon',
+        //             href: 'https://twitter.com/0xfandora',
         //             label: 'Twitter',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://t.me/polygonofficial',
+        //             href: 'https://t.me/fandoraofficial',
         //             label: 'Telegram',
         //             target: '_blank',
         //             rel: null,
         //           },
         //           {
-        //             href: 'https://polygon.technology/community/',
+        //             href: 'https://fandora.technology/community/',
         //             label: 'View all communities',
         //             target: '_blank',
         //             rel: null,
@@ -354,7 +354,7 @@ module.exports = {
         //   position: "right",
         //   items: [
         //     {
-        //       href: 'https://support.polygon.technology/support/home',
+        //       href: 'https://support.fandora.technology/support/home',
         //       label: 'End-user support',
         //       target: '_blank',
         //       rel: null,
@@ -363,7 +363,7 @@ module.exports = {
         // },
         // {
         //   label: "Notifications",
-        //   href: 'https://polygon.technology/notifications/',
+        //   href: 'https://fandora.technology/notifications/',
         //   position: "right",
         // },
         // {
@@ -430,8 +430,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/maticnetwork/matic-docs/tree/master/",
-          path: "docs",
+          editUrl: "https://github.com/fandora-network/docs/tree/master/",
+          path: "/",
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [math],

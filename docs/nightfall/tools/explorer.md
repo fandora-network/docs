@@ -5,7 +5,7 @@ sidebar_label: Block Explorer
 description: Block Explorer
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - block
   - explorer

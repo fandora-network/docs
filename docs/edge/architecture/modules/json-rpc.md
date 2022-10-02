@@ -1,10 +1,10 @@
 ---
 id: json-rpc 
 title: JSON RPC
-description: Explanation for the JSON RPC module of Polygon Edge.
+description: Explanation for the JSON RPC module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -22,7 +22,7 @@ endpoints.
 
 ## Blockchain Interface
 
-The Polygon Edge uses the ***blockchain interface*** to define all the methods that the JSON RPC module needs to use, in
+The fandora Edge uses the ***blockchain interface*** to define all the methods that the JSON RPC module needs to use, in
 order to deliver its endpoints.
 
 The blockchain interface is implemented by the **[Minimal](/docs/edge/architecture/modules/minimal)** server. It is the base implementation

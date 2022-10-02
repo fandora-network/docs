@@ -4,14 +4,14 @@ title: BLS
 description: "Explanation and instructions regarding BLS mode."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - bls
 ---
 
 ## Overview
 
-BLS is a signature scheme that can aggregate multiple signatures. In Polygon Edge, BLS is used by default in order to provide better security in the IBFT consensus mode. BLS can aggregate signatures into a single byte array and reduce the block header size. Each chain can choose whether to use BLS or not. The ECDSA key is used regardless of whether the BLS mode is enabled or not.
+BLS is a signature scheme that can aggregate multiple signatures. In fandora Edge, BLS is used by default in order to provide better security in the IBFT consensus mode. BLS can aggregate signatures into a single byte array and reduce the block header size. Each chain can choose whether to use BLS or not. The ECDSA key is used regardless of whether the BLS mode is enabled or not.
 
 ## How to setup a new chain using BLS
 
@@ -36,7 +36,7 @@ Terminate all processes of the validators by pressing Ctrl + c (Control + c). Pl
 `secrets init` with the `--bls` generates a BLS key. In order to keep the existing ECDSA and Network key and add a new BLS key, `--ecdsa` and `--network` need to be disabled.
 
 ```bash
-polygon-edge secrets init --bls --ecdsa=false --network=false
+fandora-edge secrets init --bls --ecdsa=false --network=false
 
 [SECRETS INIT]
 Public key (address) = 0x...
@@ -53,7 +53,7 @@ For PoA networks, validators need to be given in the command. As with the way of
 Specify the height from which the chain starts using BLS with the `--from` flag.
 
 ```bash
-polygon-edge ibft switch --chain ./genesis.json --type PoA --ibft-validator-type bls --ibft-validators-prefix-path test-chain- --from 100
+fandora-edge ibft switch --chain ./genesis.json --type PoA --ibft-validator-type bls --ibft-validators-prefix-path test-chain- --from 100
 ```
 
 ### 4. Restart all nodes
@@ -61,13 +61,13 @@ polygon-edge ibft switch --chain ./genesis.json --type PoA --ibft-validator-type
 Restart all nodes by `server` command. After the block at the `from` specified in the previous step is created, the chain enables the BLS and shows logs as below:
 
 ```bash
-2022-09-02T11:45:24.535+0300 [INFO]  polygon.ibft: IBFT validation type switched: old=ecdsa new=bls
+2022-09-02T11:45:24.535+0300 [INFO]  fandora.ibft: IBFT validation type switched: old=ecdsa new=bls
 ```
 
 Also the logs shows which verification mode is used to generate each block after the block is created.
 
 ```
-2022-09-02T11:45:28.728+0300 [INFO]  polygon.ibft: block committed: number=101 hash=0x5f33aa8cea4e849807ca5e350cb79f603a0d69a39f792e782f48d3ea57ac46ca validation_type=bls validators=3 committed=3
+2022-09-02T11:45:28.728+0300 [INFO]  fandora.ibft: block committed: number=101 hash=0x5f33aa8cea4e849807ca5e350cb79f603a0d69a39f792e782f48d3ea57ac46ca validation_type=bls validators=3 committed=3
 ```
 
 ## How to migrate from an existing ECDSA PoS chain to a BLS PoS chain
@@ -90,7 +90,7 @@ Terminate all processes of the validators by pressing Ctrl + c (Control + c). Pl
 `secrets init` with the `--bls` flag generates the BLS key. In order to keep existing ECDSA and Network key and add a new BLS key, `--ecdsa` and `--network` need to be disabled.
 
 ```bash
-polygon-edge secrets init --bls --ecdsa=false --network=false
+fandora-edge secrets init --bls --ecdsa=false --network=false
 
 [SECRETS INIT]
 Public key (address) = 0x...
@@ -105,14 +105,14 @@ Node ID              = 16...
 Specify the height from which the chain starts using the BLS mode with the `from` flag, and the height at which the contract is updated with the `development` flag.
 
 ```bash
-polygon-edge ibft switch --chain ./genesis.json --type PoS --ibft-validator-type bls --deployment 50 --from 200
+fandora-edge ibft switch --chain ./genesis.json --type PoS --ibft-validator-type bls --deployment 50 --from 200
 ```
 
 ### 4. Register BLS Public Key in staking contract
 
 After the fork is added and validators are restarted, each validator needs to call `registerBLSPublicKey` in the staking contract to register the BLS Public Key. This must be done after the height specified in `--deployment` before the height specified in `--from`.
 
-The script to register BLS Public Key is defined in [Staking Smart Contract repo](https://github.com/0xPolygon/staking-contracts). 
+The script to register BLS Public Key is defined in [Staking Smart Contract repo](https://github.com/0xfandora/staking-contracts). 
 
 Set `BLS_PUBLIC_KEY` to be registered into `.env` file. Refer [pos-stake-unstake](/docs/edge/consensus/pos-stake-unstake#setting-up-the-provided-helper-scripts) for more details about other parameters.
 

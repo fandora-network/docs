@@ -4,7 +4,7 @@ title: Propose a new feature
 description: "PR template and instructions for proposing a new feature."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - feature
   - PR
@@ -15,7 +15,7 @@ keywords:
 ## Overview
 
 If you want to include a fix, or just contribute to the code, it is highly encouraged for you to reach out to the team first. <br/>
-The Polygon Edge uses a relatively basic feature proposition template, that is concise and to the point.
+The fandora Edge uses a relatively basic feature proposition template, that is concise and to the point.
 
 ## PR Template
 

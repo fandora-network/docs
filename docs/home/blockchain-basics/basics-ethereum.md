@@ -6,7 +6,6 @@ description: A programmable blockchain that allows building dapps.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 Ethereum is the foundation for a new era of the internet:

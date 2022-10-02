@@ -1,10 +1,10 @@
 ---
 id: terraform-aws-deployment
 title: Terraform AWS Deployment
-description: "Deploy Polygon Edge network on AWS cloud provider using Terraform"
+description: "Deploy fandora Edge network on AWS cloud provider using Terraform"
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - deployment
   - terraform
@@ -23,7 +23,7 @@ This deployment is PoA only.
 If PoS mechanism is needed, just follow this ***[guide](/docs/edge/consensus/migration-to-pos)*** on now to make a switch from PoA to PoS.
 :::
 
-This guide will, in detail, describe the process of deploying a Polygon Edge blockchain network on the AWS cloud provider,
+This guide will, in detail, describe the process of deploying a fandora Edge blockchain network on the AWS cloud provider,
 that is production ready as the validator nodes are spanned across multiple availability zones.
 
 ## Prerequisites
@@ -36,7 +36,7 @@ that is production ready as the validator nodes are spanned across multiple avai
 ### Terraform variables
 Three variables that must be provided, before running the deployment:
 
-* `account_id` - the AWS account ID that the Polygon Edge blockchain cluster will be deployed on
+* `account_id` - the AWS account ID that the fandora Edge blockchain cluster will be deployed on
 * `alb_ssl_certificate` - the ARN of the certificate from AWS Certificate Manager to be used by ALB for https protocol.   
   The certificate must be generated before starting the deployment, and it must have **Issued** status
 * `premine` - the account that will receive pre mined native currency.
@@ -58,7 +58,7 @@ High level overview of the resources that will be deployed:
 
 Only regions that have 4 availability zones are required for this deployment. Each node is deployed in a single AZ.
 
-By placing each node in a single AZ, the whole blockchain cluster is fault-tolerant to a single node (AZ) failure, as Polygon Edge implements IBFT
+By placing each node in a single AZ, the whole blockchain cluster is fault-tolerant to a single node (AZ) failure, as fandora Edge implements IBFT
 consensus which allows a single node to fail in a 4 validator node cluster.
 
 ### Command line access
@@ -74,14 +74,14 @@ This deployment uses `ubuntu-focal-20.04-amd64-server` AWS AMI. It will **not** 
 If, for some reason, base AMI is required to get updated,
 it can be achieved by running the `terraform taint` command for each instance, before `terraform apply`.   
 Instances can be tainted by running the    
-`terraform taint module.instances[<instance_number>].aws_instance.polygon_edge_instance` command.
+`terraform taint module.instances[<instance_number>].aws_instance.fandora_edge_instance` command.
 
 Example:
 ```shell
-terraform taint module.instances[0].aws_instance.polygon_edge_instance
-terraform taint module.instances[1].aws_instance.polygon_edge_instance
-terraform taint module.instances[2].aws_instance.polygon_edge_instance
-terraform taint module.instances[3].aws_instance.polygon_edge_instance
+terraform taint module.instances[0].aws_instance.fandora_edge_instance
+terraform taint module.instances[1].aws_instance.fandora_edge_instance
+terraform taint module.instances[2].aws_instance.fandora_edge_instance
+terraform taint module.instances[3].aws_instance.fandora_edge_instance
 terraform apply
 ```
 
@@ -92,8 +92,8 @@ In a production environment `terraform taint` should be run one-by-one in order 
 ## Deployment procedure
 
 ### Pre deployment steps
-* read through the [polygon-technology-edge](https://registry.terraform.io/modules/aws-ia/polygon-technology-edge/aws) terraform registry readme
-* add the `polygon-technology-edge` module to your `main.tf` file using *provision instructions* on the modules' readme page
+* read through the [fandora-technology-edge](https://registry.terraform.io/modules/aws-ia/fandora-technology-edge/aws) terraform registry readme
+* add the `fandora-technology-edge` module to your `main.tf` file using *provision instructions* on the modules' readme page
 * run the `terraform init` command to install all necessary Terraform dependencies
 * provide a new certificate in [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)
 * make sure that the provided certificate is in the **Issued** state and take a note of the certificate's **ARN**
@@ -101,8 +101,8 @@ In a production environment `terraform taint` should be run one-by-one in order 
 
 #### `main.tf` example
 ```terraform
-module "polygon-edge" {
-  source  = "aws-ia/polygon-technology-edge/aws"
+module "fandora-edge" {
+  source  = "aws-ia/fandora-technology-edge/aws"
   version = ">=0.0.1"
 
   account_id          = var.account_id
@@ -111,7 +111,7 @@ module "polygon-edge" {
 }
 
 output "json_rpc_dns_name" {
-  value       = module.polygon-edge.jsonrpc_dns_name
+  value       = module.fandora-edge.jsonrpc_dns_name
   description = "The dns name for the JSON-RPC API"
 }
 
@@ -145,7 +145,7 @@ alb_ssl_certificate = "arn:aws:acm:us-west-2:123456789:certificate/64c7f117-61f5
   There are other non-mandatory variables that can fully customize this deployment.
   You can override the default values by adding your own to the `terraform.tfvars` file.   
 
-  Specification of all available variables can be found in modules' Terraform ***[registry](https://registry.terraform.io/modules/aws-ia/polygon-technology-edge/aws)***
+  Specification of all available variables can be found in modules' Terraform ***[registry](https://registry.terraform.io/modules/aws-ia/fandora-technology-edge/aws)***
   :::
 * make sure that you've set up an aws cli authentication properly by running `aws s3 ls` - there should be no errors
 * deploy the infrastructure `terraform apply`

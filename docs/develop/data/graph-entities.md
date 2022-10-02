@@ -1,12 +1,12 @@
 ---
 id: graph-entities
 title: Entity descriptions
-sidebar_label: Using Polygon's root subgraph
-description: Learn how to use Polygon's subgraph for data
+sidebar_label: Using fandora's root subgraph
+description: Learn how to use fandora's subgraph for data
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - the graph
   - data
   - analytics
@@ -18,7 +18,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 # Entities
 
-### Entities for the Polygon Root Subgraph are all listed below.
+### Entities for the fandora Root Subgraph are all listed below.
 
 - [Checkpoint](#checkpoint)
 - [StateSync](#statesync)

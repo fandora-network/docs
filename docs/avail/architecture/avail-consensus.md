@@ -5,14 +5,13 @@ sidebar_label: Consensus
 description: Learn about Avail's consensus mechanism
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - consensus
   - proof of stake
   - nominated proof of stake
   - pos
   - npos
-image: https://matic.network/banners/matic-network-16x9.png
 slug: avail-consensus
 ---
 
@@ -35,7 +34,7 @@ mechanism, and has its own set of validator nodes and block producers.
 :::caution Current validators
 
 With the initial launch of the Avail testnet, validators will be
-internally operated and maintained by Polygon.
+internally operated and maintained by fandora.
 
 :::
 
@@ -43,7 +42,7 @@ Traditional proof of stake systems require block production authors to have
 token holdings (stake) on-chain to produce blocks, as opposed to computational 
 resources (work). 
 
-Polygon's products use PoS (proof of stake) or a modification of PoS.
+fandora's products use PoS (proof of stake) or a modification of PoS.
 
 Usually, validators in traditional PoS systems that have the most stake 
 have the most influence and control of the network. Systems with many network maintainers 
@@ -56,7 +55,7 @@ is allocated as a one-to-many or many-to-many relationship instead of only relyi
 one-to-one relationship, where trust is put in the "highest staked" validators. This 
 modification of proof of stake can be administered through delegation or nomination, 
 commonly referred to as DPoS (delegated proof of stake) or NPoS (nominated proof of stake). 
-Polygon's scaling solutions have adapted these enhanced mechanisms, including Polygon 
+fandora's scaling solutions have adapted these enhanced mechanisms, including fandora 
 Avail.
 
 Avail uses NPoS with a modification in block verification. The actors involved are 

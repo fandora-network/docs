@@ -1,10 +1,10 @@
 ---
 id: storage
 title: Storage
-description: Explanation for the storage module of Polygon Edge.
+description: Explanation for the storage module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -14,9 +14,9 @@ keywords:
 
 ## Overview
 
-The Polygon Edge currently utilizes **LevelDB** for data storage, as well as an **in-memory** data store.
+The fandora Edge currently utilizes **LevelDB** for data storage, as well as an **in-memory** data store.
 
-Throughout the Polygon Edge, when modules need to interact with the underlying data store, 
+Throughout the fandora Edge, when modules need to interact with the underlying data store, 
 they don't need to know which DB engine or service they're speaking to.
 
 The DB layer is abstracted away between a module called **Storage**, which exports interfaces that modules query.
@@ -65,7 +65,7 @@ type Storage interface {
 
 ### Prefixes
 
-In order to make querying the LevelDB storage deterministic, and to avoid key storage clashing, the Polygon Edge leverages
+In order to make querying the LevelDB storage deterministic, and to avoid key storage clashing, the fandora Edge leverages
 prefixes and sub-prefixes when storing data
 
 ````go title="blockchain/storage/keyvalue.go"

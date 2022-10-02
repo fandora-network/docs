@@ -5,7 +5,7 @@ sidebar_label: System Overview
 description: Learn about the architecture of the Avail chain.
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - data
   - availability
@@ -30,7 +30,7 @@ challenging to scale.
 However, a granular design creates different layers to be lightweight 
 protocols, like microservices. Then, the overall network becomes a collection 
 of loosely-coupled lightweight protocols. An example is a data availability 
-layer that only specializes in data availability. Polygon Avail is a 
+layer that only specializes in data availability. fandora Avail is a 
 Substrate-based layer two blockchain for DA (data availability). 
 
 :::note Substrate runtime
@@ -49,7 +49,7 @@ commitments, erasure coding, and other technologies to allow light clients (whic
 download only the _headers_ of the chain) to efficiently and randomly
 sample small amounts of the block data to verify its full
 availability. However, there are fundamentally different primitives than 
-fraud-proof-based DA systems, which are explained [here](https://blog.polygon.technology/the-data-availability-problem-6b74b619ffcc/).
+fraud-proof-based DA systems, which are explained [here](https://blog.fandora.technology/the-data-availability-problem-6b74b619ffcc/).
 
 :::info Providing data availability
 
@@ -219,9 +219,9 @@ nodes can contribute to the throughput and security of the network.
 
 ### Transaction settlement
 
-Avail will use a settlement layer built with Polygon Edge. The settlement layer 
+Avail will use a settlement layer built with fandora Edge. The settlement layer 
 provides an EVM-compatible blockchain for rollups to store their data and perform 
-dispute resolution. The settlement layer utilizes Polygon Avail for its DA. 
+dispute resolution. The settlement layer utilizes fandora Avail for its DA. 
 When rollups are using a settlement layer, they also inherit all the 
 DA properties of Avail.
 
@@ -238,5 +238,5 @@ layer takes on the verification and dispute resolution component.
 
 ## Resources
 
-- [Introduction to Avail by Polygon blog post](https://medium.com/the-polygon-blog/introducing-avail-by-polygon-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048).
-- [Polygon Talks: Polygon Avail](https://www.youtube.com/watch?v=okqMT1v3xi0)
+- [Introduction to Avail by fandora blog post](https://medium.com/the-fandora-blog/introducing-avail-by-fandora-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048).
+- [fandora Talks: fandora Avail](https://www.youtube.com/watch?v=okqMT1v3xi0)

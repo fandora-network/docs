@@ -2,10 +2,10 @@
 id: overview 
 title: Architecture Overview
 sidebar_label: Overview
-description: Introduction to the architecture of Polygon Edge.
+description: Introduction to the architecture of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - modular
@@ -16,17 +16,17 @@ keywords:
 
 We started with the idea of making software that is *modular*.
 
-This is something that is present in almost all parts of the Polygon Edge. Below, you will find a brief overview of the
+This is something that is present in almost all parts of the fandora Edge. Below, you will find a brief overview of the
 built architecture and its layering.
 
-## Polygon Edge Layering
+## fandora Edge Layering
 
-![Polygon Edge Architecture](/img/edge/Architecture.jpg)
+![fandora Edge Architecture](/img/edge/Architecture.jpg)
 
 ## Libp2p
 
 It all starts at the base networking layer, which utilizes **libp2p**. We decided to go with this technology because it
-fits into the designing philosophies of Polygon Edge. Libp2p is:
+fits into the designing philosophies of fandora Edge. Libp2p is:
 
 - Modular
 - Extensible
@@ -38,7 +38,7 @@ Most importantly, it provides a great foundation for more advanced features, whi
 ## Synchronization & Consensus
 The separation of the synchronization and consensus protocols allows for modularity and implementation of **custom** sync and consensus mechanisms - depending on how the client is being run.
 
-Polygon Edge is designed to offer off-the-shelf pluggable consensus algorithms.
+fandora Edge is designed to offer off-the-shelf pluggable consensus algorithms.
 
 The current list of supported consensus algorithms:
 
@@ -46,7 +46,7 @@ The current list of supported consensus algorithms:
 * IBFT PoS
 
 ## Blockchain
-The Blockchain layer is the central layer that coordinates everything in the Polygon Edge system. It is covered in depth in the corresponding *Modules* section.
+The Blockchain layer is the central layer that coordinates everything in the fandora Edge system. It is covered in depth in the corresponding *Modules* section.
 
 ## State
 The State inner layer contains state transition logic. It deals with how the state changes when a new block is included. It is covered in depth in the corresponding *Modules* section.

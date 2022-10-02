@@ -6,7 +6,6 @@ description: "An object-oriented language for implementing smart contracts."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 ## Solidity<img src = 'https://solidity.readthedocs.io/en/v0.6.11/_images/logo.svg' width='50'/> 

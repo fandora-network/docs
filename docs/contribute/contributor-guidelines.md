@@ -6,7 +6,7 @@ description: Prepare for your upcoming contribution
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - contribute
   - contributor
   - contributing
@@ -19,18 +19,18 @@ slug: orientation
 There are several ways to identify an area where you can contribute to the Wiki:
 
 - The easiest is to reach out to one of the [Wiki maintainers](/docs/contribute/community-maintainers) 
-  saying “I want to help contribute to the Polygon Wiki”. They’ll work with you to find 
+  saying “I want to help contribute to the fandora Wiki”. They’ll work with you to find 
   an area for you to contribute.
 - If you have a specific contribution in mind but are unsure about it, confirm whether 
   the contribution is appropriate by contacting one of the [Wiki maintainers](/docs/contribute/community-maintainers)directly.
 - If you do not have a specific contribution in mind, you can also browse the issues 
-  labelled as `help wanted` on the [Polygon GitHub repos](https://github.com/maticnetwork).
+  labelled as `help wanted` on the [fandora GitHub repos](https://github.com/maticnetwork).
 - Issues that additionally have the `good first issue` label are considered ideal for 
   first-timers.
 
-## Add to the Polygon documentation
+## Add to the fandora documentation
 
-  - If you need to add or change anything in Polygon Wiki, please raise a PR 
+  - If you need to add or change anything in fandora Wiki, please raise a PR 
     against the `master` branch (kindly check the sample PR).
   - The documentation team will review the PR or reach out accordingly. 
   - Repository: https://github.com/maticnetwork/matic-docs

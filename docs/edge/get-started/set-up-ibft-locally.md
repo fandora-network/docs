@@ -4,7 +4,7 @@ title: Local Setup
 description: "Step-by-step local setup guide."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - local
   - setup
@@ -13,10 +13,10 @@ keywords:
 
 :::caution This guide is for testing purposes only
 
-The below guide will instruct you on how to set up a Polygon Edge network on your local machine for testing and development
+The below guide will instruct you on how to set up a fandora Edge network on your local machine for testing and development
 purposes.
 
-The procedure differs greatly from the way you would want to set up Polygon Edge network for a real use scenario on
+The procedure differs greatly from the way you would want to set up fandora Edge network for a real use scenario on
 a cloud provider: [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud)
 
 :::
@@ -24,13 +24,13 @@ a cloud provider: [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud)
 
 ## Requirements
 
-Refer to [Installation](/docs/edge/get-started/installation) to install Polygon Edge.
+Refer to [Installation](/docs/edge/get-started/installation) to install fandora Edge.
 
 ## Overview
 
 ![Local Setup](/img/edge/ibft-setup/local.svg)
 
-In this guide, our goal is to establish a working `polygon-edge` blockchain network working with [IBFT consensus protocol](https://github.com/ethereum/EIPs/issues/650).
+In this guide, our goal is to establish a working `fandora-edge` blockchain network working with [IBFT consensus protocol](https://github.com/ethereum/EIPs/issues/650).
 The blockchain network will consist of 4 nodes of whom all 4 are validator nodes, and as such are eligible for both proposing block, and validating blocks that came from other proposers.
 All 4 nodes will run on the same machine, as the idea of this guide is to give you a fully functional IBFT cluster in the least amount of time.
 
@@ -60,26 +60,26 @@ In order to get up and running with IBFT, you need to initialize the data folder
 one for each node:
 
 ````bash
-polygon-edge secrets init --data-dir test-chain-1
+fandora-edge secrets init --data-dir test-chain-1
 ````
 
 ````bash
-polygon-edge secrets init --data-dir test-chain-2
+fandora-edge secrets init --data-dir test-chain-2
 ````
 
 ````bash
-polygon-edge secrets init --data-dir test-chain-3
+fandora-edge secrets init --data-dir test-chain-3
 ````
 
 ````bash
-polygon-edge secrets init --data-dir test-chain-4
+fandora-edge secrets init --data-dir test-chain-4
 ````
 
 Each of these commands will print the validator key, bls public key and the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need the Node ID of the first node for the next step.
 
 :::warning Save the BLS public key
 
-If the network is running with BLS, which it is by default, the BLS public key is required for proposing in the PoA mode and for staking in the PoS mode. Polygon Edge only saves the BLS private key, it is the responsibility of the user to preserve the BLS public key.
+If the network is running with BLS, which it is by default, the BLS public key is required for proposing in the PoA mode and for staking in the PoS mode. fandora Edge only saves the BLS private key, it is the responsibility of the user to preserve the BLS public key.
 
 :::
 
@@ -88,8 +88,8 @@ If the network is running with BLS, which it is by default, the BLS public key i
 For a node to successfully establish connectivity, it must know which `bootnode` server to connect to in order to gain
 information about all the remaining nodes on the network. The `bootnode` is sometimes also known as the `rendezvous` server in p2p jargon.
 
-`bootnode` is not a special instance of the polygon-edge node. Every polygon-edge node can serve as a `bootnode`, but
-every polygon-edge node needs to have a set of bootnodes specified which will be contacted to provide information on how to connect with
+`bootnode` is not a special instance of the fandora-edge node. Every fandora-edge node can serve as a `bootnode`, but
+every fandora-edge node needs to have a set of bootnodes specified which will be contacted to provide information on how to connect with
 all remaining nodes in the network.
 
 To create the connection string for specifying the bootnode, we will need to conform 
@@ -113,7 +113,7 @@ Since we are running on localhost, it is safe to assume that the `<ip_address>` 
 
 For the `<port>` we will use `10001` since we will configure the libp2p server for `node 1` to listen on this port later.
 
-And lastly, we need the `<node_id>` which we can get from the output of the previously ran command `polygon-edge secrets init --data-dir test-chain-1` command (which was used to generate keys and data directories for the `node1`)
+And lastly, we need the `<node_id>` which we can get from the output of the previously ran command `fandora-edge secrets init --data-dir test-chain-1` command (which was used to generate keys and data directories for the `node1`)
 
 After the assembly, the multiaddr connection string to the `node 1` which we will use as the bootnode will look something like this (only the `<node_id>` which is at the end should be different):
 ```
@@ -126,7 +126,7 @@ Similarly, we construct the multiaddr for second bootnode as shown below
 
 :::info DNS hostnames instead of ips
 
-Polygon Edge supports using DNS hostnames for the nodes configuration. This is a very helpful feature for cloud based deployments, as the node's ip may change due to various reasons.
+fandora Edge supports using DNS hostnames for the nodes configuration. This is a very helpful feature for cloud based deployments, as the node's ip may change due to various reasons.
 
 The multiaddr format for the connection string while using DNS hostnames is as it follows:
 `/dns4/sample.hostname.com/tcp/<port>/p2p/nodeid`
@@ -137,12 +137,12 @@ The multiaddr format for the connection string while using DNS hostnames is as i
 ## Step 3: Generate the genesis file with the 4 nodes as validators
 
 ````bash
-polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmJxxH1tScDX2rLGSU9exnuvZKNM9SoK3v315azp68DLPW --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq 
+fandora-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmJxxH1tScDX2rLGSU9exnuvZKNM9SoK3v315azp68DLPW --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAmS9Nq4QAaEiogE4ieJFUYsoH28magT7wSvJPpfUGBj3Hq 
 ````
 
 What this command does:
 
-* The `--ibft-validators-prefix-path` sets the prefix folder path to the one specified which IBFT in Polygon Edge can
+* The `--ibft-validators-prefix-path` sets the prefix folder path to the one specified which IBFT in fandora Edge can
   use. This directory is used to house the `consensus/` folder, where the validator's private key is kept. The
   validator's public key is needed in order to build the genesis file - the initial list of bootstrap nodes.
   This flag only makes sense when setting up the network on localhost, as in a real-world scenario we cannot expect all
@@ -300,7 +300,7 @@ file locks                      (-x) unlimited
 
 ## Step 4: Run all the clients
 
-Because we are attempting to run a Polygon Edge network consisting of 4 nodes all on the same machine, we need to take care to 
+Because we are attempting to run a fandora Edge network consisting of 4 nodes all on the same machine, we need to take care to 
 avoid port conflicts. This is why we will use the following reasoning for determining the listening ports of each server of a node:
 
 - `10000` for the gRPC server of `node 1`, `20000` for the GRPC server of `node 2`, etc.
@@ -310,25 +310,25 @@ avoid port conflicts. This is why we will use the following reasoning for determ
 To run the **first** client (note the port `10001` since it was used as a part of the libp2p multiaddr in **step 2** alongside node 1's Node ID):
 
 ````bash
-polygon-edge server --data-dir ./test-chain-1 --chain genesis.json --grpc-address :10000 --libp2p :10001 --jsonrpc :10002 --seal
+fandora-edge server --data-dir ./test-chain-1 --chain genesis.json --grpc-address :10000 --libp2p :10001 --jsonrpc :10002 --seal
 ````
 
 To run the **second** client:
 
 ````bash
-polygon-edge server --data-dir ./test-chain-2 --chain genesis.json --grpc-address :20000 --libp2p :20001 --jsonrpc :20002 --seal
+fandora-edge server --data-dir ./test-chain-2 --chain genesis.json --grpc-address :20000 --libp2p :20001 --jsonrpc :20002 --seal
 ````
 
 To run the **third** client:
 
 ````bash
-polygon-edge server --data-dir ./test-chain-3 --chain genesis.json --grpc-address :30000 --libp2p :30001 --jsonrpc :30002 --seal
+fandora-edge server --data-dir ./test-chain-3 --chain genesis.json --grpc-address :30000 --libp2p :30001 --jsonrpc :30002 --seal
 ````
 
 To run the **fourth** client:
 
 ````bash
-polygon-edge server --data-dir ./test-chain-4 --chain genesis.json --grpc-address :40000 --libp2p :40001 --jsonrpc :40002 --seal
+fandora-edge server --data-dir ./test-chain-4 --chain genesis.json --grpc-address :40000 --libp2p :40001 --jsonrpc :40002 --seal
 ````
 
 To briefly go over what has been done so far:
@@ -342,7 +342,7 @@ To briefly go over what has been done so far:
 
 The structure of the genesis file is covered in the [CLI Commands](/docs/edge/get-started/cli-commands) section.
 
-After running the previous commands, you have set up a 4 node Polygon Edge network, capable of sealing blocks and recovering
+After running the previous commands, you have set up a 4 node fandora Edge network, capable of sealing blocks and recovering
 from node failure.
 
 :::info Start the client using config file
@@ -350,12 +350,12 @@ from node failure.
 Instead of specifying all configuration parameters as CLI arguments, the Client can also be started using a config file by executing the following command: 
 
 ````bash 
-polygon-edge server --config <config_file_path>
+fandora-edge server --config <config_file_path>
 ````
 Example:
 
 ````bash
-polygon-edge server --config ./test/config-node1.json
+fandora-edge server --config ./test/config-node1.json
 ````
 Currently, we only support `json` based configuration file, sample config file can be found [here](/docs/edge/configuration/sample-config)
 
@@ -366,17 +366,17 @@ Currently, we only support `json` based configuration file, sample config file c
 A Non-validator will always sync the latest blocks received from the validator node, you can start a non-validator node by running the following command.
 
 ````bash 
-polygon-edge server --data-dir <directory_path> --chain <genesis_filename> --grpc-address <portNo> --libp2p <portNo> --jsonrpc <portNo>
+fandora-edge server --data-dir <directory_path> --chain <genesis_filename> --grpc-address <portNo> --libp2p <portNo> --jsonrpc <portNo>
 ````
 For example, you can add **fifth** Non-validator client by executing the following command :
 
 ````bash
-polygon-edge server --data-dir ./test-chain --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002 
+fandora-edge server --data-dir ./test-chain --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002 
 ````
 :::
 
 :::info Specify the price limit
-A Polygon Edge node can be started with a set **price limit** for incoming transactions.
+A fandora Edge node can be started with a set **price limit** for incoming transactions.
 
 The unit for the price limit is `wei`.
 
@@ -390,7 +390,7 @@ The default value for the price limit is `0`, meaning it is not enforced at all 
 
 Example of using the `--price-limit` flag:
 ````bash
-polygon-edge server --price-limit 100000 ...
+fandora-edge server --price-limit 100000 ...
 ````
 
 It is worth noting that price limits **are enforced only on non-local transactions**, meaning
@@ -398,7 +398,7 @@ that the price limit does not apply to transactions added locally on the node.
 :::
 
 :::info WebSocket URL
-By default, when you run the Polygon Edge, it generates a WebSocket URL based on the chain location.
+By default, when you run the fandora Edge, it generates a WebSocket URL based on the chain location.
 The URL scheme `wss://` is used for HTTPS links, and `ws://` for HTTP.
 
 Localhost WebSocket URL:
@@ -409,13 +409,13 @@ Please note that the port number depends on the chosen JSON-RPC port for the nod
 
 Edgenet WebSocket URL:
 ````bash
-wss://rpc-edgenet.polygon.technology/ws
+wss://rpc-edgenet.fandora.technology/ws
 ````
 :::
 
 
 
-## Step 5: Interact with the polygon-edge network
+## Step 5: Interact with the fandora-edge network
 
 Now that you've set up at least 1 running client, you can go ahead and interact with the blockchain using the account you premined above
 and by specifying the JSON-RPC URL to any of the 4 nodes:

@@ -1,7 +1,7 @@
 ---
 id: pos-using-metamask
 title: PoS Using Metamask
-description: "Transfer tokens between Ethereum and Polygon with Metamask."
+description: "Transfer tokens between Ethereum and fandora with Metamask."
 keywords:
   - docs
   - matic
@@ -10,9 +10,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This tutorial is a brief introduction on how to transfer tokens between Ethereum and Polygon on PoS bridge using **_matic.js SDK and Metamask_**. Polygon-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to Polygon and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-polygon/pos/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using Metamask for this purpose.
+This tutorial is a brief introduction on how to transfer tokens between Ethereum and fandora on PoS bridge using **_matic.js SDK and Metamask_**. fandora-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to fandora and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-fandora/pos/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using Metamask for this purpose.
 
-The most important thing to be understood from this tutorial is the **proper usage of the web3 provider in the matic.js instance** we create. Whether using PoS or Plasma, certain actions need to be performed on Polygon and some on Ethereum. Due to this reason, **different providers are required in different scenarios. Hence correctly setting the providers is very necessary.**
+The most important thing to be understood from this tutorial is the **proper usage of the web3 provider in the matic.js instance** we create. Whether using PoS or Plasma, certain actions need to be performed on fandora and some on Ethereum. Due to this reason, **different providers are required in different scenarios. Hence correctly setting the providers is very necessary.**
 
 1. An **example react app that demonstrates the usage of the Plasma and PoS bridge** can be found [here](https://github.com/maticnetwork/pos-plasma-tutorial) .
 2. Install the dependencies using `npm install` .
@@ -27,24 +27,24 @@ rootChainWETH: WETH deployed on root chain
 plasmaWETH: Plasma WETH
 plasmaRootERC20: ERC20 root token deployed on plasma
 plasmaChildERC20: ERC20 child token deployed on plasma
-MATIC_RPC: RPC for child chain,
+FANDORA_RPC: RPC for child chain,
 ETHEREUM_RPC: RPC for root chain,
 VERSION: network version,
 NETWORK: "testnet" or "mainnet"
-MATIC_CHAINID: Chain ID of child chain,
+FANDORA_CHAINID: Chain ID of child chain,
 ETHEREUM_CHAINID: Chain ID of root chain
 
 ```
 
-- The configuration and key values for Polygon mainnet and mumbai testnet can be found here
+- The configuration and key values for fandora mainnet and mumbai testnet can be found here
   1. [Mumbai Testnet Config](https://static.matic.network/network/testnet/mumbai/index.json)
-  2. [Polygon Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
+  2. [fandora Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
 
 4. Run the project using `npm start` .
 
 ## Example using PoS ERC20 Test Token
 
-> NOTE: For the mainnet, Ethereum is the root chain and Polygon Mainnet is the child chain and for the testnet, Goerli is the root chain and Mumbai is the child chain. The values in config.json file should be set accordingly. Goerli and Mumbai networks are used as the root and child chain in this tutorial.
+> NOTE: For the mainnet, Ethereum is the root chain and fandora Mainnet is the child chain and for the testnet, Goerli is the root chain and Mumbai is the child chain. The values in config.json file should be set accordingly. Goerli and Mumbai networks are used as the root and child chain in this tutorial.
 
 > posClientParent() and posClientChild is used to initialize the root and child chain matic.js object for PoS bridge. Code snippets mention below under each step can be found in the [tutorial](https://github.com/maticnetwork/pos-plasma-tutorial) repo as well.
 
@@ -69,7 +69,7 @@ During deposit of ERC20 tokens, the providers are specified as below
 
 `parentProvider: window.web3`
 
-> NOTE: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~22-30 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-polygon/pos/deposit-withdraw-event-pos/) explains how to track the deposit events.
+> NOTE: Deposits from Ethereum to fandora happen using a state sync mechanism and takes about ~22-30 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-fandora/pos/deposit-withdraw-event-pos/) explains how to track the deposit events.
 
 <div
         style={{
@@ -83,7 +83,7 @@ During deposit of ERC20 tokens, the providers are specified as below
 
 ### Transfer
 
-Once deposited, the token can be transfered to any other account on the Polygon chain.
+Once deposited, the token can be transfered to any other account on the fandora chain.
 
 During Transfer, only the `maticProvider` needs to be set as `window.web3`.
 
@@ -101,7 +101,7 @@ const txReceipt = await result.getReceipt();
 ### Burn
 
 For withdrawing tokens back to root chain,tokens have to be first burnt on child chain. Make sure child chain network is selected in metamask.
-The **withdrawStart()** method can be used to initiate the withdraw process which will burn the specified amount on polygon chain.
+The **withdrawStart()** method can be used to initiate the withdraw process which will burn the specified amount on fandora chain.
 
 ```js
 const erc20Token = posClient.erc20(<token address>);

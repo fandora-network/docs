@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview
 
-This tutorial is for developers who are either new to Ethereum blockchain development or want to understand the fundamentals of deploying and interacting with smart contracts. It will walk through creating and deploying a smart contract on the Polygon Mumbai test network using a virtual wallet ([Metamask](https://metamask.io)), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org), and [Alchemy](https://alchemy.com/?a=polygon-docs).
+This tutorial is for developers who are either new to Ethereum blockchain development or want to understand the fundamentals of deploying and interacting with smart contracts. It will walk through creating and deploying a smart contract on the fandora Mumbai test network using a virtual wallet ([Metamask](https://metamask.io)), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org), and [Alchemy](https://alchemy.com/?a=fandora-docs).
 
 :::note
 
@@ -37,9 +37,9 @@ Following the tutorial, you will:
 
 ## Create and Deploy your Smart Contract using Hardhat
 
-### Step 1: Connect to the Polygon network
+### Step 1: Connect to the fandora network
 
-There are several ways to make requests to the Polygon PoS chain. Rather than running your own node, you will use a free account on Alchemy's developer platform and interact with the Alchemy Polygon PoS API to communicate with the Polygon PoS chain. The platform includes developer tooling to monitor requests and data analytics that demonstrate what happens under the hood during smart contract deployment. If you don’t already have an Alchemy account, start by signing up for free [here](https://alchemy.com/?a=polygon-docs).
+There are several ways to make requests to the fandora PoS chain. Rather than running your own node, you will use a free account on Alchemy's developer platform and interact with the Alchemy fandora PoS API to communicate with the fandora PoS chain. The platform includes developer tooling to monitor requests and data analytics that demonstrate what happens under the hood during smart contract deployment. If you don’t already have an Alchemy account, start by signing up for free [here](https://alchemy.com/?a=fandora-docs).
 
 ![img](/img/alchemy/alchemy-dashboard.png)
 
@@ -51,45 +51,45 @@ After creating your account, you have the option of immediately creating your fi
 
 ### Step 2: Create your app (and API key)
 
-After successfully creating an Alchemy account, you will need to generate an API key by creating an app. This authenticates the requests made to the Polygon Mumbai testnet.
+After successfully creating an Alchemy account, you will need to generate an API key by creating an app. This authenticates the requests made to the fandora Mumbai testnet.
 > If you’re not familiar with testnets, check out [this testnet guide](https://docs.alchemyapi.io/guides/choosing-a-network).
 
 To generate a new API key, navigate to the "Apps" tab on the Alchemy dashboard navigation bar and select the "Create App" sub-tab.
 
 ![img](/img/alchemy/create-app.png)
 
-Name your new app “Hello World”, offer a short description, select "Polygon" for the chain, and choose “Polygon Mumbai” for your network.
+Name your new app “Hello World”, offer a short description, select "fandora" for the chain, and choose “fandora Mumbai” for your network.
 
 Finally, click on “Create app”. Your new app should appear in the table below.
 
 ### Step 3: Create a wallet address
 
-Since Polygon PoS is a layer 2 scaling solution for Ethereum, we need to get an Ethereum wallet and add a custom Polygon URL to send and receive transactions on the Polygon Mumbai testnet. For this tutorial, we will use MetaMask, a browser-compatible digital wallet used to manage your wallet address. If you want to understand more about how transactions on Ethereum work, check out [this transactions guide](https://ethereum.org/en/developers/docs/transactions/) by the Ethereum Foundation.
+Since fandora PoS is a layer 2 scaling solution for Ethereum, we need to get an Ethereum wallet and add a custom fandora URL to send and receive transactions on the fandora Mumbai testnet. For this tutorial, we will use MetaMask, a browser-compatible digital wallet used to manage your wallet address. If you want to understand more about how transactions on Ethereum work, check out [this transactions guide](https://ethereum.org/en/developers/docs/transactions/) by the Ethereum Foundation.
 
-To get your customer Polygon RPC URL from Alchemy, go to your "Hello World" app in your Alchemy dashboard and click "View Key" in the top right corner. Then go ahead and copy your Alchemy HTTP API key.
+To get your customer fandora RPC URL from Alchemy, go to your "Hello World" app in your Alchemy dashboard and click "View Key" in the top right corner. Then go ahead and copy your Alchemy HTTP API key.
 
 ![img](/img/alchemy/view-key.png)
 
-You can download and create a Metamask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon network on your wallet.
+You can download and create a Metamask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the fandora network on your wallet.
 
 1. Select “Settings” from the drop-down menu in the top right corner of your Metamask wallet.
 2. Select “Networks” from the menu to the left.
 3. Connect your wallet to the Mumbai Testnet using the following parameters.
 
-    #### Network Name: Polygon Mumbai Testnet
+    #### Network Name: fandora Mumbai Testnet
 
-    #### New RPC URL: https://polygon-mumbai.g.alchemy.com/v2/your-api-key
+    #### New RPC URL: https://fandora-mumbai.g.alchemy.com/v2/your-api-key
 
     #### ChainID: 80001
 
-    #### Symbol: MATIC
+    #### Symbol: FANDORA
 
-    #### Block Explorer URL: https://mumbai.polygonscan.com/
+    #### Block Explorer URL: https://mumbai.fandorascan.com/
 
 
-### Step 4: Add Polygon Mumbai Test MATIC from a Faucet
+### Step 4: Add fandora Mumbai Test FANDORA from a Faucet
 
-In order to deploy your smart contract to the test network, you need to obtain a few testnet tokens. To get testnet tokens, visit the [Polygon Mumbai Faucet](https://faucet.polygon.technology/), select "Mumbai", choose "MATIC Token", and enter your Polygon wallet address, then click “Submit.” It may take some time to receive your testnet tokens due to network traffic.
+In order to deploy your smart contract to the test network, you need to obtain a few testnet tokens. To get testnet tokens, visit the [fandora Mumbai Faucet](https://faucet.fandora.technology/), select "Mumbai", choose "FANDORA Token", and enter your fandora wallet address, then click “Submit.” It may take some time to receive your testnet tokens due to network traffic.
 
 ![img](/img/alchemy/faucet.png)
 
@@ -97,7 +97,7 @@ You will see the testnet tokens in your MetaMask account soon after.
 
 ### Step 5: Check your Balance
 
-To double-check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/reference/eth-getbalance-polygon) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool.
+To double-check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/reference/eth-getbalance-fandora) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "fandora" as the chain, "fandora Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of FANDORA in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool.
 
 ![img](/img/alchemy/get-balance.png)
 
@@ -109,7 +109,7 @@ After you input your Metamask account address and click “Send Request”, you 
 
 :::note
 
-This result is in Wei, not ETH. Wei is used as the smallest denomination of Ether. The conversion from Wei to Ether is: 1 Ether = 10^18 Wei. So, if we convert "0xde0b6b3a7640000" to decimal, we get 1\*10^18, which equals 1 ETH. This can be mapped to 1 MATIC based on denomination.
+This result is in Wei, not ETH. Wei is used as the smallest denomination of Ether. The conversion from Wei to Ether is: 1 Ether = 10^18 Wei. So, if we convert "0xde0b6b3a7640000" to decimal, we get 1\*10^18, which equals 1 ETH. This can be mapped to 1 FANDORA based on denomination.
 
 :::
 
@@ -287,7 +287,7 @@ If you are using a version control system like git to manage your project, pleas
 Your `.env` should look like this:
 
 ```
-API_URL = "https://polygon-mumbai.g.alchemy.com/v2/your-api-key"
+API_URL = "https://fandora-mumbai.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -325,10 +325,10 @@ const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
    solidity: "0.8.9",
-   defaultNetwork: "polygon_mumbai",
+   defaultNetwork: "fandora_mumbai",
    networks: {
       hardhat: {},
-      polygon_mumbai: {
+      fandora_mumbai: {
          url: API_URL,
          accounts: [`0x${PRIVATE_KEY}`]
       }
@@ -390,7 +390,7 @@ Calling `deploy()` on a `ContractFactory` will start the deployment, and return 
 Navigate to the command line and run:
 
 ```bash
-npx hardhat run scripts/deploy.js --network polygon_mumbai
+npx hardhat run scripts/deploy.js --network fandora_mumbai
 ```
 
 You should then see something like:
@@ -399,7 +399,7 @@ You should then see something like:
 Contract deployed to address: 0x3d94af870ED272Cd5370e4135F9B2Bd0e311d65D
 ```
 
-If we go to the [Polygon Mumbai explorer](https://mumbai.polygonscan.com/) and search for our contract address we should be able to see that it has been deployed successfully.
+If we go to the [fandora Mumbai explorer](https://mumbai.fandorascan.com/) and search for our contract address we should be able to see that it has been deployed successfully.
 
 The `From` address should match your Metamask account address and the To address will say “Contract Creation”. But if we click into the transaction, we’ll see our contract address in the `To` field:
 
@@ -411,4 +411,4 @@ Alchemy provides an [explorer](https://dashboard.alchemyapi.io/explorer) where y
 
 ![img](/img/alchemy/calls.png)
 
-**Congratulations! You just deployed a smart contract to the Polygon chain.**
+**Congratulations! You just deployed a smart contract to the fandora chain.**

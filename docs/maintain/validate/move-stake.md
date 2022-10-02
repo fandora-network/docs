@@ -1,10 +1,10 @@
 ---
 id: move-stake
 title: Moving Stake 
-description: Build your next blockchain app on Polygon.
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - stake
   - move stake
@@ -28,11 +28,11 @@ Moving Stake from the foundation node to external node is a single transaction. 
 
 Please note that Moving Stake is only allowed from Foundation node to External nodes. If you want to move your stake from an External node to another External node, you will have to Unbond first and then Delegate on the new external node.
 
-Also, the Move Stake function is a temporary function developed by the Polygon team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
+Also, the Move Stake function is a temporary function developed by the fandora team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
 
 ### How to Move Stake
 
-In order to Move stake, first you will need to login to the Staking UI: https://wallet.polygon.technology/staking using your Delegator Address. 
+In order to Move stake, first you will need to login to the Staking UI: https://wallet.fandora.technology/staking using your Delegator Address. 
 
 **Delegator Address** = The address that you have already used for Staking on the Foundation Nodes.
 
@@ -66,4 +66,4 @@ Once you have entered the amount you can then click on Stake Funds button. This 
 
 Once you have signed the transaction your stake would have successfully moved from the Foundation node to the External node. However, you will have to wait for 12 block confirmations for it reflect on the Staking UI. If your moved funds do not show up after 12 block confirmations, try refreshing the page once to see updated stakes.
 
-If you have any questions or any issues please submit a ticket [here](https://support.polygon.technology/support/home).
+If you have any questions or any issues please submit a ticket [here](https://support.fandora.technology/support/home).

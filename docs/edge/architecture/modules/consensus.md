@@ -1,10 +1,10 @@
 ---
 id: consensus
 title: Consensus
-description: Explanation for the consensus module of Polygon Edge.
+description: Explanation for the consensus module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -20,7 +20,7 @@ Currently, the following consensus engines are available:
 * **IBFT PoA**
 * **IBFT PoS**
 
-The Polygon Edge wants to maintain a state of modularity and pluggability. <br />
+The fandora Edge wants to maintain a state of modularity and pluggability. <br />
 This is why the core consensus logic has been abstracted away, so new consensus mechanisms can be built on top, without
 compromising on usability and ease of use.
 
@@ -339,7 +339,7 @@ type snapshotStore struct {
 
 ### IBFT Startup
 
-To start up IBFT, the Polygon Edge firstly needs to set up the IBFT transport:
+To start up IBFT, the fandora Edge firstly needs to set up the IBFT transport:
 ````go title="consensus/ibft/ibft.go"
 func (i *Ibft) setupTransport() error {
 	// use a gossip protocol
@@ -380,7 +380,7 @@ func (i *Ibft) setupTransport() error {
 ````
 
 It essentially creates a new topic with IBFT proto, with a new proto buff message.<br />
-The messages are meant to be used by validators. The Polygon Edge then subscribes to the topic and handles messages accordingly.
+The messages are meant to be used by validators. The fandora Edge then subscribes to the topic and handles messages accordingly.
 
 #### MessageReq
 

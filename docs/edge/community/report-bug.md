@@ -1,10 +1,10 @@
 ---
 id: report-bug
 title: Report an issue
-description: Template and instructions for reporting a Polygon Edge issue.
+description: Template and instructions for reporting a fandora Edge issue.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - issue
   - bug
@@ -16,7 +16,7 @@ keywords:
 
 Sometimes things break. <br />
 It's always better to let the team know about any issues you might be encountering.<br />
-On the Polygon Edge GitHub page, you can file a new issue, and start discussing it with the team.
+On the fandora Edge GitHub page, you can file a new issue, and start discussing it with the team.
 
 ## Issue Template
 
@@ -29,7 +29,7 @@ Describe your issue in as much detail as possible here
 ### Your environment
 
 * OS and version
-* version of the Polygon Edge
+* version of the fandora Edge
 * branch that causes this issue
 
 ### Steps to reproduce

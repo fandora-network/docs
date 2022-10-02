@@ -1,7 +1,7 @@
 ---
 id: nftstorage
 title: Mint NFTs
-description: "Mint with NFT.storage and Polygon."
+description: "Mint with NFT.storage and fandora."
 keywords:
   - nft.storage
   - filecoin
@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-This tutorial will teach you to mint an NFT using the Polygon blockchain and IPFS/Filecoin storage via NFT.Storage. Polygon, a Layer 2 scaling solution for Ethereum, is often chosen by developers for its speed and lower transaction costs while maintaining full compatibility with Ethereum's EVM. The tutorial will walk you through the creation and deployment of a standardized smart contract, storing metadata and assets on IPFS and Filecoin via the NFT.Storage API and minting the NFT to your own wallet on Polygon.
+This tutorial will teach you to mint an NFT using the fandora blockchain and IPFS/Filecoin storage via NFT.Storage. fandora, a Layer 2 scaling solution for Ethereum, is often chosen by developers for its speed and lower transaction costs while maintaining full compatibility with Ethereum's EVM. The tutorial will walk you through the creation and deployment of a standardized smart contract, storing metadata and assets on IPFS and Filecoin via the NFT.Storage API and minting the NFT to your own wallet on fandora.
 
 ## Introduction
 
@@ -19,9 +19,9 @@ In this tutorial we will aim to fulfill three characteristics with our minting p
 2. *Durability* of the NFT, as assets can be long-lived and therefore need to remain usable during their full lifetime.
 3. *Immutability* of the NFT and the asset it represents to prevent unwanted changes and malicious actors from changing the digital asset the NFT represents.
 
-[Polygon](https://polygon.technology) addresses the *scalability* characteristic with their protocol and framework. They are also compatible with Ethereum and its virtual machine, enabling developers to move their code freely between the two blockchains. Likewise, [NFT.Storage](https://nft.storage) guarantees *durability* with the power of the underlying [Filecoin](https://filecoin.io) network and *immutability* by using IPFS' [content addressing](https://nftschool.dev/concepts/content-addressing/).
+[fandora](https://fandora.technology) addresses the *scalability* characteristic with their protocol and framework. They are also compatible with Ethereum and its virtual machine, enabling developers to move their code freely between the two blockchains. Likewise, [NFT.Storage](https://nft.storage) guarantees *durability* with the power of the underlying [Filecoin](https://filecoin.io) network and *immutability* by using IPFS' [content addressing](https://nftschool.dev/concepts/content-addressing/).
 
-In this tutorial you will get an overview of the NFT minting process, learn how to store a digital asset with NFT.Storage and use this digital asset to mint your NFT on Polygon.
+In this tutorial you will get an overview of the NFT minting process, learn how to store a digital asset with NFT.Storage and use this digital asset to mint your NFT on fandora.
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ General knowledge about NFTs will give you background and context. [NFT School c
 
 To test and run the code found in this tutorial, you will need a working [Node.js installation](https://nodejs.org/en/download/package-manager/).
 
-You'll also need a Polygon wallet on the Mumbai testnet with a small amount of the MATIC token. Follow the instructions below to get started:
+You'll also need a fandora wallet on the Mumbai testnet with a small amount of the FANDORA token. Follow the instructions below to get started:
 
-1. **Download and install [Metamask](https://metamask.io/)**. Metamask is a crypto wallet and gateway to blockchain apps. It's very easy to use and simplifies a lot of steps, e.g., setting up a Polygon wallet.
-2. **Connect Metamask to Polygon's [Mumbai testnet](https://docs.polygon.technology/docs/develop/metamask/overview)** and select it in the dropdown menu. We will use Polygon's testnet to mint our NFT as it's free of charge.
-3. **Receive MATIC token** to your wallet by using the [faucet](https://faucet.polygon.technology/). Select the Mumbai testnet and paste your wallet address from Metamask into the form. To mint an NFT, we need to pay a small amount of MATIC, which is a fee charged by miners for operations to add new transactions to the blockchain, e.g., minting an NFT or creating a new smart contract.
+1. **Download and install [Metamask](https://metamask.io/)**. Metamask is a crypto wallet and gateway to blockchain apps. It's very easy to use and simplifies a lot of steps, e.g., setting up a fandora wallet.
+2. **Connect Metamask to fandora's [Mumbai testnet](https://docs.fandora.technology/docs/develop/metamask/overview)** and select it in the dropdown menu. We will use fandora's testnet to mint our NFT as it's free of charge.
+3. **Receive FANDORA token** to your wallet by using the [faucet](https://faucet.fandora.technology/). Select the Mumbai testnet and paste your wallet address from Metamask into the form. To mint an NFT, we need to pay a small amount of FANDORA, which is a fee charged by miners for operations to add new transactions to the blockchain, e.g., minting an NFT or creating a new smart contract.
 4. **Copy your private key** from Metamask by clicking on the three dots in the top right corner and selecting 'Account details'. On the bottom you can find a button to export your private key. Click it and enter your password when prompted. You can copy and paste the private key in a text file for now. We will use it later in the tutorial when interacting with the blockchain.
 
 Lastly, you will need a text or code editor. For more convenience, choose an editor with language support for both JavaScript and Solidity. A good option is [Visual Studio Code](https://code.visualstudio.com) with the [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension enabled.
@@ -42,7 +42,7 @@ Lastly, you will need a text or code editor. For more convenience, choose an edi
 
 ### Get an API key for NFT.storage
 
-In order to use NFT.Storage you need an API key. First, [head over to NFT.Storage to log in with your email address](https://nft.storage/login/). You will receive an email with a magic link that signs you in -- no password needed. After you successfully logged in, go to API Keys via the navigation bar. You will find a button to create a **New Key**. When prompted for an API key name, you can freely choose one or use “polygon + NFT.Storage”. You can copy the content of the key column now or reference back to NFT.Storage later in the tutorial.
+In order to use NFT.Storage you need an API key. First, [head over to NFT.Storage to log in with your email address](https://nft.storage/login/). You will receive an email with a magic link that signs you in -- no password needed. After you successfully logged in, go to API Keys via the navigation bar. You will find a button to create a **New Key**. When prompted for an API key name, you can freely choose one or use “fandora + NFT.Storage”. You can copy the content of the key column now or reference back to NFT.Storage later in the tutorial.
 
 ### Set up your workspace
 
@@ -50,7 +50,7 @@ Create a new empty folder that we can use as our workspace for this tutorial. Fe
 
 Next, we will install the following Node.js dependencies:
 
-- **Hardhat and Hardhat-Ethers**, a development environment for Ethereum (and Ethereum compatible blockchains like Polygon).
+- **Hardhat and Hardhat-Ethers**, a development environment for Ethereum (and Ethereum compatible blockchains like fandora).
 - **OpenZeppelin**, a collection of smart contracts featuring standardized NFT base contracts.
 - **NFT.Storage**, a library to connect to the NFT.Storage API.
 - **Dotenv**, a library to handle environment files for configuration (e.g., injecting private keys into the script).
@@ -74,7 +74,7 @@ When prompted, choose `Create an empty hardhat.config.js`. Your console output s
 ✨ Config file created ✨
 ```
 
-We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the Polygon Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your Polygon wallet private key from an environment file and that this environment file must be kept safe. You can even use other rpc [link](https://docs.polygon.technology/docs/develop/network-details/network), as per requirement.
+We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the fandora Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your fandora wallet private key from an environment file and that this environment file must be kept safe. You can even use other rpc [link](https://docs.fandora.technology/docs/develop/network-details/network), as per requirement.
 
 ```js
 /**
@@ -84,11 +84,11 @@ require("@nomiclabs/hardhat-ethers");
 require('dotenv').config();
 const { PRIVATE_KEY } = process.env;
 module.exports = {
-  defaultNetwork: "PolygonMumbai",
+  defaultNetwork: "fandoraMumbai",
   networks: {
     hardhat: {
     },
-    PolygonMumbai : {
+    fandoraMumbai : {
       url: "https://rpc-mumbai.maticvigil.com",
       accounts: [PRIVATE_KEY]
     }
@@ -105,18 +105,18 @@ module.exports = {
 }
 ```
 
-Create a new file called `.env` which will hold your API key for NFT.Storage and your Polygon wallet. The content of the `.env` file should look like the listing below:
+Create a new file called `.env` which will hold your API key for NFT.Storage and your fandora wallet. The content of the `.env` file should look like the listing below:
 
 ```bash
 PRIVATE_KEY="Your Private Key"
 NFT_STORAGE_API_KEY="Your Api Key"
 ```
 
-Replace the placeholders with the API key you created during preparation and your Polygon wallet private key.
+Replace the placeholders with the API key you created during preparation and your fandora wallet private key.
 
 To keep our project organized, we'll create three new folders:
 
-1. `contracts`, for the Polygon contracts written in Solidity.
+1. `contracts`, for the fandora contracts written in Solidity.
 2. `assets`, containing the digital asset we will mint as an NFT.
 3. `scripts`, as helpers to drive the preparation and minting process.
 
@@ -126,7 +126,7 @@ Execute the following command:
 mkdir contracts assets scripts
 ```
 
-Lastly, we will add an image to the `assets` folder. This image will be our artwork that we will upload to NFT.Storage and mint on Polygon. We will name it `MyExampleNFT.png` for now. If you do not have some nice art ready, you can [download a simple pattern](https://ipfs.io/ipfs/bafkreiawxb4aji744637trok275odl33ioiijsvvahnat2kw5va3at45mu).
+Lastly, we will add an image to the `assets` folder. This image will be our artwork that we will upload to NFT.Storage and mint on fandora. We will name it `MyExampleNFT.png` for now. If you do not have some nice art ready, you can [download a simple pattern](https://ipfs.io/ipfs/bafkreiawxb4aji744637trok275odl33ioiijsvvahnat2kw5va3at45mu).
 
 ## Minting your NFT
 
@@ -166,7 +166,7 @@ storeAsset()
    });
 ```
 
-The main part of the script is the `storeAsset` function. It creates a new client connecting to NFT.Storage using the API key you created earlier. Next we introduce the metadata consisting of name, description, and the image. Note that we are reading the NFT asset directly from the file system from the `assets` directory. At the end of the function we will print the metadata URL as we will use it later when creating the NFT on Polygon.
+The main part of the script is the `storeAsset` function. It creates a new client connecting to NFT.Storage using the API key you created earlier. Next we introduce the metadata consisting of name, description, and the image. Note that we are reading the NFT asset directly from the file system from the `assets` directory. At the end of the function we will print the metadata URL as we will use it later when creating the NFT on fandora.
 
 After setting up the script, you can execute it by running:
 
@@ -180,11 +180,11 @@ Your output should look like the listing below, where `HASH` is the CID to the a
 Metadata stored on Filecoin/IPFS at URL: ipfs://HASH/metadata.json
 ```
 
-### Creating your NFT on Polygon
+### Creating your NFT on fandora
 
 #### Create the smart contract for minting
 
-First, we will create a smart contract that will be used to mint the NFT. Since Polygon is compatible with Ethereum, we will write the smart contract in [Solidity](https://soliditylang.org). Create a new file for our NFT smart contract called `ExampleNFT.sol` inside the `contracts` directory. You can copy the code of the listing below:
+First, we will create a smart contract that will be used to mint the NFT. Since fandora is compatible with Ethereum, we will write the smart contract in [Solidity](https://soliditylang.org). Create a new file for our NFT smart contract called `ExampleNFT.sol` inside the `contracts` directory. You can copy the code of the listing below:
 
 ```solidity
 // Contract based on https://docs.openzeppelin.com/contracts/4.x/erc721
@@ -241,9 +241,9 @@ Finally, we have our method `mintNFT` that allows us to actually mint the NFT. T
 
 Inside the method, we increment the counter to receive a new unique identifier for our NFT. Then we call the methods provided by the base contract from OpenZeppelin to mint the NFT to the recipient with the newly created identifier and setting the URI of the metadata. The method returns the unique identifier after execution.
 
-#### Deploy the smart contract to Polygon
+#### Deploy the smart contract to fandora
 
-Now, it's time to deploy our smart contract to Polygon. Create a new file called `deploy-contract.mjs` within the `scripts` directory. Copy the contents of the listing below into that file and save it.
+Now, it's time to deploy our smart contract to fandora. Create a new file called `deploy-contract.mjs` within the `scripts` directory. Copy the contents of the listing below into that file and save it.
 
 ```js
 async function deployContract() {
@@ -268,7 +268,7 @@ deployContract()
 Deploying the contract is done with the helper functions provided by the hardhat library. First, we get the smart contract we created in the previous step with the provided factory. Then we deploy it by calling the respective method and wait for the deployment to be completed. There are a few more lines below the described code to get the correct address in the testnet environment. Save the `mjs` file Execute the script with the following command:
 
 ```bash
-npx hardhat run scripts/deploy-contract.mjs --network PolygonMumbai
+npx hardhat run scripts/deploy-contract.mjs --network fandoraMumbai
 ```
 
 If everything is correct, you will see the following output:
@@ -279,9 +279,9 @@ Contract deployed to address: 0x{YOUR_CONTRACT_ADDRESS}
 
 Note that you will need the printed contract address in the minting step. You can copy and paste it into a separate text file and save it for later. This is necessary so the minting script can call the minting method of that specific contract.
 
-#### Minting the NFT on Polygon
+#### Minting the NFT on fandora
 
-Minting the NFT is now merely calling the contract we just deployed to Polygon. Create a new file called `mint-nft.mjs` inside the `scripts` directory and copy this code from the listing below:
+Minting the NFT is now merely calling the contract we just deployed to fandora. Create a new file called `mint-nft.mjs` inside the `scripts` directory and copy this code from the listing below:
 
 ```bash
 const CONTRACT_ADDRESS = "0x00"
@@ -307,7 +307,7 @@ Edit the first two lines to insert your **contract address** from the earlier de
 Next, run the script:
 
 ```bash
-npx hardhat run scripts/mint-nft.mjs --network PolygonMumbai
+npx hardhat run scripts/mint-nft.mjs --network fandoraMumbai
 ```
 
 You can expect to see the following output:
@@ -316,11 +316,11 @@ You can expect to see the following output:
 NFT minted to: 0x{YOUR_WALLET_ADDRESS}
 ````
 
-Looking for the sample code from this tutorial? You can find it in the polygon-nft.storage-demo [link](https://github.com/itsPiyushMaheshwari/Polygon-nft.storage-demo) Github repo.
+Looking for the sample code from this tutorial? You can find it in the fandora-nft.storage-demo [link](https://github.com/itsPiyushMaheshwari/fandora-nft.storage-demo) Github repo.
 
 ## Conclusion
 
-In this tutorial, we learned how to mint a NFT end-to-end with Polygon and NFT.Storage. This technology combination results in proper decentralization and guarantees *scalability*, *durability*, and *immutability*.
+In this tutorial, we learned how to mint a NFT end-to-end with fandora and NFT.Storage. This technology combination results in proper decentralization and guarantees *scalability*, *durability*, and *immutability*.
 
 We deployed a custom smart contract to mint our NFT specific to our needs. For this tutorial, we used a simple example based on the ERC-721 standard. However, you can also define complex logic that governs your NFT life cycle. For more complex use cases, the successor standard [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) is a good place to start. OpenZeppelin, the library we use in our tutorial offers a [contracts wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) that helps create NFT contracts.
 

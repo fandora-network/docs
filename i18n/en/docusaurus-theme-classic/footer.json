@@ -11,65 +11,65 @@
     "message": "Company",
     "description": "The title of the footer links column with title=Company in the footer"
   },
-  "link.item.label.Polygon PoS": {
-    "message": "Polygon PoS",
-    "description": "The label of footer link with label=Polygon PoS linking to https://polygon.technology/solutions/polygon-pos/"
+  "link.item.label.fandora PoS": {
+    "message": "fandora PoS",
+    "description": "The label of footer link with label=fandora PoS linking to https://fandora.technology/solutions/fandora-pos/"
   },
-  "link.item.label.Polygon Edge": {
-    "message": "Polygon Edge",
-    "description": "The label of footer link with label=Polygon Edge linking to https://polygon.technology/solutions/polygon-edge/"
+  "link.item.label.fandora Edge": {
+    "message": "fandora Edge",
+    "description": "The label of footer link with label=fandora Edge linking to https://fandora.technology/solutions/fandora-edge/"
   },
-  "link.item.label.Polygon Supernets": {
-    "message": "Polygon Supernets",
-    "description": "The label of footer link with label=Polygon Supernets linking to https://polygon.technology/polygon-edge-supernets/"
+  "link.item.label.fandora Supernets": {
+    "message": "fandora Supernets",
+    "description": "The label of footer link with label=fandora Supernets linking to https://fandora.technology/fandora-edge-supernets/"
   },
-  "link.item.label.Polygon Hermez": {
-    "message": "Polygon Hermez",
-    "description": "The label of footer link with label=Polygon Hermez linking to https://polygon.technology/solutions/polygon-hermez/"
+  "link.item.label.fandora Hermez": {
+    "message": "fandora Hermez",
+    "description": "The label of footer link with label=fandora Hermez linking to https://fandora.technology/solutions/fandora-hermez/"
   },
-  "link.item.label.Polygon Avail": {
-    "message": "Polygon Avail",
-    "description": "The label of footer link with label=Polygon Avail linking to https://polygon.technology/solutions/polygon-avail/"
+  "link.item.label.fandora Avail": {
+    "message": "fandora Avail",
+    "description": "The label of footer link with label=fandora Avail linking to https://fandora.technology/solutions/fandora-avail/"
   },
-  "link.item.label.Polygon Nightfall": {
-    "message": "Polygon Nightfall",
-    "description": "The label of footer link with label=Polygon Nightfall linking to https://polygon.technology/solutions/polygon-nightfall/"
+  "link.item.label.fandora Nightfall": {
+    "message": "fandora Nightfall",
+    "description": "The label of footer link with label=fandora Nightfall linking to https://fandora.technology/solutions/fandora-nightfall/"
   },
-  "link.item.label.Polygon Zero": {
-    "message": "Polygon Zero",
-    "description": "The label of footer link with label=Polygon Zero linking to https://polygon.technology/solutions/polygon-zero/"
+  "link.item.label.fandora Zero": {
+    "message": "fandora Zero",
+    "description": "The label of footer link with label=fandora Zero linking to https://fandora.technology/solutions/fandora-zero/"
   },
-  "link.item.label.Polygon Miden": {
-    "message": "Polygon Miden",
-    "description": "The label of footer link with label=Polygon Miden linking to https://polygon.technology/solutions/polygon-miden/"
+  "link.item.label.fandora Miden": {
+    "message": "fandora Miden",
+    "description": "The label of footer link with label=fandora Miden linking to https://fandora.technology/solutions/fandora-miden/"
   },
   "link.item.label.Get Started": {
     "message": "Get Started",
-    "description": "The label of footer link with label=Get Started linking to https://docs.polygon.technology/docs/develop/getting-started/"
+    "description": "The label of footer link with label=Get Started linking to https://docs.fandora.technology/docs/develop/getting-started/"
   },
   "link.item.label.Advocate Program": {
     "message": "Advocate Program",
-    "description": "The label of footer link with label=Advocate Program linking to https://polygon.technology/advocate-program/"
+    "description": "The label of footer link with label=Advocate Program linking to https://fandora.technology/advocate-program/"
   },
-  "link.item.label.Polygon Funds": {
-    "message": "Polygon Funds",
-    "description": "The label of footer link with label=Polygon Funds linking to https://polygon.technology/funds/"
+  "link.item.label.fandora Funds": {
+    "message": "fandora Funds",
+    "description": "The label of footer link with label=fandora Funds linking to https://fandora.technology/funds/"
   },
-  "link.item.label.Polygon Studios": {
-    "message": "Polygon Studios",
-    "description": "The label of footer link with label=Polygon Studios linking to https://polygonstudios.com/"
+  "link.item.label.fandora Studios": {
+    "message": "fandora Studios",
+    "description": "The label of footer link with label=fandora Studios linking to https://fandorastudios.com/"
   },
   "link.item.label.Bug Bounty": {
     "message": "Bug Bounty",
-    "description": "The label of footer link with label=Bug Bounty linking to https://immunefi.com/bounty/polygon/"
+    "description": "The label of footer link with label=Bug Bounty linking to https://immunefi.com/bounty/fandora/"
   },
   "link.item.label.dApps": {
     "message": "dApps",
-    "description": "The label of footer link with label=dApps linking to https://polygon.technology/ecosystem/"
+    "description": "The label of footer link with label=dApps linking to https://fandora.technology/ecosystem/"
   },
-  "link.item.label.Polygon Lightpaper": {
-    "message": "Polygon Lightpaper",
-    "description": "The label of footer link with label=Polygon Lightpaper linking to https://polygon.technology/lightpaper-polygon.pdf"
+  "link.item.label.fandora Lightpaper": {
+    "message": "fandora Lightpaper",
+    "description": "The label of footer link with label=fandora Lightpaper linking to https://fandora.technology/lightpaper-fandora.pdf"
   },
   "link.item.label.Matic Whitepaper": {
     "message": "Matic Whitepaper",
@@ -77,38 +77,38 @@
   },
   "link.item.label.About Us": {
     "message": "About Us",
-    "description": "The label of footer link with label=About Us linking to https://polygon.technology/about/"
+    "description": "The label of footer link with label=About Us linking to https://fandora.technology/about/"
   },
   "link.item.label.Contact": {
     "message": "Contact",
-    "description": "The label of footer link with label=Contact linking to https://polygon.technology/contact-us/"
+    "description": "The label of footer link with label=Contact linking to https://fandora.technology/contact-us/"
   },
   "link.item.label.Transparency Sheet": {
     "message": "Transparency Sheet",
-    "description": "The label of footer link with label=Transparency Sheet linking to https://polygon.technology/transparency-sheet/"
+    "description": "The label of footer link with label=Transparency Sheet linking to https://fandora.technology/transparency-sheet/"
   },
   "link.item.label.Blogs": {
     "message": "Blogs",
-    "description": "The label of footer link with label=Blogs linking to https://blog.polygon.technology/"
+    "description": "The label of footer link with label=Blogs linking to https://blog.fandora.technology/"
   },
   "link.item.label.Brand Kit": {
     "message": "Brand Kit",
-    "description": "The label of footer link with label=Brand Kit linking to https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+    "description": "The label of footer link with label=Brand Kit linking to https://www.notion.so/fandoratechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
   },
   "link.item.label.Media Kit": {
     "message": "Media Kit",
-    "description": "The label of footer link with label=Media Kit linking to https://www.notion.so/polygontechnology/Polygon-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+    "description": "The label of footer link with label=Media Kit linking to https://www.notion.so/fandoratechnology/fandora-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
   },
   "link.item.label.Careers": {
     "message": "Careers",
-    "description": "The label of footer link with label=Careers linking to https://polygon.technology/careers/"
+    "description": "The label of footer link with label=Careers linking to https://fandora.technology/careers/"
   },
   "link.item.label.Ecosystem Careers": {
     "message": "Ecosystem Careers",
-    "description": "The label of footer link with label=Ecosystem Careers linking to https://ecosystemjobs.polygon.technology/jobs/"
+    "description": "The label of footer link with label=Ecosystem Careers linking to https://ecosystemjobs.fandora.technology/jobs/"
   },
   "copyright": {
-    "message": "Copyright © 2022 Polygon Technology",
+    "message": "Copyright © 2022 fandora Technology",
     "description": "The footer copyright"
   }
 }

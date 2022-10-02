@@ -1,10 +1,10 @@
 ---
 id: syncer
 title: Syncer
-description: Explanation for the syncer module of Polygon Edge.
+description: Explanation for the syncer module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -15,9 +15,9 @@ keywords:
 
 This module contains the logic for the synchronization protocol. It is used for syncing a new node with the running network, or validating/inserting new blocks for the nodes which do not participate in the consensus (non-validators).
 
-The Polygon Edge uses **libp2p** as the networking layer, and on top of that runs **gRPC**.
+The fandora Edge uses **libp2p** as the networking layer, and on top of that runs **gRPC**.
 
-There are essentially 2 sync types in Polygon Edge:
+There are essentially 2 sync types in fandora Edge:
 * Bulk Sync  - sync a large range of blocks at a time
 * Watch Sync - sync on a per-block basis
 

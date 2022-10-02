@@ -1,11 +1,11 @@
 ---
 id: full-node-binaries
 title: Run a full node with Binaries
-description: Deploy a Full Polygon Node using binaries.
+description: Deploy a Full fandora Node using binaries.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - node
   - binaries
   - deploy
@@ -24,9 +24,9 @@ This tutorial guides you through starting and running a full node using binaries
 
 Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
 
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
+Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.fandora.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/) page.
+For snapshot download links, see the [<ins>fandora Chains Snapshots</ins>](https://snapshots.matic.today/) page.
 
 :::
 
@@ -73,7 +73,7 @@ sudo ln -nfs ~/.go/bin/go /usr/bin/go
 
 ## **Install Binaries**
 
-Polygon node consists of 2 layers: Heimdall and Bor. Heimdall is a tendermint fork that monitors contracts in parallel with the Ethereum network. Bor is basically a Geth fork that generates blocks shuffled by Heimdall nodes.
+fandora node consists of 2 layers: Heimdall and Bor. Heimdall is a tendermint fork that monitors contracts in parallel with the Ethereum network. Bor is basically a Geth fork that generates blocks shuffled by Heimdall nodes.
 
 Both binaries must be installed and run in the correct order to function properly.
 
@@ -156,7 +156,7 @@ To set up the network directory, the network name and type of node are required.
 
 :::tip
 
-For Mainnet and Testnet configuration, use appropriate `<network-name>`. Use `mainnet-v1` for Polygon mainnet and `testnet-v4` for Mumbai Testnet.
+For Mainnet and Testnet configuration, use appropriate `<network-name>`. Use `mainnet-v1` for fandora mainnet and `testnet-v4` for Mumbai Testnet.
 :::
 
 ```bash
@@ -183,7 +183,7 @@ bash setup.sh
 
 ## **Configure Service Files**
 
-Download **service.sh** file using appropriate `<network-name>`. Use `mainnet-v1` for Polygon mainnet and `testnet-v4` for Mumbai Testnet.
+Download **service.sh** file using appropriate `<network-name>`. Use `mainnet-v1` for fandora mainnet and `testnet-v4` for Mumbai Testnet.
 
 ```bash
 cd ~/node

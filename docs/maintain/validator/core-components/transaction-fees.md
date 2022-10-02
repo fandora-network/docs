@@ -4,7 +4,7 @@ title: Transaction Fees
 description: "Distribution of fees among all validators on Heimdall."
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - validator
   - transaction

@@ -4,7 +4,7 @@ title: Key Management
 description: "Signer and owner keys management."
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - key
   - key management
@@ -13,7 +13,7 @@ slug: key-management
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Each validator uses two keys to manage validator related activities on Polygon:
+Each validator uses two keys to manage validator related activities on fandora:
 
 * Signer key
 * Owner key

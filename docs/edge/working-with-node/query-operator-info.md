@@ -4,7 +4,7 @@ title: Query operator information
 description: "How to query operator information."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - node
   - query
@@ -17,7 +17,7 @@ This guide assumes you have followed the [Local Setup](/docs/edge/get-started/se
 
 A functioning node is required in order to query any kind of operator information.
 
-With the Polygon Edge, node operators are in control and informed about what the node they're operating is doing.<br />
+With the fandora Edge, node operators are in control and informed about what the node they're operating is doing.<br />
 At any time, they can use the node information layer, built on top of gRPC, and get meaningful information - no log sifting required.
 
 :::note
@@ -32,7 +32,7 @@ If your node isn't running on `127.0.0.1:8545` you should add a flag `--grpc-add
 
 To get a complete list of connected peers (including the running node itself), run the following command:
 ````bash
-polygon-edge peers list
+fandora-edge peers list
 ````
 
 This will return a list of libp2p addresses that are currently peers of the running client.
@@ -41,7 +41,7 @@ This will return a list of libp2p addresses that are currently peers of the runn
 
 For the status of a specific peer, run:
 ````bash
-polygon-edge peers status --peer-id <address>
+fandora-edge peers status --peer-id <address>
 ````
 With the *address* parameter being the libp2p address of the peer.
 
@@ -49,24 +49,24 @@ With the *address* parameter being the libp2p address of the peer.
 
 Lots of times, an operator might want to know about the state of the operating node in IBFT consensus.
 
-Luckily, the Polygon Edge provides an easy way to find this information.
+Luckily, the fandora Edge provides an easy way to find this information.
 
 ### Snapshots
 
 Running the following command returns the most recent snapshot.
 ````bash
-polygon-edge ibft snapshot
+fandora-edge ibft snapshot
 ````
 To query the snapshot at a specific height (block number), the operator can run:
 ````bash
-polygon-edge ibft snapshot --num <block-number>
+fandora-edge ibft snapshot --num <block-number>
 ````
 
 ### Candidates
 
 To get the latest info on candidates, the operator can run:
 ````bash
-polygon-edge ibft candidates
+fandora-edge ibft candidates
 ````
 This command queries the current set of proposed candidates, as well as candidates that have not been included yet
 
@@ -74,12 +74,12 @@ This command queries the current set of proposed candidates, as well as candidat
 
 The following command returns the current validator key of the running IBFT client:
 ````bash
-polygon-edge ibft status
+fandora-edge ibft status
 ````
 
 ## Transaction pool
 
 To find the current number of transactions in the transaction pool, the operator can run:
 ````bash
-polygon-edge txpool status
+fandora-edge txpool status
 ````

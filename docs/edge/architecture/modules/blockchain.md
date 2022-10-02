@@ -1,10 +1,10 @@
 ---
 id: blockchain
 title: Blockchain
-description: Explanation for the blockchain and state modules of Polygon Edge.
+description: Explanation for the blockchain and state modules of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-One of the main modules of the Polygon Edge are **Blockchain** and **State**. <br />
+One of the main modules of the fandora Edge are **Blockchain** and **State**. <br />
 
 **Blockchain** is the powerhouse that deals with block reorganizations. This means that it deals with all the logic that happens when a new block is included in the blockchain.
 
@@ -154,5 +154,5 @@ type Event struct {
 :::tip Refresher
 Do you remember when we mentioned the ***monitor*** command in the [CLI Commands](/docs/edge/get-started/cli-commands)?
 
-The Blockchain Events are the original events that happen in Polygon Edge, and they're later mapped to a Protocol Buffers message format for easy transfer.
+The Blockchain Events are the original events that happen in fandora Edge, and they're later mapped to a Protocol Buffers message format for easy transfer.
 :::

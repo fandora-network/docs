@@ -2,18 +2,18 @@
 id: nightfall-wallet
 title: Nightfall Wallet
 sidebar: Nightfall Wallet
-description: "Polygon Nightfall wallet guide."
+description: "fandora Nightfall wallet guide."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - nightfall
   - wallet
 image: https://matic.network/banners/matic-network-16x9.png
 
 ---
 
-The Polygon Nightfall wallet is a browser wallet that is able to interact with the
+The fandora Nightfall wallet is a browser wallet that is able to interact with the
 Nightfall mainnet beta release.
 
 :::info Use the Nightfall wallet to make deposits, transfers, and withdrawals
@@ -25,7 +25,7 @@ While Nightfall achieves a mature state, the following restrictions are applied:
 
 | ERC20 token | Max Deposit | Max Withdraw |
 |-------------|-------------|--------------|
-| MATIC       | 250 MATIC   | 1000 MATIC   |
+| FANDORA       | 250 FANDORA   | 1000 FANDORA   |
 | WETH        | 0.25 WETH   | 1 WETH       |
 | DAI         | 250 DAI     | 1000 DAI     |
 | USDT        | 250 USDT    | 1000 USDT    |
@@ -46,25 +46,25 @@ browsers.
 
 ## Getting Started
 
-Visit the Polygon web [mainnet wallet](https://wallet-beta.polygon.technology) or 
-[testnet wallet](https://wallet.testnet.polygon-nightfall.technology/), connect your MetaMask 
-account and select the Polygon Wallet on the left. If you need help with MetaMask, refer to the 
-[Polygon documentation on MetaMask](../../develop/metamask/tutorial-metamask.md)
+Visit the fandora web [mainnet wallet](https://wallet-beta.fandora.technology) or 
+[testnet wallet](https://wallet.testnet.fandora-nightfall.technology/), connect your MetaMask 
+account and select the fandora Wallet on the left. If you need help with MetaMask, refer to the 
+[fandora documentation on MetaMask](../../develop/metamask/tutorial-metamask.md)
 
-![](../imgs/tools-wallet/polygon-wallet-click-nf.png)
+![](../imgs/tools-wallet/fandora-wallet-click-nf.png)
 
-At this point, the wallet will prompt you to Switch to Polygon Network, and a Metamask popup will
+At this point, the wallet will prompt you to Switch to fandora Network, and a Metamask popup will
 request to confirm the switch.
 
-![](../imgs/tools-wallet/polygon-network.png)
+![](../imgs/tools-wallet/fandora-network.png)
 
-Next, in the top wallet section, click in the Dropdown menu and select `Polygon Nightfall`, and a 
+Next, in the top wallet section, click in the Dropdown menu and select `fandora Nightfall`, and a 
 new request to switch to Ethereum Mainnet will appear. Please, accept to switch to Ethereum mainnet 
-to operate with Polygon Nightfall.
+to operate with fandora Nightfall.
 
-![](../imgs/tools-wallet/polygon-network-dropdown-nf.png)
+![](../imgs/tools-wallet/fandora-network-dropdown-nf.png)
 
-If you are working on testnet, the wallet URL will immediatelly take you to the landing page of Polygon Nightfall wallet.
+If you are working on testnet, the wallet URL will immediatelly take you to the landing page of fandora Nightfall wallet.
 
 ![](../imgs/tools-wallet/wallet-main-screen.png)
 
@@ -112,7 +112,7 @@ Get your Nightfall wallet address from the Nightfall Assets page by clicking on 
 From the Nightfall Assets page, click on the `Deposit` button to the right of the chosen asset, or navigate to the L2 Bridge page.
 
 1. Check that Transfer mode is set to `Deposit`
-2. Check that the desired token is selected (WETH, MATIC, etc.)
+2. Check that the desired token is selected (WETH, FANDORA, etc.)
 3. Enter the value to be deposited in your Nightfall wallet, click `Transfer`
 4. Review the transaction on the pop-up
 5. Click `Create Transaction`
@@ -131,8 +131,8 @@ Go to the Transactions page to [view your deposit](#view-transactions).
 ## How to make transfers
 From the Nightfall Assets page, click on the `Send` button to the right of the chosen asset.
 
-1. Enter a valid address existing on the Polygon Nightfall L2
-2. Check that the desired token is selected (WETH, MATIC, etc.)
+1. Enter a valid address existing on the fandora Nightfall L2
+2. Check that the desired token is selected (WETH, FANDORA, etc.)
 3. Enter the value to be transferred from your Nightfall wallet, click `Continue`
 
 ![](../imgs/tools-wallet/send-nf.png)
@@ -167,7 +167,7 @@ On the other hand, if Alex decides to transfer an amount of 6 to Bob, the ZK pro
 From the Nightfall Assets page, click on the `Withdraw` button to the right of the chosen asset, or navigate to the L2 Bridge page.
 
 1. Check that Transfer mode is set to `Withdraw`
-2. Check that the desired token is selected (WETH, MATIC, etc.)
+2. Check that the desired token is selected (WETH, FANDORA, etc.)
 3. Enter the value to be withdrawn from your Nightfall wallet, click on `Transfer`
 4. Review the transaction on the pop-up
 5. Click `Create Transaction`

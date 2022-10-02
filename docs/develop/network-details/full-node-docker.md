@@ -11,11 +11,11 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-The Polygon team distributes official Docker images which can be used to run nodes on the Polygon mainnet. These instructions are for running a Full Node, but they can be adapted for running sentry nodes and validators as well.
+The fandora team distributes official Docker images which can be used to run nodes on the fandora mainnet. These instructions are for running a Full Node, but they can be adapted for running sentry nodes and validators as well.
 
 
 :::note Snapshots
-You’ll find that syncing from scratch can take a very long time. If you’d like to speed the process up, you can follow the instructions listed here: [<ins>https://docs.polygon.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/</ins>](https://docs.polygon.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/)
+You’ll find that syncing from scratch can take a very long time. If you’d like to speed the process up, you can follow the instructions listed here: [<ins>https://docs.fandora.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/</ins>](https://docs.fandora.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/)
 
 This will be the most up to date instructions, but roughly you can do something like the steps below:
 ```bash
@@ -30,13 +30,13 @@ tar xzf bor-fullnode-snapshot-2022-07-01.tar.gz -C /mnt/data/bor/bor/chaindata
 :::
 
 ## Prerequisites
-The general configuration for running a Polygon full node is to have **at least** 4 CPUs/cores and 16 GB of RAM. For this walk through, we’re going to be using AWS and a `t3.2xlarge` instance type. The application can run on both x86 and Arm architectures.
+The general configuration for running a fandora full node is to have **at least** 4 CPUs/cores and 16 GB of RAM. For this walk through, we’re going to be using AWS and a `t3.2xlarge` instance type. The application can run on both x86 and Arm architectures.
 
 These instructions are based on Docker, so it should be easy to follow along with almost any operating system, but we’re using Ubuntu.
 
 In terms of space, for a full node you’ll probably need at least 1.5 terrabytes of SSD (or faster) storage.
 
-The peer exchange for a Polygon full node generally depends on port 30303 and 26656 being open. When you configure your firewall or security groups for AWS, make sure those ports are open along with whatever ports you need to access the machine.
+The peer exchange for a fandora full node generally depends on port 30303 and 26656 being open. When you configure your firewall or security groups for AWS, make sure those ports are open along with whatever ports you need to access the machine.
 
 TLDR:
 
@@ -125,27 +125,27 @@ sudo findmnt --verify --verbose
 At this point you should be able to reboot and confirm that the system loads your mount properly.
 
 ### Heimdall Setup
-At this point, we have a host with docker running on it and we have ample mounted storage to run our Polygon node software. So let’s get Heimdall configured and running.
+At this point, we have a host with docker running on it and we have ample mounted storage to run our fandora node software. So let’s get Heimdall configured and running.
 
 First let’s make sure we can run Heimdall with docker. Run the following command:
 
 ```bash
-docker run -it 0xpolygon/heimdall:0.2.11 heimdallcli version
+docker run -it 0xfandora/heimdall:0.2.11 heimdallcli version
 ```
 
 If this is the first time you’ve run Heimdall with docker, it should pull the required image automatically and output the version information.
 
 ![img](/img/full-node-docker/heimdall-version.png)
 
-If you’d like to check the details of the Heimdall image or find a different tag, you can take a look at the repository on Docker Hub: https://hub.docker.com/repository/docker/0xpolygon/heimdall
+If you’d like to check the details of the Heimdall image or find a different tag, you can take a look at the repository on Docker Hub: https://hub.docker.com/repository/docker/0xfandora/heimdall
 
 At this point, let’s run the Heimdall `init` command to set up our home directory.
 
 ```bash
-docker run -v /mnt/data/heimdall:/heimdall-home:rw --entrypoint /usr/local/bin/heimdalld -it 0xpolygon/heimdall:0.2.11 init --home=/heimdall-home
+docker run -v /mnt/data/heimdall:/heimdall-home:rw --entrypoint /usr/local/bin/heimdalld -it 0xfandora/heimdall:0.2.11 init --home=/heimdall-home
 ```
 
-Let’s break this command down a bit in case anything goes wrong. We’re using `docker run` to run a command via docker. The switch `-v /mnt/data/heimdall:/heimdall-home:rw` is very important. It’s mounting the folder that we created earlier `/mnt/data/heimdall` from our host system to `/heimdall-home` within the container as a docker volume. The `rw` allows the command to write to this docker volume. For all intents and purposes, from within the docker container, the home directory for Heimdall will be `/heimdall-home`. The argument `--entrypoint /usr/local/bin/heimdalld` is overriding the default entry point for this container. The switch `-it` is used to run the command interactively. Finally we’re specifying which image we want to run with `0xpolygon/heimdall:0.2.11`. After that `init --home=/heimdall-home` are arguments being passed to the heimdalld executable. `init` is the command we want to run and `--home` is used to specify the location of the home directory.
+Let’s break this command down a bit in case anything goes wrong. We’re using `docker run` to run a command via docker. The switch `-v /mnt/data/heimdall:/heimdall-home:rw` is very important. It’s mounting the folder that we created earlier `/mnt/data/heimdall` from our host system to `/heimdall-home` within the container as a docker volume. The `rw` allows the command to write to this docker volume. For all intents and purposes, from within the docker container, the home directory for Heimdall will be `/heimdall-home`. The argument `--entrypoint /usr/local/bin/heimdalld` is overriding the default entry point for this container. The switch `-it` is used to run the command interactively. Finally we’re specifying which image we want to run with `0xfandora/heimdall:0.2.11`. After that `init --home=/heimdall-home` are arguments being passed to the heimdalld executable. `init` is the command we want to run and `--home` is used to specify the location of the home directory.
 
 After running the `init` command, your `/mnt/data/heimdall` directory should have some structure and look like this:
 
@@ -196,7 +196,7 @@ bor_rpc_url = "http://bor:8545"
 
 ```
 
-The default `init` command provides a `genesis.json` but that will not work with Polygon Mainnet or Mumbai. If you’re setting up a mainnet node, you can run this command to download the correct genesis file:
+The default `init` command provides a `genesis.json` but that will not work with fandora Mainnet or Mumbai. If you’re setting up a mainnet node, you can run this command to download the correct genesis file:
 
 ```bash
 sudo curl -o /mnt/data/heimdall/config/genesis.json https://raw.githubusercontent.com/maticnetwork/heimdall/develop/builder/files/genesis-mainnet-v1.json
@@ -213,16 +213,16 @@ If you want to verify that you have the right file, you can check against this h
 Before we start Heimdall, we’re going to create a docker network so that the containers can easily network with each other based on names. In order to create the network, run the following command:
 
 ```bash
-docker network create polygon
+docker network create fandora
 ```
 
 Now we’re going to start Heimdall. Run the following command:
 
 ```bash
-docker run -p 26657:26657 -p 26656:26656 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdall --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped  0xpolygon/heimdall:0.2.11 start --home=/heimdall-home
+docker run -p 26657:26657 -p 26656:26656 -v /mnt/data/heimdall:/heimdall-home:rw --net fandora --name heimdall --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped  0xfandora/heimdall:0.2.11 start --home=/heimdall-home
 ```
 
-Many of the pieces of this command will look familiar. So let’s talk about what’s new. The `-p 26657:26657` and `-p 26656:26656` switches are port mappings. This will instruct docker to map the host port `26657` to the container port `26657` and the same for `26656`. The `--net polygon` switch is telling docker to run this container in the polygon network. `--name heimdall` is naming the container which is useful for debugging, but it’s all the name that will be used for other containers to connect to Heimdall. The `-d` argument tells docker to run this container in the background. The switch `--restart unless-stopped` tells docker to automatically restart the container unless it was stopped manually. Finally, start is being used to actually run the application instead of `init` which just set `up the home directory.
+Many of the pieces of this command will look familiar. So let’s talk about what’s new. The `-p 26657:26657` and `-p 26656:26656` switches are port mappings. This will instruct docker to map the host port `26657` to the container port `26657` and the same for `26656`. The `--net fandora` switch is telling docker to run this container in the fandora network. `--name heimdall` is naming the container which is useful for debugging, but it’s all the name that will be used for other containers to connect to Heimdall. The `-d` argument tells docker to run this container in the background. The switch `--restart unless-stopped` tells docker to automatically restart the container unless it was stopped manually. Finally, start is being used to actually run the application instead of `init` which just set `up the home directory.
 
 At this point it’s helpful to check and see what’s going on. These two commands can be useful:
 
@@ -305,7 +305,7 @@ At this point, you should have a node that’s successfully running Heimdall. Yo
 Before we get started with Bor, we need to run the Heimdall rest server. This command will start a REST API that Bor uses to retrieve information from Heimdall. The command to start server is
 
 ```bash
-docker run -p 1317:1317 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdallrest --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped 0xpolygon/heimdall:0.2.11 rest-server --home=/heimdall-home --node "tcp://heimdall:26657"
+docker run -p 1317:1317 -v /mnt/data/heimdall:/heimdall-home:rw --net fandora --name heimdallrest --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped 0xfandora/heimdall:0.2.11 rest-server --home=/heimdall-home --node "tcp://heimdall:26657"
 ```
 
 There are two pieces of this command that are different and worth noting. Rather than running the `start` command, we’re running the `rest-server` command. Also, we’re passing `~–node “tcp://heimdall:26657”~` which tells the rest server how to communicate with Heimdall.
@@ -334,11 +334,11 @@ Let’s verify the `sha256 sum` again for this file:
 Now we need to init the Bor home directory. This command is similar to what we did for Heimdall:
 
 ```bash
-docker run -v /mnt/data/bor:/bor-home:rw -it  0xpolygon/bor:0.2.16 --datadir /bor-home init /bor-home/genesis.json
+docker run -v /mnt/data/bor:/bor-home:rw -it  0xfandora/bor:0.2.16 --datadir /bor-home init /bor-home/genesis.json
 ```
 Most of the pieces of this command should look very familiar. Instead of `--home` we’re setting the `--datadir` flag to tell bor where to preserve the data.
 
-For reference, you can see the details for the Bor image here: https://hub.docker.com/repository/docker/0xpolygon/bor
+For reference, you can see the details for the Bor image here: https://hub.docker.com/repository/docker/0xfandora/bor
 
 After downloading the genesis file and running `init` our Bor home directory should look something like this.
 
@@ -369,7 +369,7 @@ tree /mnt/data/bor/
 At this point, we should be ready to start Bor. We’re going to use this command:
 
 ```bash
-docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polygon --name bor -d --restart unless-stopped  0xpolygon/bor:0.2.16 --datadir /bor-home \
+docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net fandora --name bor -d --restart unless-stopped  0xfandora/bor:0.2.16 --datadir /bor-home \
   --port 30303 \
   --bor.heimdall 'http://heimdallrest:1317' \
   --http --http.addr '0.0.0.0' \

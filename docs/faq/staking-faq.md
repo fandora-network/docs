@@ -2,7 +2,7 @@
 id: staking-faq
 title: Staking FAQ
 sidebar_label: Staking FAQ
-description: Build your next blockchain app on Polygon.
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
   - matic
@@ -11,9 +11,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-### How to stake tokens on Polygon?
+### How to stake tokens on fandora?
 
-For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://staking.polygon.technology/
+For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://staking.fandora.technology/
 
 Please watch this video for a graphical illustration of how this works:
 
@@ -38,13 +38,13 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 ### I am unable to view the Staking tab. How do I access Staking?
 
-Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
+Once logged into https://wallet.fandora.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
 
 <img src={useBaseUrl("img/staking_faq/stakingApp.png")} height="500px"/>
 
 ### How do I know which Validator to select for better rewards?
 
-It depends on your understanding and research on which validator you would want to stake on. You can find the list of validators here : https://staking.polygon.technology/validators
+It depends on your understanding and research on which validator you would want to stake on. You can find the list of validators here : https://staking.fandora.technology/validators
 
 ### How to unbond?
 
@@ -66,7 +66,7 @@ Please watch the video for a graphical illustration of how this works:
 
 ### What is the unbonding period? 
 
-The unbonding period on Polygon is 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
+The unbonding period on fandora is 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
 This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
 
 ### How to restake rewards?
@@ -140,7 +140,7 @@ Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" o
 
 Staking through Binance is not yet supported. There will be an announcement if and when Binance starts supporting it.
 
-### Do I need to deposit Matic tokens to the Polygon Mainnet network for staking?
+### Do I need to deposit Matic tokens to the fandora Mainnet network for staking?
 
 No. All your funds need to be on the Main Ethereum Network.
 
@@ -152,13 +152,13 @@ Approximately 20188 Matic tokens are distributed proportionately on each success
 
 (Note that there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.)
 
-The checkpoint submission is done by one of the validators approximately every 34 minutes. This time may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on the Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
+The checkpoint submission is done by one of the validators approximately every 34 minutes. This time may vary based on validator consensus on the fandora Heimdall layer. This may also vary based on the Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
 
 You can track checkpoints on the staking contract here: https://etherscan.io/address/0x86e4dc95c7fbdbf52e33d563bbdb00823894c287
 
 ### Why do rewards keep getting decreased at every checkpoint?
 
-Rewards earned will depend on the actual total locked supply in the network at each checkpoint. This is expected to vary significantly as more MATIC tokens get locked in the staking contracts.
+Rewards earned will depend on the actual total locked supply in the network at each checkpoint. This is expected to vary significantly as more FANDORA tokens get locked in the staking contracts.
 Rewards will be higher, to begin with, and will keep decreasing as the locked supply percentage goes up. This change in locked supply is captured at every checkpoint, and rewards are calculated based on this.
 
 ### Will I keep receiving rewards after I unbond?

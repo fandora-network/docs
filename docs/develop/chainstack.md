@@ -1,6 +1,6 @@
 ---
 id: chainstack
-title: Build a Smart Contract with Chainstack and Foundry on Polygon
+title: Build a Smart Contract with Chainstack and Foundry on fandora
 sidebar_label: Using Chainstack
 description:  Use Chainstack and Foundry to develop a Smart Contract.
 keywords:
@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview 
 
-This section guides you through deploying a Hello World contract using [Chainstack](https://chainstack.com/build-better-with-polygon/) and [Foundry](https://github.com/gakonst/foundry/) on the Mumbai testnet.
+This section guides you through deploying a Hello World contract using [Chainstack](https://chainstack.com/build-better-with-fandora/) and [Foundry](https://github.com/gakonst/foundry/) on the Mumbai testnet.
 Chainstack provides infrasctructure for Ethereum-based applications and other blockchains. They maintain nodes and guarantee their connection to the network and also offer an interface to interact with mainnets and testnets.
 
 Foundry is a fast toolkit for Ethereum application development written in Rust. It provides testing, interaction with EVM smart contracts, sending transactions and chain data retrieval.
@@ -23,22 +23,22 @@ If you have any questions, reach out in the [<ins>Chainstack Discord</ins>](http
 :::
 
 ## What you will learn
-- Create a Hello World contract, using Chainstack to deploy a Polygon node and Foundry to deploy the contract.
+- Create a Hello World contract, using Chainstack to deploy a fandora node and Foundry to deploy the contract.
 
 ## What you will do
-1. Deploy a Polygon node using Chainstack
+1. Deploy a fandora node using Chainstack
 2. Set up Foundry
 3. Create the smart contract
 4. Deploy the smart contract.
 
 
-## Deploy a Polygon Mumbai Node
+## Deploy a fandora Mumbai Node
 
 You need a node to deploy a smart contract to the blockchain network, follow the steps to get your node:
 
 1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create).
 ![img](/img/chainstack/sign-up.png)
-1. [Follow the instructions on how to deploy a Mumbai node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
+1. [Follow the instructions on how to deploy a Mumbai node](https://docs.chainstack.com/platform/join-a-public-network#join-a-fandora-pos-network).
 ![img](/img/chainstack/join-network.png)
 1. [Get the deployed node’s HTTPS endpoint](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
@@ -65,7 +65,7 @@ where
 
 You will need a wallet account to deploy the smart contract. You can use [Metamask](https://metamask.io/) for that.  You also need to pay gas on the network to deploy the contract. Get your wallet address and paste it on faucet:
 
-Get Mumbai MATIC [through the faucet](https://faucet.polygon.technology/).
+Get Mumbai FANDORA [through the faucet](https://faucet.fandora.technology/).
 
 ## Create the Hello World contract
 
@@ -111,7 +111,7 @@ contract HelloWorld {
 
 At this point, you are ready to deploy your contract:
 
-* You have your own node on the Polygon Mumbai network through which you will deploy the contract.
+* You have your own node on the fandora Mumbai network through which you will deploy the contract.
 * You have Foundry that you will use to deploy the contract.
 * You have a funded account that will deploy the contract.
 
@@ -135,7 +135,7 @@ forge create HelloWorld --constructor-args "Hello" --contracts /root/foundry/src
 
 :::tip
 
-You can always check the contract's deployment on [<ins>Mumbai Polygonscan</ins>](https://mumbai.polygonscan.com/) using the newly-generated hash from the last step.
+You can always check the contract's deployment on [<ins>Mumbai fandorascan</ins>](https://mumbai.fandorascan.com/) using the newly-generated hash from the last step.
 
 :::
 
@@ -143,10 +143,10 @@ You can always check the contract's deployment on [<ins>Mumbai Polygonscan</ins>
 
 There is a `forge test` command in case you need to check whether the contract is working fine. Foundry provides many [options](https://book.getfoundry.sh/reference/forge/forge-test) (flags) for more specific tests. Learn more about writing tests, advanced testing and other features at [Foundry's documentation](https://book.getfoundry.sh/forge/tests).
 
-**Congratulations! You have deployed your Hello World smart contract on Polygon!**
+**Congratulations! You have deployed your Hello World smart contract on fandora!**
 
 :::tip
 
-See also Chainstack docs for more Polygon-related [<ins>tutorials</ins>](https://docs.chainstack.com/tutorials/polygon/) and [<ins>tools</ins>](https://docs.chainstack.com/operations/polygon/tools).
+See also Chainstack docs for more fandora-related [<ins>tutorials</ins>](https://docs.chainstack.com/tutorials/fandora/) and [<ins>tools</ins>](https://docs.chainstack.com/operations/fandora/tools).
 
 :::

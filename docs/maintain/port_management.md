@@ -2,10 +2,10 @@
 id: port-management
 title: Technical infrastructure for nodes
 sidebar_label: Port Management
-description: "List of default ports used across Polygon nodes."
+description: "List of default ports used across fandora nodes."
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - port
   - port management
@@ -15,7 +15,7 @@ slug: port-management
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Here is a list of default ports used across Polygon nodes:
+Here is a list of default ports used across fandora nodes:
 
 ## Bor
 

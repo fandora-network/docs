@@ -5,7 +5,7 @@ sidebar_label: Circuits and Transactions
 description: "Types of Circuits on Nightfall"
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - circuits
   - deposit
@@ -77,4 +77,4 @@ Withdrawals require a `COOLING OFF` period of one week to finalize. This is due 
 
 Proposer takes incoming transaction and rolls them into a L2 block in exchange for a fee. There are two different types of fees paid to the propose depending on the transaction:
 - Deposits pay fees ETH directly in L1. 
-- Transfers and Withdrawals pay fees in MATIC in L2. 
+- Transfers and Withdrawals pay fees in FANDORA in L2. 

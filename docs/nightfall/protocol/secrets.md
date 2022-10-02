@@ -5,7 +5,7 @@ sidebar_label: In Band Secret Distribution
 description: "A solution to encrypt secrets and ensure their decryption."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - secret
   - encryption

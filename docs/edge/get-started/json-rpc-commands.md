@@ -1,10 +1,10 @@
 ---
 id: json-rpc-commands
 title: JSON RPC Commands
-description: "List of JSON RPC commands for Polygon Edge."
+description: "List of JSON RPC commands for fandora Edge."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - json
   - rpc

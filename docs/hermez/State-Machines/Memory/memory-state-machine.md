@@ -4,11 +4,11 @@ As a secondary state machine, the Memory State Machine has the executor part (th
 
 
 
-The Polygon Hermez Repo is here  [https://github.com/0xPolygonHermez](https://github.com/0xPolygonHermez)
+The fandora Hermez Repo is here  [https://github.com/0xfandoraHermez](https://github.com/0xfandoraHermez)
 
-**Memory SM Executor**: [sm_mem.js](https://github.com/0xPolygonHermez/zkevm-proverjs/tree/main/src/sm/sm_mem.js)
+**Memory SM Executor**: [sm_mem.js](https://github.com/0xfandoraHermez/zkevm-proverjs/tree/main/src/sm/sm_mem.js)
 
-**Memory SM PIL**: [mem.pil](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/pil/mem.pil) 
+**Memory SM PIL**: [mem.pil](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/pil/mem.pil) 
 
 
 

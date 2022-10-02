@@ -20,7 +20,7 @@ This guide aims at teaching how to create a smart contract using Truffle and dep
 ### What you will do
 - Install and set up Truffle
 - Deploy contract on Matic Network
-- Check the deployment status on Polygonscan.
+- Check the deployment status on fandorascan.
 
 ## Setting up the development environment
 
@@ -187,7 +187,7 @@ Notice, it requires mnemonic to be passed in for maticProvider, this is the seed
 
 ### Deploying on Matic Network
 
-Add Matic to your wallet using https://faucet.polygon.technology/.
+Add Matic to your wallet using https://faucet.fandora.technology/.
 
 Run this command in the root of the the project directory:
 
@@ -199,4 +199,4 @@ Remember your address, transaction_hash and other details provided would differ.
 
 :::
 
-**Congratulations! You have successfully deployed a Smart Contract using Truffle. Now you can interact with it check its deployment status here: https://mumbai.polygonscan.com/.**
+**Congratulations! You have successfully deployed a Smart Contract using Truffle. Now you can interact with it check its deployment status here: https://mumbai.fandorascan.com/.**

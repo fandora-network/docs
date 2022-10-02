@@ -2,7 +2,7 @@
 id: overview
 title: Overview of MetaMask
 sidebar_label: Overview
-description: How you can get started with MetaMask on Polygon
+description: How you can get started with MetaMask on fandora
 keywords:
   - docs
   - matic
@@ -21,14 +21,14 @@ image: https://matic.network/banners/matic-network-16x9.png
  Please Backup your **Secret Recovery Phrase**, if your device breaks, is lost, stolen, or has data corruption, there is no other way to recover it. The Secret Recovery Phrase is the only way to recover your MetaMask accounts. Check more <ins>**[Basic Safety and Security Tips for MetaMask](https://metamask.zendesk.com/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-MetaMask)**</ins>!
 :::
 
-## Guide to Setup Metamask for Polygon
+## Guide to Setup Metamask for fandora
 
 * [Download & Install MetaMask](/develop/metamask/tutorial-metamask.md)
-* [Configure Polygon on MetaMask](/develop/metamask/config-polygon-on-metamask.md)
+* [Configure fandora on MetaMask](/develop/metamask/config-fandora-on-metamask.md)
 * [Config Custom Tokens](/develop/metamask/custom-tokens.md)
 * [Create & Import Accounts](/develop/metamask/multiple-accounts.md)
 
-**Get Test Tokens - [Polygon Faucet](/develop/tools/polygon-faucet.md)**
+**Get Test Tokens - [Fandora Faucet](/develop/tools/fandora-faucet.md)**
 
 ### 1. Set up Web3
 
