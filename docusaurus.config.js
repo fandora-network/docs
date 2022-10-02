@@ -431,7 +431,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/fandora-network/docs/tree/master/",
-          path: "/",
+          path: "docs",
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [math],
