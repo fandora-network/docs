@@ -4,14 +4,14 @@ title: Setup
 description: How to setup chainBridge
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - Bridge
 ---
 
 ## Contracts deployment
 
-In this section, you will deploy the required contracts to the Polygon PoS and Polygon Edge chain with `cb-sol-cli`.
+In this section, you will deploy the required contracts to the fandora PoS and fandora Edge chain with `cb-sol-cli`.
 
 ```bash
 # Setup for cb-sol-cli command
@@ -20,10 +20,10 @@ $ cd chainbridge-deploy/cb-sol-cli
 $ make install
 ```
 
-Firstly, we will deploy contracts to the Polygon PoS chain by `cb-sol-cli deploy` command.  `--all` flag makes the command deploy all the contracts, including Bridge, ERC20 Handler, ERC721 Handler, Generic Handler, ERC20, and ERC721 contract. In addition, it'll set the default relayer account address and the threshold
+Firstly, we will deploy contracts to the fandora PoS chain by `cb-sol-cli deploy` command.  `--all` flag makes the command deploy all the contracts, including Bridge, ERC20 Handler, ERC721 Handler, Generic Handler, ERC20, and ERC721 contract. In addition, it'll set the default relayer account address and the threshold
 
 ```bash
-# Deploy all required contracts into Polygon PoS chain
+# Deploy all required contracts into fandora PoS chain
 $ cb-sol-cli deploy --all --chainId 99 \
   --url https://rpc-mumbai.matic.today \
   --gasPrice [GAS_PRICE] \
@@ -53,7 +53,7 @@ $ cb-sol-cli deploy --all --chainId 99 \
 
 :::caution
 
-The Bridge contract takes approximately 0x3f97b8 (4167608) gas to deploy. Please make sure the blocks being generated have enough block gas limit to contain the contract creation transaction. To learn more about changing block gas limit in Polygon Edge, please visit
+The Bridge contract takes approximately 0x3f97b8 (4167608) gas to deploy. Please make sure the blocks being generated have enough block gas limit to contain the contract creation transaction. To learn more about changing block gas limit in fandora Edge, please visit
 the [Local Setup](/docs/edge/get-started/set-up-ibft-locally) 
 
 :::
@@ -105,10 +105,10 @@ WETC:               Not Deployed
 ================================================================
 ```
 
-Now we may deploy the contracts to the Polygon Edge chain.
+Now we may deploy the contracts to the fandora Edge chain.
 
 ```bash
-# Deploy all required contracts into Polygon Edge chain
+# Deploy all required contracts into fandora Edge chain
 $ cb-sol-cli deploy --all --chainId 100 \
   --url http://localhost:10002 \
   --privateKey [ADMIN_ACCOUNT_PRIVATE_KEY] \
@@ -150,7 +150,7 @@ Next, You need to create `config.json` and set the JSON-RPC URLs, relayer addres
       }
     },
     {
-      "name": "polygon-edge",
+      "name": "fandora-edge",
       "type": "ethereum",
       "id": "100",
       "endpoint": "http://localhost:10002",
@@ -192,7 +192,7 @@ Enter password for key ./keys/<RELAYER_ACCOUNT_ADDRESS>.key:
 INFO[11-19|07:15:25] Connecting to ethereum chain...          chain=mumbai url=<JSON_RPC_URL>
 Enter password for key ./keys/<RELAYER_ACCOUNT_ADDRESS>.key:
 > [PASSWORD_TO_DECRYPT_KEY]
-INFO[11-19|07:15:31] Connecting to ethereum chain...          chain=polygon-edge url=<JSON_RPC_URL>
+INFO[11-19|07:15:31] Connecting to ethereum chain...          chain=fandora-edge url=<JSON_RPC_URL>
 ```
 
 Once the relayer has begun, it will start to watch new blocks on each chain.

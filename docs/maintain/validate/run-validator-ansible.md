@@ -5,7 +5,7 @@ description: "Use Ansible to set up your validator node."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - ansible
   - node
   - validator
@@ -19,7 +19,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
 This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](../../develop/network-details/snapshot-instructions-heimdall-bor).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [fandora Chains Snapshots](https://snapshots.matic.today/).
 
 There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
 :::
@@ -309,9 +309,9 @@ You will first start the Heimdall service. Once the Heimdall service syncs, you 
 
 The Heimdall service takes several days to fully sync from scratch.
 
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
+Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.fandora.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [fandora Chains Snapshots](https://snapshots.matic.today/).
 
 :::
 
@@ -459,10 +459,10 @@ Save the changes in `static-nodes.json`.
 
 ## Set the owner and signer key
 
-On Polygon, you should keep the owner and signer keys different.
+On fandora, you should keep the owner and signer keys different.
 
 * Signer — the address that signs the [checkpoint transactions](../glossary#checkpoint-transaction). The recommendation is to keep at least 1 ETH on the signer address.
-* Owner — the address that does the staking transactions. The recommendation is to keep the MATIC tokens on the owner address.
+* Owner — the address that does the staking transactions. The recommendation is to keep the FANDORA tokens on the owner address.
 
 ### Generate a Heimdall private key
 
@@ -537,9 +537,9 @@ You will now start the Heimdall service on the validator machine. Once the Heimd
 
 The Heimdall service takes several days to fully sync from scratch.
 
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
+Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.fandora.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [fandora Chains Snapshots](https://snapshots.matic.today/).
 
 :::
 
@@ -610,7 +610,7 @@ journalctl -u bor.service -f
 
 ## Check node health with the community
 
-Now that your sentry and validator nodes are synced and running, head over to [Discord](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes.
+Now that your sentry and validator nodes are synced and running, head over to [Discord](https://discord.com/invite/0xfandora) and ask the community to health-check your nodes.
 
 ## Proceed to staking
 

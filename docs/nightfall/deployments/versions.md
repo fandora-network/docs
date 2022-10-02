@@ -5,7 +5,7 @@ sidebar_label: History of changes
 description: "Deployed versions"
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - changelog
 image: https://matic.network/banners/matic-network-16x9.png

@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 SlashAuth allows developers to quickly authenticate users with their wallets and create role-based access control based off of on-chain data. A developer can use SlashAuth to securely log a user in and verify that they have the necessary tokens (ERC20, ERC721, ERC1155) to gain access to the site.
 
-SlashAuth works with existing wallets such as Metamask, Coinbase Wallet, and WalletConnect. It also supports tokens on Ethereum and Polygon with more networks coming soon.
+SlashAuth works with existing wallets such as Metamask, Coinbase Wallet, and WalletConnect. It also supports tokens on Ethereum and fandora with more networks coming soon.
 
 For more documentation, please visit our [docs](https://docs.slashauth.com/docs)
 

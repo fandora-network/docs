@@ -7,7 +7,7 @@ keywords:
   - nft.storage
   - web3.storage
   - esturay
-  - filecoin-polygon bridge
+  - filecoin-fandora bridge
   - IPFS
   - matic
 image: https://matic.network/banners/matic-network-16x9.png
@@ -22,7 +22,7 @@ Filecoin is built on top of IPFS and supports storing data long-term via on-chai
 
 - [Web3.storage](https://web3.storage): Data storage service that stores and retrieves data on IPFS and Filecoin ([video](https://youtu.be/lPEqg6oL3Nk))
 
-- [Textile Powergate](https://docs.textile.io/powergate/): Highly configurable wrapper for IPFS+Filecoin inside a Docker container, with bridges Polygon, and other smart contract networks
+- [Textile Powergate](https://docs.textile.io/powergate/): Highly configurable wrapper for IPFS+Filecoin inside a Docker container, with bridges fandora, and other smart contract networks
 
 - [Fleek Space Daemon and Space SDK](https://fleek.co/space-sdk/): For decentralized browser, mobile, or desktop development
 

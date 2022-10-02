@@ -17,12 +17,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### What you will learn
 
-This article explains how to build and deploy a solidity smart contract on Polygon using [Replit IDE](https://replit.com/signup) and [Replit Solidity development template (Solidity starter beta)](https://replit.com/@replit/Solidity-starter-beta?v=1)
+This article explains how to build and deploy a solidity smart contract on fandora using [Replit IDE](https://replit.com/signup) and [Replit Solidity development template (Solidity starter beta)](https://replit.com/@replit/Solidity-starter-beta?v=1)
 
 ### What you will do
 - Create a Replit account
 - Create a Repl environment
-- Deploy a sample project on the Polygon network
+- Deploy a sample project on the fandora network
 - Verify the contract
 - Publish your project to a personal Replit profile.  
 
@@ -32,16 +32,16 @@ For additional examples about Solidity with Replit, you can read the article <in
 
 ## Prerequisites
 
-You do not need any local environment to deploy your solidity smart contract on Polygon using Replit.
+You do not need any local environment to deploy your solidity smart contract on fandora using Replit.
 
-You need a browser-based web3 wallet to interact with the Polygon Mumbai Testnet and deployed contracts. If you are already using MetaMask, it is recommended to create a new account for testing with Replit. You can do this from the account menu, which appears when you click on the account avatar in the top right corner of MetaMask interface.
+You need a browser-based web3 wallet to interact with the fandora Mumbai Testnet and deployed contracts. If you are already using MetaMask, it is recommended to create a new account for testing with Replit. You can do this from the account menu, which appears when you click on the account avatar in the top right corner of MetaMask interface.
 
-You must set up all of the following Prerequisites to be able to deploy your solidity smart contract on Polygon:
+You must set up all of the following Prerequisites to be able to deploy your solidity smart contract on fandora:
 
 1. [Create a Replit account](https://replit.com/signup)
-2. [Download Metamask wallet](https://docs.polygon.technology/docs/develop/metamask/hello/)
-3. [Configure Polygon on Metamask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
-4. [Get testnet tokens](https://faucet.polygon.technology)
+2. [Download Metamask wallet](https://docs.fandora.technology/docs/develop/metamask/hello/)
+3. [Configure fandora on Metamask](https://docs.fandora.technology/docs/develop/metamask/config-fandora-on-metamask/)
+4. [Get testnet tokens](https://faucet.fandora.technology)
 
 ## Working with a Repl
 
@@ -61,7 +61,7 @@ Every Repl that you create is a fully functional development and production envi
 The Solidity starter repl comes with a friendly web interface, built using the <ins>**[web3 Ethereum JavaScript API](https://web3js.readthedocs.io/en/v1.5.2/)**</ins>, which you can use to deploy and interact with our contracts. We will deploy to Replit’s testnet, a custom version of the Ethereum blockchain managed by Replit and optimised for testing.
 :::
 
-## Deploy on Polygon
+## Deploy on fandora
 
 Make sure that you have followed the list of Prerequisites above so that you are ready to deploy and interact with your smart contract:
 
@@ -69,7 +69,7 @@ Make sure that you have followed the list of Prerequisites above so that you are
 
 ![img](/img/replit/run.png)
 
-2. Connect your MetaMask wallet to the web interface and switch to the [Mumbai Testnet](https://docs.polygon.technology/docs/integrate/network/)
+2. Connect your MetaMask wallet to the web interface and switch to the [Mumbai Testnet](https://docs.fandora.technology/docs/integrate/network/)
 
 ![img](/img/replit/connect.png)
 
@@ -85,7 +85,7 @@ Make sure that you have followed the list of Prerequisites above so that you are
 6. Approve the MetaMask pop-up that appears to confirm the transaction from your wallet to deploy your contract
 
 ## Verifying and testing your contract
-When the contract is deployed, [Navigate to Polyganscan](https://mumbai.polygonscan.com/) to search for your account, view your deployed contract, and copy your account address.
+When the contract is deployed, [Navigate to Polyganscan](https://mumbai.fandorascan.com/) to search for your account, view your deployed contract, and copy your account address.
 
 Once your contract has been deployed, it will show up as expandable boxes below the drop-down box. Expand it and take a look at all the different functions available. You can now interact with your contract using the provided user interface or from a sharable URL shown on the interface.
 

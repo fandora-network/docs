@@ -1,18 +1,18 @@
 ---
 id: tokens
 title: Tokens FAQ
-description: "FAQ for Polygon Edge tokens"
+description: "FAQ for fandora Edge tokens"
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - FAQ
   - tokens
   
 ---
 
-## Does Polygon Edge support EIP-1559?
-At the moment, Polygon Edge does not support EIP-1559.
+## Does fandora Edge support EIP-1559?
+At the moment, fandora Edge does not support EIP-1559.
 
 ## How to set the currency(token) symbol?
 

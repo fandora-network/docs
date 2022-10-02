@@ -5,7 +5,7 @@ sidebar_label: Smart Contracts
 description: "Shield, proposers, challenges and Merkle Tree Computations."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - smart
   - contracts
@@ -36,7 +36,7 @@ Since Nightfall interacts with real ERC contracts, the following checks cannot b
 
 ## Proposers
 Contract includes functionality for registering, unregistering, paying and rotating proposers, and proposing a new Layer 2 Block to the blockchain.
-First version of Nightfall only accepts a single Boot Proposer operated by Polygon. In the upcoming versions, this restriction will be lifted where multiple proposers will be allowed.
+First version of Nightfall only accepts a single Boot Proposer operated by fandora. In the upcoming versions, this restriction will be lifted where multiple proposers will be allowed.
 
 ## Challenges 
 Functionality enables a Block to be challenged as incorrect.
@@ -50,11 +50,11 @@ A stateless (pure function) version of the original `MerkleTree.sol`, used by `C
 - `Structures.sol` - defines global structs, enums, events, mappings and state variables. It makes these easier to find.
 
 ## Upgradability
-At least initially, Polygon retains the ability to upgrade the Nightfall contracts following deployment.
+At least initially, fandora retains the ability to upgrade the Nightfall contracts following deployment.
 We use Openzeppelin [Upgrades Plugins](https://docs.openzeppelin.com/upgrades-plugins/1.x/) for Truffle to do that.
 
-Polygon uses a [deployer](https://github.com/EYBlockchain/nightfall_3/tree/master/nightfall-deployer) module to upgrade contracts. 
+fandora uses a [deployer](https://github.com/EYBlockchain/nightfall_3/tree/master/nightfall-deployer) module to upgrade contracts. 
 The `deployer` has 4 migrations stored in its migration folder.
-The first three migrations perform a 'normal' deployment of the Polygon Nightfall contract suite. They
+The first three migrations perform a 'normal' deployment of the fandora Nightfall contract suite. They
 do however make sure that all contracts (but not libraries) are deployed with a proxy to enable them to
 be upgraded at a later date. The fourth migration is used to upgrade contracts.

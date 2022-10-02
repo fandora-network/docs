@@ -1,11 +1,11 @@
 ---
 id: governance
 title: Governance
-description: Learn about the Polygon DAO and how to participate in Polygon's governance
+description: Learn about the fandora DAO and how to participate in fandora's governance
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - DAO
   - governance
 slug: governance

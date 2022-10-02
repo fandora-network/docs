@@ -9,11 +9,11 @@ As a secondary state machine, the Arithmetic State Machine has the executor part
 
 
 
-The Polygon Hermez Repo is here  [https://github.com/0xPolygonHermez](https://github.com/0xPolygonHermez)
+The fandora Hermez Repo is here  [https://github.com/0xfandoraHermez](https://github.com/0xfandoraHermez)
 
-**Arithmetic SM Executor**: [sm_arith folder](https://github.com/0xPolygonHermez/zkevm-proverjs/tree/main/src/sm/sm_arith)
+**Arithmetic SM Executor**: [sm_arith folder](https://github.com/0xfandoraHermez/zkevm-proverjs/tree/main/src/sm/sm_arith)
 
-**Arithmetic SM PIL**: [arith.pil](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/pil/arith.pil) 
+**Arithmetic SM PIL**: [arith.pil](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/pil/arith.pil) 
 
 
 

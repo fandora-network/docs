@@ -15,8 +15,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Polygon-Mainnet', value: 'mainnet', },
-    { label: 'Polygon-Testnet', value: 'mumbai', },
+    { label: 'fandora-Mainnet', value: 'mainnet', },
+    { label: 'fandora-Testnet', value: 'mumbai', },
   ]
 }>
 <TabItem value="mumbai">
@@ -29,9 +29,9 @@ Pre-requisite:
 
 - Ansible should be installed on local machine with Python3.x. The setup will not work if you have Python2.x.
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
-- Check the [Polygon PoS Ansible repository](https://github.com/maticnetwork/node-ansible#requirements) for requirements
+- Check the [fandora PoS Ansible repository](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is **not installed** in your environment. You will run into issues if you attempt to set up your full node through Ansible with Go installed as Ansible requires specific packages of Go to be installed.
-- You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- You will also need to make sure that your VM / Machine does not have any previous setups for fandora Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
 - The latest version, [Heimdall v.0.2.11](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.11), contains a few enhancements. The delay time between the contract events of different validators **has been increased** to ensure that the mempool doesn't get filled very quickly in case of a burst of events which could hamper the progress of the chain. Additionally, the data size **has been restricted in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
 
 ```bash
@@ -108,7 +108,7 @@ It should output the remote machine IP(s) you have configured:
 </TabItem>
 <TabItem value="mainnet">
 
-## Full Node Deployment (Polygon mainnet)
+## Full Node Deployment (fandora mainnet)
 
 The Ansible playbook is used to configure and manage a full node.
 
@@ -118,7 +118,7 @@ Pre-requisites:
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
 - Check [Ansible Repository](https://github.com/maticnetwork/node-ansible#requirements) for requirements.
 - You will also need to make sure that Go is **not installed** on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
-- You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- You will also need to make sure that your VM / Machine does not have any previous setups for fandora Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
 - The latest version, [Heimdall v.0.2.11](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.11), contains a few enhancements. The delay time between the contract events of different validators **has been increased** to ensure that the mempool doesn't get filled very quickly in case of a burst of events which could hamper the progress of the chain. Additionally, the data size **has been restricted in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
 
 ```bash
@@ -129,7 +129,7 @@ Hex Byte representation - [171 205 18 52]
 Length in byte format - 4
 ```
 
-## Full Node Set Up for Polygon Mainnet
+## Full Node Set Up for fandora Mainnet
 
 - Ensure you have access to the remote machine or VM that the full node is being setup on. Refer [https://github.com/maticnetwork/node-ansible#setup](https://github.com/maticnetwork/node-ansible#setup) for more details.
 - Clone the [`https://github.com/maticnetwork/node-ansible`](https://github.com/maticnetwork/node-ansible) repo

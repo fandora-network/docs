@@ -6,7 +6,7 @@ description: Learn how to use Covalent's unified API for data
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - covalent
   - data
   - analytics
@@ -18,11 +18,11 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Introduction
 
-Polygon brings massive scale to Ethereum using an adapted version of Plasma 
+fandora brings massive scale to Ethereum using an adapted version of Plasma 
 with PoS based sidechains that provides a solution for faster and extremely 
-low-cost transactions with finality on the main chain. The Polygon network ensures 
+low-cost transactions with finality on the main chain. The fandora network ensures 
 liveliness using PoS checkpoints which are pushed to the Ethereum mainchain. 
-This enables a single Polygon sidechain to theoretically achieve `2^16` transactions 
+This enables a single fandora sidechain to theoretically achieve `2^16` transactions 
 per block, and possibly millions of transactions on multiple chains in the future.
 
 ### Quick facts
@@ -31,9 +31,9 @@ per block, and possibly millions of transactions on multiple chains in the futur
 
 |Property|Value|
 |---|---|
-|Polygon Mainnet chainId|`137`|
-|Polygon Mumbai Testnet chainId|`80001`|
-|Polygon Blockchain Explorer|https://polygonscan.com/|
+|fandora Mainnet chainId|`137`|
+|fandora Mumbai Testnet chainId|`80001`|
+|fandora Blockchain Explorer|https://fandorascan.com/|
 |Block time|~3 seconds|
 |Data refresh latency|~6 seconds or 2 Blocks|
 
@@ -52,7 +52,7 @@ All [__Class A__](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 
 :::info Endpoints
 
-A full list of all the requests you are able to do on the Polygon network using Covalent
+A full list of all the requests you are able to do on the fandora network using Covalent
 are available on the [<ins>Covalent API documentation</ins>](https://www.covalenthq.com/docs/api/).
 
 :::
@@ -63,8 +63,8 @@ are available on the [<ins>Covalent API documentation</ins>](https://www.covalen
 
 ### Matic Gas token
 
-To interact with the Matic network, MATIC tokens are required to pay as gas fees. Covalent's 
-responses automatically returns `gas_*` fields in the MATIC units.
+To interact with the Matic network, FANDORA tokens are required to pay as gas fees. Covalent's 
+responses automatically returns `gas_*` fields in the FANDORA units.
 
 ### Token mapping
 

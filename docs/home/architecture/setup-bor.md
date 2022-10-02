@@ -1,7 +1,7 @@
 ---
 id: setup-bor
 title: Setup Bor
-description: Build your next blockchain app on Polygon.
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
   - matic

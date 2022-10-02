@@ -1,10 +1,10 @@
 ---
 id: txpool 
 title: TxPool
-description: Explanation for the TxPool module of Polygon Edge.
+description: Explanation for the TxPool module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -208,7 +208,7 @@ The first scenario does not produce any error.
 
 > This happens whenever you get the following error:
 > ```shell
-> 2021-11-04T15:41:07.665+0100 [ERROR] polygon.consensus.dev: failed to write transaction: transaction's gas limit exceeds block gas limit
+> 2021-11-04T15:41:07.665+0100 [ERROR] fandora.consensus.dev: failed to write transaction: transaction's gas limit exceeds block gas limit
 > ```
 
 ## Block Gas Target

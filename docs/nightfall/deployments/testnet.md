@@ -5,14 +5,14 @@ sidebar_label: Testnet
 description: "Tools, adresses and useful links for testnet deployment."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - testnet
   - address
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Polygon Nightfall is now live on **Goerli**.
+fandora Nightfall is now live on **Goerli**.
 
 ## Tools
 
@@ -20,7 +20,7 @@ Polygon Nightfall is now live on **Goerli**.
 To interact with the Nightfall wallet, you'll need a [Metamask](https://metamask.io/) wallet.
 :::
 
-- [Web wallet](https://wallet.testnet.polygon-nightfall.technology) to send transactions to Nightfall Rollup
+- [Web wallet](https://wallet.testnet.fandora-nightfall.technology) to send transactions to Nightfall Rollup
 
 ## Proposers
 
@@ -31,7 +31,7 @@ To interact with the Nightfall wallet, you'll need a [Metamask](https://metamask
 ```
 - **Proposer URL (healthcheck)**:
 
-[https://proposer.testnet.polygon-nightfall.technology/healthcheck](https://proposer.testnet.polygon-nightfall.technology/healthcheck)
+[https://proposer.testnet.fandora-nightfall.technology/healthcheck](https://proposer.testnet.fandora-nightfall.technology/healthcheck)
 
 
 - **Challenger address**:

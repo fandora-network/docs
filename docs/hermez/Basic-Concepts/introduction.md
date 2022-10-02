@@ -2,7 +2,7 @@ We would like to emphasise that this documentation is still **Work In Progress**
 
 ## Concept
 
-Polygon zkEVM is a zk-rollup that executes smart contracts transparently, by publishing zero-knowledge validity proofs, while maintaining opcode compatibility with the Ethereum Virtual Machine.
+fandora zkEVM is a zk-rollup that executes smart contracts transparently, by publishing zero-knowledge validity proofs, while maintaining opcode compatibility with the Ethereum Virtual Machine.
 
 The decision of proving EVM transactions instead of creating a virtual machine with  simpler transactions is for minimizing the friction of current Ethereum users and dApps when using the solution. It is an approach that requires the recreation of all the EVM opcodes, which
 allows the transparent deployment of any existing Ethereum smart contract. 
@@ -12,7 +12,7 @@ For this purpose, a new set of technologies and tools have been engineered and d
 ## EVM Arithmetization
 
 The first step to prove the execution correctness of an EVM transaction is to build a suitable execution trace. By a suitable execution trace, we mean a set of values that fulfill the constraints imposed by the EVM processing. The trace is expressed as a matrix, where each column has a name. Each column is interpolated into a polynomial and the correctness of the execution is finally reduced to verifying a set of identities between polynomials (columns).
-The process of designing the proper set of columns and identities is called arithmetization. The Polygon zkEVM provides an efficient arithmetization of the EVM.
+The process of designing the proper set of columns and identities is called arithmetization. The fandora zkEVM provides an efficient arithmetization of the EVM.
 
 <!-- TODO. We could do a picture of the matrix -->
 
@@ -35,7 +35,7 @@ Each instruction utilizes a row of the execution trace matrix,
 also known as a "step" of the zkEVM. 
 
 The executor is part of the **zkProver**, which is the
-core component of the Polygon zkEVM.
+core component of the fandora zkEVM.
 The following figure shows, at a high level, the interaction of the zkProver with the other components of the solution, which are the Node and the Database (DB):
 
 ![Prover high level](figures/intro-zkprv-and-node.png)
@@ -60,7 +60,7 @@ The amount of columns and identities can grow beyond thousands
 for the execution trace of complex state machines like the EVM.
 Managing such a huge matrix makes its design complex and hard to handle.
 
-To simplify this, the Polygon zkEVM uses a divide and conquer technique
+To simplify this, the fandora zkEVM uses a divide and conquer technique
 in which the execution trace is split in smaller matrices.
 Then, using a proving technique called plookup, it is possible to 
 relate rows in one matrix with rows in another matrix.
@@ -73,7 +73,7 @@ rows of another matrix but in a different order.
 The PIL language allows to name the columns of each matrix in which the execution trace is divided (using the keyword $\mathtt{namespace}$) and, it also allows the definition of inclusions 
 (using the keyword $\mathtt{in}$) and permutations (using the keyword $\mathtt{is}$). 
 
-In the Polygon zkEVM, the execution trace is divided into a main matrix also called 
+In the fandora zkEVM, the execution trace is divided into a main matrix also called 
 the **main state machine** and secondary matrices also called **secondary state machines**. 
 
 ## Further Reading

@@ -1,10 +1,10 @@
 ---
 id: backup-restore
 title: Backup/restore node instance
-description: "How to back up and restore a Polygon Edge node instance."
+description: "How to back up and restore a fandora Edge node instance."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - instance
   - restore
@@ -14,19 +14,19 @@ keywords:
 
 ## Overview
 
-This guide goes into detail on how to back up and restore a Polygon Edge node instance.
+This guide goes into detail on how to back up and restore a fandora Edge node instance.
 It covers the base folders and what they contain, as well as which files are critical for performing a successful backup and restore.
 
 ## Base folders
 
-Polygon Edge leverages LevelDB as its storage engine.
-When starting a Polygon Edge node, the following sub-folders are created in the specified working directory:
+fandora Edge leverages LevelDB as its storage engine.
+When starting a fandora Edge node, the following sub-folders are created in the specified working directory:
 * **blockchain** - Stores the blockchain data
 * **trie** - Stores the Merkle tries (world state data)
 * **keystore** - Stores private keys for the client. This includes the libp2p private key and the sealing/validator private key
 * **consensus** - Stores any consensus information that the client might need while working. For now, it stores the node's *private validator key*
 
-It is critical for these folders to be preserved in order for the Polygon Edge instance to run smoothly.
+It is critical for these folders to be preserved in order for the fandora Edge instance to run smoothly.
 
 ## Create backup from a running node and restore for new node
 
@@ -37,7 +37,7 @@ This section guides you through creating archive data of the blockchain in a run
 `backup` command fetches blocks from a running node by gRPC and generates an archive file. If `--from` and `--to` are not given in the command, this command will fetch blocks from genesis to latest.
 
 ```bash
-$ polygon-edge backup --grpc-address 127.0.0.1:9632 --out backup.dat [--from 0x0] [--to 0x100]
+$ fandora-edge backup --grpc-address 127.0.0.1:9632 --out backup.dat [--from 0x0] [--to 0x100]
 ```
 
 ### Restore
@@ -45,7 +45,7 @@ $ polygon-edge backup --grpc-address 127.0.0.1:9632 --out backup.dat [--from 0x0
 A server imports blocks from an archive at the start when starting with `--restore` flag. Please make sure that there is a key for new node. To find out more about importing or generating keys, visit the [Secret Managers section](/docs/edge/configuration/secret-managers/set-up-aws-ssm).
 
 ```bash
-$ polygon-edge server --restore archive.dat
+$ fandora-edge server --restore archive.dat
 ```
 
 ## Back up/Restore Whole data
@@ -54,10 +54,10 @@ This section guides you through backup the data including state data and key and
 
 ### Step 1: Stop the running client
 
-Since the Polygon Edge uses **LevelDB** for data storage, the node needs to be stopped for the duration of the backup, 
+Since the fandora Edge uses **LevelDB** for data storage, the node needs to be stopped for the duration of the backup, 
 as **LevelDB** doesn't allow for concurrent access to its database files.
 
-Additionally, the Polygon Edge also does data flushing on close.
+Additionally, the fandora Edge also does data flushing on close.
 
 The first step involves stopping the running client (either through a service manager or some other mechanism that sends a SIGINT signal to the process), 
 so it can trigger 2 events while gracefully shutting down:
@@ -78,14 +78,14 @@ Please back up and restore the generated `genesis` file manually, so the restore
 
 ### Step 1: Stop the running client
 
-If any instance of the Polygon Edge is running, it needs to be stopped in order for step 2 to be successful.
+If any instance of the fandora Edge is running, it needs to be stopped in order for step 2 to be successful.
 
 ### Step 2: Copy the backed up data directory to the desired folder
 
 Once the client is not running, the data directory which was previously backed up can be copied over to the desired folder.
 Additionally, restore the previously copied `genesis` file.
 
-### Step 3: Run the Polygon Edge client while specifying the correct data directory 
+### Step 3: Run the fandora Edge client while specifying the correct data directory 
 
-In order for the Polygon Edge to use the restored data directory, at launch, the user needs to specify the path to the 
+In order for the fandora Edge to use the restored data directory, at launch, the user needs to specify the path to the 
 data directory. Please consult the [CLI Commands](/docs/edge/get-started/cli-commands) section on information regarding the `data-dir` flag.

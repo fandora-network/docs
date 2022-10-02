@@ -5,7 +5,6 @@ description: "Scaling solutions for the Blockchain."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 Sidechain is an alternate blockchain to a parent chain. Plasma is a framework of child chains - it is a scaling solution for Ethereum (or any blockchain for that matter). 
 

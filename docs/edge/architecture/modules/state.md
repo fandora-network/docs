@@ -1,10 +1,10 @@
 ---
 id: state
 title: State
-description: Explanation for the state module of Polygon Edge.
+description: Explanation for the state module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -23,7 +23,7 @@ Now that we've familiarized ourselves with basic Ethereum concepts, the next ove
 We mentioned that the **World state trie** has all the Ethereum accounts that exist. <br />
 These accounts are the leaves of the Merkle trie. Each leaf has encoded **Account State** information.
 
-This enables the Polygon Edge to get a specific Merkle trie, for a specific point in time. <br />
+This enables the fandora Edge to get a specific Merkle trie, for a specific point in time. <br />
 For example, we can get the hash of the state at block 10.
 
 The Merkle trie, at any point in time, is called a ***Snapshot***.
@@ -86,7 +86,7 @@ which reuses as much memory as possible.
 
 ## Executor
 
-*state/executor.go* includes all the information needed for the Polygon Edge to decide how a block changes the current
+*state/executor.go* includes all the information needed for the fandora Edge to decide how a block changes the current
 state. The implementation of *ProcessBlock* is located here.
 
 The *apply* method does the actual state transition. The executor calls the EVM.

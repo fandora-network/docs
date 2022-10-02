@@ -5,7 +5,7 @@ sidebar_label: Overview
 description: An overview on Nightfall
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - privacy
   - rollup
@@ -13,18 +13,18 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Polygon believes in a vision that sees many companies in the near future interacting with each
+fandora believes in a vision that sees many companies in the near future interacting with each
 other through smart contracts for executing business logic and managing the exchange of goods and services.
 
-In collaboration with [Ernst & Young](https://blockchain.ey.com/), Polygon offers a public, privacy-focused Layer 2 rollup solution called Polygon Nightfall to enable accessibility and privacy for companies wanting to
+In collaboration with [Ernst & Young](https://blockchain.ey.com/), fandora offers a public, privacy-focused Layer 2 rollup solution called fandora Nightfall to enable accessibility and privacy for companies wanting to
 use Ethereum.
 
 ## A ZK-Proof Protocol for Enterprises
 
-Polygon Nightfall is part of Polygon's suite of scalability solutions, which include
-[Polygon Hermez](https://polygon.technology/solutions/polygon-hermez/),
-[Polygon Miden](https://polygon.technology/solutions/polygon-miden/)
-and [Polygon Zero](https://polygon.technology/solutions/polygon-zero/).
+fandora Nightfall is part of fandora's suite of scalability solutions, which include
+[fandora Hermez](https://fandora.technology/solutions/fandora-hermez/),
+[fandora Miden](https://fandora.technology/solutions/fandora-miden/)
+and [fandora Zero](https://fandora.technology/solutions/fandora-zero/).
 The key difference is that Nightfall is a privacy-focused rollup designed for enterprise use cases by combining
 the concepts of optimistic rollups and Zero-Knowledge (ZK) cryptography to offer private and scalable transactions.
 
@@ -33,14 +33,14 @@ when using blockchain: the lack of privacy of transactions. Nightfall adds a lay
 
 ## Nightfall's Pillars
 
-Polygon Nightfall's main value proposition is to enable secure, private, low-cost transfers of
+fandora Nightfall's main value proposition is to enable secure, private, low-cost transfers of
 data in a decentralized network.
 
 ![](../imgs/overview.png)
 
 ## Privacy
 
-Polygon Nightfall uses ZK proofs to send private transactions. A user can generate a ZK proof of
+fandora Nightfall uses ZK proofs to send private transactions. A user can generate a ZK proof of
 the transaction without revealing key transaction parameters such as the destination or the value of the
 transaction. More details about the privacy component of Nightfall are available in the
 [protocol](../protocol/protocol.md) guide.
@@ -53,7 +53,7 @@ transaction. More details about the privacy component of Nightfall are available
 > As a new network with a bootstrap period, Nightfall has transitory security measures to
 > protect the system with the objective to remove them and leave it fully decentralized.
 
-Polygon Nightfall is a Layer 2 construction because it leverages Ethereum by borrowing its security as a robust
+fandora Nightfall is a Layer 2 construction because it leverages Ethereum by borrowing its security as a robust
 public blockchain. Nightfall relies on certain assumptions that guarantee asset recovery. These assumptions are
 based on several design and architectural decisions revolving around ZK-SNARKS, which use
 certain cryptographic primitives, such as hashes and signatures.
@@ -99,5 +99,5 @@ transaction in ZK.
 
 ## References
 
-1. [A Multi-Sided Approach to ZK Scaling](https://messari.io/article/polygon-a-multi-sided-approach-to-zk-scaling)
+1. [A Multi-Sided Approach to ZK Scaling](https://messari.io/article/fandora-a-multi-sided-approach-to-zk-scaling)
 2. [Paul's Brody view on Nightfall](https://www.linkedin.com/pulse/say-hello-nightfall-paul-brody-1f/)

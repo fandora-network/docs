@@ -1,10 +1,10 @@
 ---
 id: other-modules 
 title: Other modules
-description: Explanation for the some modules of Polygon Edge.
+description: Explanation for the some modules of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - modules

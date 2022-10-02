@@ -18,13 +18,13 @@ As a secondary state machine, the Binary State Machine has the executor part (th
 
 
 
-The Polygon Hermez Repo is here  [https://github.com/0xPolygonHermez](https://github.com/0xPolygonHermez)
+The fandora Hermez Repo is here  [https://github.com/0xfandoraHermez](https://github.com/0xfandoraHermez)
 
-**Binary SM Executor**: [sm_binary.js](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/src/sm/sm_binary.js)
+**Binary SM Executor**: [sm_binary.js](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/src/sm/sm_binary.js)
 
-**Binary SM PIL**: [binary.pil](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/pil/binary.pil) 
+**Binary SM PIL**: [binary.pil](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/pil/binary.pil) 
 
-**Test Vectors**: [binary_test.js](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/test/sm/sm_binary_test.js)
+**Test Vectors**: [binary_test.js](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/test/sm/sm_binary_test.js)
 
 
 
@@ -680,7 +680,7 @@ It also creates constants required in the Binary PIL program;
 
 #### Execution of Binary Actions
 
-The crux of the Binary SM Executor is in the `lines 371 to 636` of [sm_binary.js](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/src/sm/sm_binary.js). This is where it executes Binary Actions. 
+The crux of the Binary SM Executor is in the `lines 371 to 636` of [sm_binary.js](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/src/sm/sm_binary.js). This is where it executes Binary Actions. 
 
 1. It takes the committed polynomials A, B and C, breaks them into bytes (in little-endian form). 
 

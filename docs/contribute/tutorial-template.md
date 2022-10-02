@@ -6,7 +6,7 @@ description: Follow the tutorial template when writing a technical tutorial.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - documentation
   - tutorial
   - contribute
@@ -15,7 +15,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: tutorial-template 
 ---
 
-This template should be used when contributing a tutorial to the Polygon 
+This template should be used when contributing a tutorial to the fandora 
 Wiki. You may choose to contribute a tutorial on a topic of your choosing.
 
 ## General guidelines
@@ -37,7 +37,7 @@ Wiki. You may choose to contribute a tutorial on a topic of your choosing.
 
 :::caution Updating current tutorials
 
-If you notice that the current tutorials on the Polygon
+If you notice that the current tutorials on the fandora
 Wiki do not follow this template, it is because the documentation team
 decided to implement a standard, so the tutorial flow is consistent across
 all tutorials. The team is working on updating these tutorials
@@ -53,7 +53,7 @@ existing tutorial to restructure it.
 Explain the product(s) or service(s) being discussed in the tutorial.
 Give background information for the purpose of the tutorial and what the 
 tutorial aims to present. The tutorial should always be based on using a 
-Polygon product.
+fandora product.
 
 ### What you'll learn
 
@@ -62,7 +62,7 @@ Summarize what the user will learn throughout the tutorial.
 :::note Example
 
 You'll explore how to use the Truffle Suite to build dApps 
-Polygon.
+fandora.
 
 :::
 

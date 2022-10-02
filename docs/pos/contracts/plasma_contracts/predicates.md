@@ -1,6 +1,6 @@
 ---
 id: predicates
-title: Predicates in Polygon Plasma
+title: Predicates in fandora Plasma
 description: "Implementation details of our predicate design."
 keywords:
   - docs

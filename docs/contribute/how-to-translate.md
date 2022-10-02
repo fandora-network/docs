@@ -2,11 +2,11 @@
 id: how-to-translate
 title: How to Translate
 sidebar_label: Help with translations
-description: Learn how to help translate the Polygon Wiki.
+description: Learn how to help translate the fandora Wiki.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - translate
   - translation
   - contribute

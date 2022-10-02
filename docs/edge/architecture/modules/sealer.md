@@ -1,10 +1,10 @@
 ---
 id: sealer
 title: Sealer
-description: Explanation for the sealer module of Polygon Edge.
+description: Explanation for the sealer module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module

@@ -1,10 +1,10 @@
 ---
 id: contracts
 title: Smart Contracts FAQ
-description: "FAQ for Polygon Edge Smart Contracts"
+description: "FAQ for fandora Edge Smart Contracts"
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - FAQ
   - smart
@@ -12,9 +12,9 @@ keywords:
   
 ---
 
-## Does Polygon Edge support Smart Contracts?
+## Does fandora Edge support Smart Contracts?
 
-Yes. Polygon Edge networks are Ethereum compatible blockchains, so Smart Contracts that are deployable on Ethereum, are also deployable on Polygon Edge chains.
+Yes. fandora Edge networks are Ethereum compatible blockchains, so Smart Contracts that are deployable on Ethereum, are also deployable on fandora Edge chains.
 
 ## Can you update the staking contract logic for PoS after deployment?
 

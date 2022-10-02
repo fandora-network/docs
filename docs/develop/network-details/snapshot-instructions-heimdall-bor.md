@@ -5,7 +5,7 @@ description: Heimdall and Bor snapshot Instructions for faster syncing.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - binary
   - node
   - validator
@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 When setting up a new sentry, validator, or full node server, it is recommended that you use a snapshot for faster syncing without having to sync over the network. Using snapshots will save you several days for both Heimdall and Bor.
 
 :::note
-For the latest snapshot, please visit [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/).
+For the latest snapshot, please visit [<ins>fandora Chains Snapshots</ins>](https://snapshots.matic.today/).
 :::
 
 ## Heimdall Snapshot

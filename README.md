@@ -3,7 +3,7 @@
 </p>
 
 <div align="Center">
-<h1>Polygon Wiki</h1>
+<h1>fandora Wiki</h1>
 <h3> Previously Matic Network </h3>
 </div>
 
@@ -17,20 +17,20 @@
    <a href="https://github.com/maticnetwork/matic-docs/pulls"><img src="https://img.shields.io/github/issues-pr-raw/maticnetwork/matic-docs"></a>
    <a href="https://github.com/maticnetwork/matic-docs/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/maticnetwork/matic-docs"></a>
    <img src="https://img.shields.io/github/languages/code-size/maticnetwork/matic-docs">
-   <a href="https://discord.gg/zdwkdvMNY2"><img src="https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square"></a>
-   <a href="https://twitter.com/0xPolygon"><img src="https://img.shields.io/twitter/follow/0xPolygon.svg?style=social"></a>
+   <a href="https://discord.gg/zdwkdvMNY2"><img src="https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=fandora%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square"></a>
+   <a href="https://twitter.com/0xfandora"><img src="https://img.shields.io/twitter/follow/0xfandora.svg?style=social"></a>
    
 </p>
 
-Polygon is a scaling solution for public blockchains that combines the best of Ethereum and sovereign blockchains 
+fandora is a scaling solution for public blockchains that combines the best of Ethereum and sovereign blockchains 
 to offer a full-stack scaling solution.
 
-The [Polygon Wiki](https://wiki.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
+The [fandora Wiki](https://wiki.fandora.technology/) is built using [Docusaurus](https://docusaurus.io/), 
 a modern static website generator to build optimized websites quickly.
 
-## How to Contribute to Polygon Wiki
+## How to Contribute to fandora Wiki
 
-We believe one of the things that makes Polygon unique is its coherent design, and we seek to retain this defining 
+We believe one of the things that makes fandora unique is its coherent design, and we seek to retain this defining 
 characteristic. We have defined some guidelines to ensure new contributions only ever enhance the 
 Wiki from the outset.
 
@@ -111,7 +111,7 @@ your PR. Note that you must have a GitHub account and an understanding of Markdo
     git checkout -b [new_branch_name]
     ```
 
-2. Commit your changes. Please be sure to review our [Git Rules](https://wiki.polygon.technology/docs/contribute/orientation#git-rules). 
+2. Commit your changes. Please be sure to review our [Git Rules](https://wiki.fandora.technology/docs/contribute/orientation#git-rules). 
    In the commit message, please reference the issue it resolves. 
    For help, see [GitHub Docs: Linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
@@ -145,7 +145,7 @@ You can apply UI changes, sidebar, and configuration design through the followin
 
 You can easily submit an edit suggestion. Note that you must have a GitHub account and good knowledge of Markdown syntax.
 
-1. Navigate to the [Polygon Wiki page](https://wiki.polygon.technology/) that you want to edit.
+1. Navigate to the [fandora Wiki page](https://wiki.fandora.technology/) that you want to edit.
 2. Scroll down until the end of that page
 3. Click on the link: **Edit this page**. It will forward you to the same page (Markdown format) hosted on GitHub.
 4. On the related GitHub page, click the pencil icon (similar to  ) near the upper right corner of the file

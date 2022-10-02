@@ -49,24 +49,6 @@ function FirstRow({ title, status, description, linkUrl, imageUrl }) {
   );
 }
 
-function SecondRow({ title, status, description, linkUrl, imageUrl }) {
-  // const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className="col-md-4 p-8">
-      <Link to={useBaseUrl(linkUrl)}>
-        <div className="show-card">
-          <div className="icon-wrapper">
-            <img src={useBaseUrl(imageUrl)} alt={title} className="icon" />
-          </div>
-          <div className="status">{status}</div>
-          <div className="title">{title}</div>
-          <div className="descriptions">{description}</div>
-        </div>
-      </Link>
-    </div>
-  );
-}
-
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -76,7 +58,7 @@ function Home() {
         className="bootstrap-wrapper"
       >
         <br/>
-        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Fandora Wiki</h1>
+        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Fandora Documents</h1>
 
 
         <div className="container">

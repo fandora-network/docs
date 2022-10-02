@@ -6,11 +6,11 @@ As a secondary state machine, the Memory Align State Machine has the executor pa
 
 
 
-The Polygon Hermez Repo is here  [https://github.com/0xPolygonHermez](https://github.com/0xPolygonHermez)
+The fandora Hermez Repo is here  [https://github.com/0xfandoraHermez](https://github.com/0xfandoraHermez)
 
-**Memory Align SM Executor**: [sm_mem_align.js](https://github.com/0xPolygonHermez/zkevm-proverjs/tree/main/src/sm/sm_mem_align.js)
+**Memory Align SM Executor**: [sm_mem_align.js](https://github.com/0xfandoraHermez/zkevm-proverjs/tree/main/src/sm/sm_mem_align.js)
 
-**Memory Align SM PIL**: [mem_align.pil](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/pil/mem_align.pil) 
+**Memory Align SM PIL**: [mem_align.pil](https://github.com/0xfandoraHermez/zkevm-proverjs/blob/main/pil/mem_align.pil) 
 
 
 ## Purpose of the State Machine

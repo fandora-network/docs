@@ -5,7 +5,7 @@ sidebar_label: Run an Avail node
 description: "Learn about running an Avail node."
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - node
 image: https://matic.network/banners/matic-network-16x9.png
@@ -139,7 +139,7 @@ internal validators.
 
 :::warning System administration
 
-Although Polygon Avail is in testnet phase, in general, users should have **significant system 
+Although fandora Avail is in testnet phase, in general, users should have **significant system 
 administration experience** when running validator nodes. 
 
 Validator nodes are responsbile for maintaining and securing the network by staking tokens with real
@@ -170,7 +170,7 @@ The easiest way to deploy your own Avail validator node is using Docker.
 Use the default parameters and expose the P2P port with `-p 30333` by running:
 
 ```shell
-docker run -p 30333 --name my_val 0xpolygon/avail:latest
+docker run -p 30333 --name my_val 0xfandora/avail:latest
 ```
 
 Any extra parameter will be added to the `data-avail` binary as an argument.
@@ -178,7 +178,7 @@ If you want to use a specific node key and limit the maximum number of incoming 
 to `10`, you can use:
 
 ```shell
-docker run -p 30333 --name my_val 0xpolygon/avail:latest --in-peers=10 --node-key 80027666cebec66464611eb0d5c36416213d83a9c689006a80efcf479826de7d
+docker run -p 30333 --name my_val 0xfandora/avail:latest --in-peers=10 --node-key 80027666cebec66464611eb0d5c36416213d83a9c689006a80efcf479826de7d
 ```
 
 This image uses two volumes:
@@ -188,7 +188,7 @@ This image uses two volumes:
 Most likelihood you want to bind these volumes to a specific points, like:
 
 ```shell
-docker run -p 30333 --name my_val -v /volumes/da/state:/da/state -v /volumes/da/keystore/:/da/keystore 0xpolygon/avail:latest
+docker run -p 30333 --name my_val -v /volumes/da/state:/da/state -v /volumes/da/keystore/:/da/keystore 0xfandora/avail:latest
 ```
 
 ### Insert private keys
@@ -266,7 +266,7 @@ It is now time to set up your validator by doing the following:
    subject to slashing.
  - Select the Controller. This is the account that will decide when to start or stop validating.
 
-First, go to the **Developer** tab in the [Avail Apps](https://devnet-avail.polygon.technology/)
+First, go to the **Developer** tab in the [Avail Apps](https://devnet-avail.fandora.technology/)
 navbar and click on **Extrinsics**.
 
 * **Stash** account - Select your Stash account. In this example, we bond 1001 AVL tokens, where the
@@ -323,7 +323,7 @@ You can restart your node at this point.
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates
 your validator with your Controller account.
 
-Navigate to the [Network > Staking](https://devnet-avail.polygon.technology/#/staking).
+Navigate to the [Network > Staking](https://devnet-avail.fandora.technology/#/staking).
 Here, you can perform various staking actions. Navigate to **Account actions** , and select **Set Session Key**
 on the bonding account you generated earlier. Enter the output `from author_rotateKeys` in the field and click on
 "Set Session Key".
@@ -335,7 +335,7 @@ After submitting this extrinsic, you are ready to start validating.
 ## Validate
 
 To verify that your node is live and synchronized, navigate to
-[Network > Staking](https://devnet-avail.polygon.technology/#/staking) and select
+[Network > Staking](https://devnet-avail.fandora.technology/#/staking) and select
 **Waiting**. Your account should be shown there. A new validator set is selected every **era**,
 based on the staking amount.
 
@@ -462,13 +462,13 @@ docker build -t da:ava-33  --build-arg BRANCH=miguel/ava-33-create-monk-template
 
 The testnet only need to load two monk templates:
 
-- **monk/polygon-da-base.matic.today.yaml**, which contains common definition for DevNet & TestNet.
-- **monk/polygon-da-devnet.matic.today.yaml**, where validators are defined.
+- **monk/fandora-da-base.matic.today.yaml**, which contains common definition for DevNet & TestNet.
+- **monk/fandora-da-devnet.matic.today.yaml**, where validators are defined.
 
 ```shell
-monk s ns-delete /templates/local/polygon
-monk load monk/polygon-da-base.matic.today.yaml
-monk load monk/polygon-da-devnet.matic.today.yaml
+monk s ns-delete /templates/local/fandora
+monk load monk/fandora-da-base.matic.today.yaml
+monk load monk/fandora-da-devnet.matic.today.yaml
 ```
 
 #### Step 3: Run templates
@@ -476,13 +476,13 @@ monk load monk/polygon-da-devnet.matic.today.yaml
 Once templates are loaded, we only need to run three nodes:
 
 ```shell
-monk run polygon/da-dev-validator-1 polygon/da-dev-validator-2 polygon/da-dev-validator-3
+monk run fandora/da-dev-validator-1 fandora/da-dev-validator-2 fandora/da-dev-validator-3
 ```
 
 Now you can check logs using `monk logs`, i.e.:
 
 ```shell
-monk logs -f -l 100 polygon/da-dev-validator-1
+monk logs -f -l 100 fandora/da-dev-validator-1
 ```
 
 You should expect:
@@ -517,7 +517,7 @@ In this configuration, the state of the node is stored at `/var/lib/monkd/volume
 you can remove these folders or just use `monk purge`:
 
 ```
-monk purge polygon/da-dev-validator-1 polygon/da-dev-validator-2 polygon/da-dev-validator-3
+monk purge fandora/da-dev-validator-1 fandora/da-dev-validator-2 fandora/da-dev-validator-3
 ```
 
 </TabItem>

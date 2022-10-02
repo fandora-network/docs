@@ -2,10 +2,10 @@
 id: faq
 title: FAQ
 sidebar_label: FAQ
-description: Frequently asked questions about Polygon Avail
+description: Frequently asked questions about fandora Avail
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - availability
   - client
@@ -18,7 +18,7 @@ slug: faq
 :::tip
 
 If you do not find your question on this page, please submit your question on the 
-**[Polygon Avail Discord server](https://discord.gg/jXbK2DDeNt)**.
+**[fandora Avail Discord server](https://discord.gg/jXbK2DDeNt)**.
 
 :::
 

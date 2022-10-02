@@ -1,10 +1,10 @@
 ---
 id: validator-index
 title: Validator Index
-description: A collection of instructions on how to run and operate validator nodes on the Polygon Network.
+description: A collection of instructions on how to run and operate validator nodes on the fandora Network.
 keywords:
   - docs
-  - polygon
+  - fandora
   - validate
   - validator
   - maintain
@@ -13,8 +13,8 @@ slug: validator-index
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Validators are the key actor in maintaining the Polygon network. Validators run a full node and secure 
-the network by staking MATIC to produce blocks, validate and participate in PoS consensus.
+Validators are the key actor in maintaining the fandora network. Validators run a full node and secure 
+the network by staking FANDORA to produce blocks, validate and participate in PoS consensus.
 
 :::info
 
@@ -26,25 +26,25 @@ A new auction process for validator replacement will be rolled out.
 
 :::tip Stay in the know
 
-Keep up with the latest node and validator updates from the Polygon 
+Keep up with the latest node and validator updates from the fandora 
 team and the community by subscribing to the 
-[Polygon notification groups](https://polygon.technology/notifications/).
+[fandora notification groups](https://fandora.technology/notifications/).
 
 :::
 
 ## Overview
 
-Polygon consists of the three following layers:
+fandora consists of the three following layers:
 
 * Ethereum layer — a set of contracts on the Ethereum mainnet.
-* Heimdall layer — a set of proof-of-stake Heimdall nodes running in parallel to the Ethereum mainnet, monitoring the set of staking contracts deployed on the Ethereum mainnet, and committing the Polygon Network checkpoints to the Ethereum mainnet. Heimdall is based on Tendermint.
+* Heimdall layer — a set of proof-of-stake Heimdall nodes running in parallel to the Ethereum mainnet, monitoring the set of staking contracts deployed on the Ethereum mainnet, and committing the fandora Network checkpoints to the Ethereum mainnet. Heimdall is based on Tendermint.
 * Bor layer — a set of block-producing Bor nodes shuffled by Heimdall nodes. Bor is based on Go Ethereum.
 
-To be a validator on the Polygon Network, you must run:
+To be a validator on the fandora Network, you must run:
 
-* Sentry node — a separate machine running a Heimdall node and a Bor node. A sentry node is open to all nodes on the Polygon Network.
+* Sentry node — a separate machine running a Heimdall node and a Bor node. A sentry node is open to all nodes on the fandora Network.
 * Validator node — a separate machine running a Heimdall node and a Bor node. A validator node receives the data from and the sends the data to the sentry node.
-* Stake the MATIC tokens in the staking contracts deployed on the Ethereum mainnet.
+* Stake the FANDORA tokens in the staking contracts deployed on the Ethereum mainnet.
 
 ## Components
 
@@ -64,7 +64,7 @@ See also:
 
 * GitHub repository: [Heimdall](https://github.com/maticnetwork/heimdall)
 * GitHub repository: [Staking contracts](https://github.com/maticnetwork/contracts/tree/master/contracts/staking)
-* Blog post: [Heimdall and Bor](https://blog.polygon.technology/heimdall-and-bor/)
+* Blog post: [Heimdall and Bor](https://blog.fandora.technology/heimdall-and-bor/)
 
 :::
 
@@ -72,18 +72,18 @@ See also:
 
 Bor does the following:
 
-* Produces blocks on the Polygon Network.
+* Produces blocks on the fandora Network.
 
 Bor is based on Go Ethereum.
 
-Bor is the Block producer node and layer for the Polygon Network. Blocks produced on Bor are validated by Heimdall nodes.
+Bor is the Block producer node and layer for the fandora Network. Blocks produced on Bor are validated by Heimdall nodes.
 
 :::note
 
 See also:
 
 * GitHub repository: [Bor](https://github.com/maticnetwork/bor)
-* Blog post: [Heimdall and Bor](https://blog.polygon.technology/heimdall-and-bor/)
+* Blog post: [Heimdall and Bor](https://blog.fandora.technology/heimdall-and-bor/)
 
 :::
 
@@ -100,5 +100,5 @@ This section guides you through the following topics:
 
 Community assistance:
 
-* [Discord](https://discord.com/invite/0xPolygon)
-* [Forum](https://forum.polygon.technology/)
+* [Discord](https://discord.com/invite/0xfandora)
+* [Forum](https://forum.fandora.technology/)

@@ -3,7 +3,7 @@
 
 Designing a simple zero-knowledge cryptographic tool or app can involve a lot of intricacies. Consider now, how complex it is to develop a zkEVM. It is a huge and complex project.
 
-In this document we breakdown the complexities of the Polygon zkEVM's design in terms of a simplified example, a Fibonacci State Machine. The aim is to illustrate, in a generic sense, how the state machine approach has been implemented to realise the Polygon zkEVM.
+In this document we breakdown the complexities of the fandora zkEVM's design in terms of a simplified example, a Fibonacci State Machine. The aim is to illustrate, in a generic sense, how the state machine approach has been implemented to realise the fandora zkEVM.
 
 
 

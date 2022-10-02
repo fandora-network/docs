@@ -5,7 +5,7 @@ description: "Common questions on validator operations."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - validator
   - faq
 image: https://matic.network/banners/matic-network-16x9.png
@@ -23,7 +23,7 @@ In any case, there is always the possibility of stake delegation with the curren
 * **Notice**: Validator sends a transaction to unbond. Before entering into the unbonding period, validator needs to be in active state creating, signing and proposing blocks for a certain time.
 * **Unbonding**: Validator is inactive in this state and thus earns no reward. However, the validator is still liable for slashing in case they have committed any malicious act previously.
 
-## Is there a minimum amount of MATIC required to stake to become a validator?
+## Is there a minimum amount of FANDORA required to stake to become a validator?
 
 The minimum is 1 Matic.
 
@@ -103,13 +103,13 @@ Full error:
 dpkg: error processing archive matic-heimdall_1.0.0_amd64.deb (--install): trying to overwrite '/heimdalld-rest-server.service', which is also in package matic-node 1.0.0
 ```
 
-This occurs mainly because of a previous installation of Polygon on your machine. To resolve you can run:
+This occurs mainly because of a previous installation of fandora on your machine. To resolve you can run:
 
 `sudo dpkg -r matic-node`
 
 ## It is not clear which private Key I should add when I generate a validator key
 
-The private key to be used is your wallet's ETH address where your Polygon tokens are stored.
+The private key to be used is your wallet's ETH address where your fandora tokens are stored.
 
 ## Is there a way to know if Heimdall is synced?
 
@@ -158,7 +158,7 @@ Change the config to `goleveldb` in `config.toml`.
 
 ## Are the private keys the same for Heimdall and Bor keystore?
 
-Yes, the private key used for generating the validator keys and Bor keystore are the same. The private key used in this instance is your wallet's ETH address where your Polygon tokens are stored.
+Yes, the private key used for generating the validator keys and Bor keystore are the same. The private key used in this instance is your wallet's ETH address where your fandora tokens are stored.
 
 ## Error: (Heimdall) Please repair the WAL file before restarting module=consensus
 
@@ -218,7 +218,7 @@ If the above steps didn’t work then please reach out to the Validator Team for
 
 This could happen when Bor has lost connectivity with other peers. Generally checking the `~/node/bor/start.sh` file should show you your bootnodes. Check if the bootnodes are entered correctly without any formatting issues. If you have made any changes to the file, then please restart your Bor service and check if the issue is resolved.
 
-If the issue persists, contact support team on [Discord](https://discord.com/invite/0xPolygon).
+If the issue persists, contact support team on [Discord](https://discord.com/invite/0xfandora).
 
 ## Bor shows "Failed to prepare header mining at block 0"
 
@@ -232,7 +232,7 @@ This is because you have not created the Bor keystore and the password file for 
 
 Let these logs be. Your node should ideally not suffer because of this and the issue should be automatically resolved.
 
-If your node is suffering because of this, please contact the support team on [Discord](https://discord.com/invite/0xPolygon).
+If your node is suffering because of this, please contact the support team on [Discord](https://discord.com/invite/0xfandora).
 
 ## Bor shows "Failed to prepare mining for header"
 
@@ -249,7 +249,7 @@ To resolve this there are 2 ways to do this:
 * Restart your Bor service and check if the issue is resolved. Usually restarting your Bor service should resolve the issue.
 * Check if your Heimdall is running correctly. If your Heimdall has stopped, restart your Heimdall service and let your Bor starty syncing and it should resolve the issue.
 
-If the issue is not resolved, contact support team on [Discord](https://discord.com/invite/0xPolygon).
+If the issue is not resolved, contact support team on [Discord](https://discord.com/invite/0xfandora).
 
 ## Bor shows "Address is required as argument"
 
@@ -274,11 +274,11 @@ For binaries:
 
 Your node not signing checkpoints could be for multiple reasons:
 
-1. Check if your Heimdall service is running correctly on your sentry and validator nodes. If the service has stopped abruptly or you see any errors, try restarting your Heimdall service and see it comes back to normal. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xPolygon).
-1. Check your Bor service and see if it has halted abruptly or there are any errors on the logs. Try restarting your Bor service to resolve this issue. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xPolygon).
-1. Check if your Heimdall Bridge is running or not or if it has any errors in the logs. Try restarting the service and see if the issue resolves. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xPolygon).
+1. Check if your Heimdall service is running correctly on your sentry and validator nodes. If the service has stopped abruptly or you see any errors, try restarting your Heimdall service and see it comes back to normal. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xfandora).
+1. Check your Bor service and see if it has halted abruptly or there are any errors on the logs. Try restarting your Bor service to resolve this issue. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xfandora).
+1. Check if your Heimdall Bridge is running or not or if it has any errors in the logs. Try restarting the service and see if the issue resolves. If the issue persists, contact support team on [Discord](https://discord.com/invite/0xfandora).
 
-If none of this is the issue, contact support team on [Discord](https://discord.com/invite/0xPolygon).
+If none of this is the issue, contact support team on [Discord](https://discord.com/invite/0xfandora).
 
 ## How to set up a validator node on the mainnet?
 
@@ -303,7 +303,7 @@ This could be because your `inventory.yml` file may have some formatting issues.
 
 Yes, you have to run both a sentry and a validator node.
 
-The Polygon ecosystem and architecture demands that you run a sentry + validator setup to ensure that your validator node is not exposed to the public and only your sentry node is.
+The fandora ecosystem and architecture demands that you run a sentry + validator setup to ensure that your validator node is not exposed to the public and only your sentry node is.
 
 Your sentry node gleans information / blocks from the network and then relays them to the validator for validation.
 
@@ -333,7 +333,7 @@ Yes, you can.
 
 ## Can I run multiple validators using the same signer key?
 
-No. You cannot. Polygon's architecture currently does not allow validators running multiple validator nodes using the same signer key.
+No. You cannot. fandora's architecture currently does not allow validators running multiple validator nodes using the same signer key.
 
 ## Is there a way to run a light Bor node?
 

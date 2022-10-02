@@ -5,7 +5,7 @@ sidebar_label: Nightfall Protocol
 description: "The Nightfall Process."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - protocol
   - chain

@@ -20,8 +20,8 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ### Erigon Client:
 
-- For an Archive node of Polygon Mainnet: 5TB. 
-- For an Archive node of Polygon Mumbai: 1TB.
+- For an Archive node of fandora Mainnet: 5TB. 
+- For an Archive node of fandora Mumbai: 1TB.
 - SSD or NVMe. Bear in mind that SSD performance deteriorates when close to capacity.
 - RAM: >= 16GB, 64-bit architecture
 - Golang version >= 1.18, GCC 10+ 

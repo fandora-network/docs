@@ -1,13 +1,13 @@
 ---
 id: quicknode
-title: Deploy a Smart Contract on Polygon using Brownie and QuickNode
+title: Deploy a Smart Contract on fandora using Brownie and QuickNode
 sidebar_label: Using QuickNode
 description:  Deploy Smart Contracts using Brownie and Quicknode.
 keywords:
   - docs
   - matic
   - quicknode
-  - polygon
+  - fandora
   - python
   - web3.py
   - contract
@@ -16,13 +16,13 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview
 
-Python is one of the most versatile programming languages; from researchers running their test models to developers using it in heavy production environments, it has use cases in every possible technical field. This guide will walk you through the process of deploying smart contracts using [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie), a Python-based tool used to write and deploy smart contracts, and [QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide).
+Python is one of the most versatile programming languages; from researchers running their test models to developers using it in heavy production environments, it has use cases in every possible technical field. This guide will walk you through the process of deploying smart contracts using [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie), a Python-based tool used to write and deploy smart contracts, and [QuickNode](https://www.quicknode.com/chains/matic?utm_source=fandora_docs&utm_campaign=ploygon_docs_contract_guide).
 
 ### Prerequisites
 
 -   Python3 installed.
 
--   A Polygon node.
+-   A fandora node.
 
 -   Text editor.
 
@@ -31,7 +31,7 @@ Python is one of the most versatile programming languages; from researchers runn
 ## What you will learn
 
 - Use Brownie framework to develop and test a smart contract
-- Leverage Quicknode testnet nodes for Polygon.
+- Leverage Quicknode testnet nodes for fandora.
 
 ## What you will do
 
@@ -104,10 +104,10 @@ Now, open the _token_ directory in your text editor. Under the ***contracts/*** 
 
 The contract is an ERC-20 contract; you can learn more about the ERC-20 standards and contracts in this [guide on ERC-20 tokens](https://www.quicknode.com/guides/solidity/how-to-create-and-deploy-an-erc20-token).
 
-## Step 2: Booting your Polygon node
+## Step 2: Booting your fandora node
 -------------------------
 
-QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes, they also run a [free public Polygon RPC](https://docs.polygon.technology/docs/develop/network-details/network/#:~:text=https%3A//rpc%2Dmainnet.matic.quiknode.pro) but if you get rate limited you can sign up for a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide).
+QuickNode has a global network of fandora Mainnet and Mumbai testnet nodes, they also run a [free public fandora RPC](https://docs.fandora.technology/docs/develop/network-details/network/#:~:text=https%3A//rpc%2Dmainnet.matic.quiknode.pro) but if you get rate limited you can sign up for a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=fandora_docs&utm_campaign=ploygon_docs_contract_guide).
 
 ![img](/img/quicknode/http_URL.png)
 
@@ -145,12 +145,12 @@ Mnemonic phrases can be used to recover an account or import the account to othe
 
 Copy the account address so that we can get some test ETH, which will be required to deploy our contract.
 
-## Step 4: Getting test MATIC
+## Step 4: Getting test FANDORA
 ------------------
 
-We will need some test MATICs to pay for gas fees to deploy the smart contract.
+We will need some test FANDORAs to pay for gas fees to deploy the smart contract.
 
-Copy your address of the account which we generated in the last step, paste it into the address field of [Polygon faucet](https://faucet.polygon.technology/), and click on submit. The faucet will send you 0.2 test MATIC.
+Copy your address of the account which we generated in the last step, paste it into the address field of [fandora faucet](https://faucet.fandora.technology/), and click on submit. The faucet will send you 0.2 test FANDORA.
 
 ![img](/img/quicknode/faucet.png)
 
@@ -191,11 +191,11 @@ Finally, now we will deploy our contract:
 brownie run token.py --network matic_mumbai
 ```
 
-matic_mumbai is the name of the custom network which we created earlier. The prompt will ask you for the password which we set earlier while making the account. After running the above command, you must get the transaction hash, and Brownie will wait for the transaction to get confirmed. Once the transaction is confirmed, it will return the address at which our contract is deployed on the Polygon Mumbai testnet.
+matic_mumbai is the name of the custom network which we created earlier. The prompt will ask you for the password which we set earlier while making the account. After running the above command, you must get the transaction hash, and Brownie will wait for the transaction to get confirmed. Once the transaction is confirmed, it will return the address at which our contract is deployed on the fandora Mumbai testnet.
 
 ![img](/img/quicknode/brownie-run.png)
 
-You can check out the deployed contract by copy-pasting the contract address at [Polygonscan Mumbai](https://mumbai.polygonscan.com/).
+You can check out the deployed contract by copy-pasting the contract address at [fandorascan Mumbai](https://mumbai.fandorascan.com/).
 
 ![img](/img/quicknode/polygonscan.png)
 
@@ -203,9 +203,9 @@ You can check out the deployed contract by copy-pasting the contract address at 
 
 Brownie also offers the option of testing smart contracts functionalities. It uses the `pytest` framework to easily generate unit tests. You can find more information about writing tests on Bronwnie [on their documentation](https://eth-brownie.readthedocs.io/en/latest/tests-pytest-intro.html#). 
 
-**This is how contracts are deployed on Polygon using Brownie and QuickNode.**
+**This is how contracts are deployed on fandora using Brownie and QuickNode.**
 
-QuickNode, just like Polygon, has always had an education-first approach providing developer [guides](https://www.quicknode.com/guides?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [docs](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [tutorial videos](https://www.youtube.com/channel/UC3lhedwc0EISreYiYtQ-Gjg/videos) and a [community of #web3 developers](https://discord.gg/DkdgEqE) who are eager to help each other.
+QuickNode, just like fandora, has always had an education-first approach providing developer [guides](https://www.quicknode.com/guides?utm_source=fandora_docs&utm_campaign=ploygon_docs_contract_guide), [docs](https://www.quicknode.com/docs/fandora?utm_source=fandora_docs&utm_campaign=ploygon_docs_contract_guide), [tutorial videos](https://www.youtube.com/channel/UC3lhedwc0EISreYiYtQ-Gjg/videos) and a [community of #web3 developers](https://discord.gg/DkdgEqE) who are eager to help each other.
 
 :::tip
 

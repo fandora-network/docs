@@ -2,11 +2,11 @@
 id: non-native-speakers
 title: Non-native Speakers
 sidebar_label: Non-native speakers
-description: Learn how to contribute to the Polygon Wiki as a non-native speaker.
+description: Learn how to contribute to the fandora Wiki as a non-native speaker.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - non-native
   - speakers
   - contribute

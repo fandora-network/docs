@@ -5,7 +5,7 @@ sidebar_label: Mainnet
 description: "Tools, adresses and useful links for mainnet deployment."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - mainnet
   - address
@@ -19,5 +19,5 @@ Nightfall is currently undergoing a security audit, and it is expected to comple
 :::
 
 
-**Polygon Nightfall will be deployed on Mainnet in Q4 2022. It is available on [Testnet](./testnet)**
+**fandora Nightfall will be deployed on Mainnet in Q4 2022. It is available on [Testnet](./testnet)**
 

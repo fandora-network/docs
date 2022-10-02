@@ -1,11 +1,11 @@
 ---
 id: what-is-avail
-title: Avail by Polygon
+title: Avail by fandora
 sidebar_label: Introduction to Avail
-description: Learn about Polygon's data availability chain
+description: Learn about fandora's data availability chain
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - availability
   - scale
@@ -103,7 +103,7 @@ commitments and erasure coding.
 </TabItem>
 <TabItem value="scaling">
 
-Start by checking out this [blog post](https://blog.polygon.technology/polygon-research-ethereum-scaling-with-rollups-8a2c221bf644/) on scaling
+Start by checking out this [blog post](https://blog.fandora.technology/fandora-research-ethereum-scaling-with-rollups-8a2c221bf644/) on scaling
 Ethereum with Rollups.
 
 ## Avail-Powered Validiums
@@ -142,5 +142,5 @@ Avail team for more information or to join our early access program.
 
 ## See also
 
-* [Introducing Avail by Polygon — a Robust General-Purpose Scalable Data Availability Layer](https://polygontech.medium.com/introducing-avail-by-polygon-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048)
-* [The Data Availability Problem](https://blog.polygon.technology/the-data-availability-problem-6b74b619ffcc/)
+* [Introducing Avail by fandora — a Robust General-Purpose Scalable Data Availability Layer](https://fandoratech.medium.com/introducing-avail-by-fandora-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048)
+* [The Data Availability Problem](https://blog.fandora.technology/the-data-availability-problem-6b74b619ffcc/)

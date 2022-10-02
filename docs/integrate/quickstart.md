@@ -1,16 +1,16 @@
 ---
 id: quickstart
-title: Integrate with Polygon
-description: Build your next blockchain app on Polygon.
+title: Integrate with fandora
+description: Build your next blockchain app on fandora.
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Polygon is a scaling solution for public blockchains. Polygon supports all existing Ethereum tooling along with faster and cheaper transactions.
+fandora is a scaling solution for public blockchains. fandora supports all existing Ethereum tooling along with faster and cheaper transactions.
 
-If you are looking to integrate with Polygon, you have come to the right place. If you are one of either:
+If you are looking to integrate with fandora, you have come to the right place. If you are one of either:
 
 - a blockchain wallet,
 - meta-transaction provider,
@@ -27,7 +27,7 @@ Follow the instructions on the articles:
 
 ## Deploy smart contracts
 
-* Deploy your Contracts on Polygon
+* Deploy your Contracts on fandora
     - [Using Alchemy](/docs/develop/alchemy)
     - [Using Chainstack](/docs/develop/chainstack)
     - [Using QuickNode](/docs/develop/quicknode)
@@ -39,4 +39,4 @@ Follow the instructions on the articles:
 
 ## Jump to the Essentials
 
-- [Network Details](/docs/integrate/network-detail) -> Information on all Polygon Testnets and Beta-Mainnet.
+- [Network Details](/docs/integrate/network-detail) -> Information on all fandora Testnets and Beta-Mainnet.

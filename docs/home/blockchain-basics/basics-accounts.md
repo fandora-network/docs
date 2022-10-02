@@ -6,7 +6,6 @@ description: "EOAs and Contract Accounts."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 The global state of Ethereum is comprised of accounts that interact with one another through a message-passing framework. The most basic interaction is that of sending some value - like matic tokens, ether - the native cryptocurrency of Ethereum blockchain.
 Each account is identified by a 20 byte hex identifier which is called an address - this is generated from public key of the account.

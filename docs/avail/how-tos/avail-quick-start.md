@@ -1,11 +1,11 @@
 ---
 id: avail-quick-start
-title: How to use Polygon Avail
+title: How to use fandora Avail
 sidebar_label: How to use Avail
-description: Learn how to use Polygon Avail
+description: Learn how to use fandora Avail
 keywords:
   - docs
-  - polygon
+  - fandora
   - avail
   - data
   - availability
@@ -22,14 +22,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::note We are working on improving many of the current features
 
 We appreciate you using our testnet and encourage your valuable feedback
-through one of our **[community channels](https://polygon.technology/community/)**.
+through one of our **[community channels](https://fandora.technology/community/)**.
 
 :::
  
 ## Generate an Avail Account
 
 You can generate an account using one of two methods:
-- [Avail Explorer](https://testnet.polygonavail.net/)
+- [Avail Explorer](https://testnet.fandoraavail.net/)
 - Console/Typescript
 
 <Tabs
@@ -41,13 +41,13 @@ You can generate an account using one of two methods:
 }>
 <TabItem value="explorer">
 
-Head over to [Avail Explorer](https://testnet.polygonavail.net/). 
+Head over to [Avail Explorer](https://testnet.fandoraavail.net/). 
 
 <img src={useBaseUrl("img/avail/avail-explorer.png")} width="100%" height="100%"/> 
 
 :::note
 
-**[Avail Explorer](https://testnet.polygonavail.net/)** is a fork 
+**[Avail Explorer](https://testnet.fandoraavail.net/)** is a fork 
 of **[Polkadot-JS Apps](https://polkadot.js.org/)**. The interface and navigation are the same 
 if you are familiar with Polkadot-JS Apps.
 
@@ -88,7 +88,7 @@ copy your address.  Alternatively, you can copy the address manually.
 
 <img src={useBaseUrl("img/avail/account-icon.png")} width="100%" height="100%"/> 
 
-Head over to the [Polygon faucet](https://faucet.polygon.technology).
+Head over to the [fandora faucet](https://faucet.fandora.technology).
 
 On the faucet page, select `DA Network`  and  `DA (Test Token)` as the network and token. 
 Paste your account address and click on **Submit**. The transfer will up to one 
@@ -98,7 +98,7 @@ minute to complete.
 
 Upon successful transfer, your account should now have a non-zero balance. If you face any issues 
 obtaining tokens from the faucet, please reach out to the 
-[support team](https://support.polygon.technology/support/home).
+[support team](https://support.fandora.technology/support/home).
 
 ## Submit a New Transaction
 
@@ -149,7 +149,7 @@ Before sending a transaction using `App_ID`, it must be created using the `creat
 
 :::
 
-Submit the transaction. Head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer). 
+Submit the transaction. Head over to the [Avail Explorer](https://testnet.fandoraavail.net/#/explorer). 
 The recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
@@ -165,7 +165,7 @@ Enter the values you wish to submit as part of this transaction for `row` and `c
 
 <img src={useBaseUrl("img/avail/da-row-col.png")} width="100%" height="100%"/> 
 
-Submit the transaction. Head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer). 
+Submit the transaction. Head over to the [Avail Explorer](https://testnet.fandoraavail.net/#/explorer). 
 The recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
@@ -283,7 +283,7 @@ medium.
 
 ## Receive AVL Testnet Tokens
 
-Head over to the [Polygon faucet](https://faucet.polygon.technology).
+Head over to the [fandora faucet](https://faucet.fandora.technology).
 
 On the faucet page, select `DA (Test Token)` and `DA Network` as the token and network, 
 respectively. Paste your account address and click on **Submit**. The transfer will take up to one 
@@ -291,7 +291,7 @@ minute to complete.
 
 <img src={useBaseUrl("img/avail/faucet.png")} width="100%" height="100%"/> 
 
-Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the faucet, please reach out to the [support team](https://support.polygon.technology/support/home).
+Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the faucet, please reach out to the [support team](https://support.fandora.technology/support/home).
 
 ### Balance Check with `@polkadot/api`
 
@@ -308,7 +308,7 @@ const keyring = new Keyring({ type: 'sr25519' });
 
 async function createApi() {
   // Initialise the provider to connect to the local node
-  const provider = new WsProvider('wss://testnet.polygonavail.net/ws');
+  const provider = new WsProvider('wss://testnet.fandoraavail.net/ws');
 
   // Create the API and wait until ready
   return ApiPromise.create({ 
@@ -384,7 +384,7 @@ main().catch(console.error)
 Sample Result:
 
 ```
-You are connected to chain Avail-Testnet using Polygon Avail Node v3.0.0-6c8781e-x86_64-linux-gnu
+You are connected to chain Avail-Testnet using fandora Avail Node v3.0.0-6c8781e-x86_64-linux-gnu
 5HBCFfAs5gfqYgSinsr5s1nSZY2uRCh8MhYhXXp6Y9jNRJFB
 5HBCFfAs5gfqYgSinsr5s1nSZY2uRCh8MhYhXXp6Y9jNRJFB has balance of 0
 ```
@@ -539,7 +539,7 @@ const keyring = new Keyring({ type: 'sr25519' });
 
 async function createApi() {
   // Initialise the provider to connect to the local node
-  const provider = new WsProvider('wss://testnet.polygonavail.net/ws');
+  const provider = new WsProvider('wss://testnet.fandoraavail.net/ws');
 
   // Create the API and wait until ready
   return ApiPromise.create({ 
@@ -632,7 +632,7 @@ main().catch(console.error)
 </TabItem>
 </Tabs>
 
-You can head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer), and the
+You can head over to the [Avail Explorer](https://testnet.fandoraavail.net/#/explorer), and the
 recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
@@ -643,7 +643,7 @@ one you wish to get availability guarantees for.
 
 ```bash
 
-curl -s -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"get_blockConfidence","params": {"number": block_number_here}, "id": 1}' 'https://polygon-da-light.matic.today/v1/json-rpc'
+curl -s -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"get_blockConfidence","params": {"number": block_number_here}, "id": 1}' 'https://fandora-da-light.matic.today/v1/json-rpc'
 
 ```
 :::

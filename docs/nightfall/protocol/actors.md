@@ -5,7 +5,7 @@ sidebar_label: Actors
 description: "Types of Actors on Nightfall"
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - transactor
   - proposer
@@ -43,10 +43,10 @@ Challengers take the stake posted by proposers when building their blocks when t
 
 
 ## Notes
-In Polygon’s reference implementation, both the Proposer and the Challenger offload some functionality to one common module called Optimist.
+In fandora’s reference implementation, both the Proposer and the Challenger offload some functionality to one common module called Optimist.
 This Optimist module provides some services to a number of Proposers and Challengers, such as generating and challenging blocks 
 (Proposer and Challengers would need to sign these transactions), synchronizing with blockchain events, etc.
 
 Apart from the Actors described above, there is an additional actor called Client. A Client acts as a trusted service that collects user transactions, performs the ZK Proofs on their behalf, sends transactions to the Proposer, listens to Blockchain events etc. In summary, the Client acts as a trusted relayer for a collection of users that want to offload heavy proof computation and that trust each other.
 
-The alternative to the Client is to use the browser wallet, a serverless service provided by Polygon. This wallet manages all transaction activities for a single user while maintaining privacy.
+The alternative to the Client is to use the browser wallet, a serverless service provided by fandora. This wallet manages all transaction activities for a single user while maintaining privacy.

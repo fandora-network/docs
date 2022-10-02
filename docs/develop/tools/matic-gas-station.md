@@ -1,7 +1,7 @@
 ---
-id: polygon-gas-station
-title: Polygon Gas Station
-sidebar_label: Polygon Gas Station
+id: fandora-gas-station
+title: fandora Gas Station
+sidebar_label: fandora Gas Station
 description:  "Gas price recommendation."
 keywords:
   - docs
@@ -11,22 +11,22 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-_Polygon Gas Station_ aims to help dApp developers with gas price recommendations, so that they can use it before sending transaction off to _Polygon_ network.
+_fandora Gas Station_ aims to help dApp developers with gas price recommendations, so that they can use it before sending transaction off to _fandora_ network.
 
 ## origin
 
-At _Polygon_, we were receiving request from dApp developers for building a gas price recommendation service. So we took some inspiration from _Eth Gas Station_, and built one.
+At _fandora_, we were receiving request from dApp developers for building a gas price recommendation service. So we took some inspiration from _Eth Gas Station_, and built one.
 
 ## availability
 
-_Polygon Gas Station_ has been deployed both on Polygon Mumbai Testnet & Polygon Mainnet, where it analyzes recent 500 transactions and recommends gas price.
+_fandora Gas Station_ has been deployed both on fandora Mumbai Testnet & fandora Mainnet, where it analyzes recent 500 transactions and recommends gas price.
 
 ## usage
 
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Polygon-Mainnet', value: 'mainnet', },
+    { label: 'fandora-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
@@ -60,9 +60,9 @@ requests.get('https://gasstation-mumbai.matic.today/v2').json()
 </TabItem>
 <TabItem value="mainnet">
 
-# Polygon-Mainnet
+# fandora-Mainnet
 
-For getting gas price recommendation from this oracle, send GET request to the Polygon Gas Station V2 to get the gas fee estimates. Polygon Gas Station V2 Endpoint: [https://gasstation-mainnet.matic.network/v2](https://gasstation-mainnet.matic.network/v2)
+For getting gas price recommendation from this oracle, send GET request to the fandora Gas Station V2 to get the gas fee estimates. fandora Gas Station V2 Endpoint: [https://gasstation-mainnet.matic.network/v2](https://gasstation-mainnet.matic.network/v2)
 
 ### cURL
 
@@ -112,6 +112,6 @@ requests.get('https://gasstation-mainnet.matic.network/v2').json()
 }
 ```
 
-- {'safelow', 'standard', 'fast', 'estimatedBaseFee'} are gas prices in GWei, you can use these prices before sending transaction off to Polygon, depending upon your need
+- {'safelow', 'standard', 'fast', 'estimatedBaseFee'} are gas prices in GWei, you can use these prices before sending transaction off to fandora, depending upon your need
 - _'blockNumber'_ tells what was latest block mined when recommendation was made
 - _'blockTime'_ in second, which gives average block time of network

@@ -6,13 +6,12 @@ description: "Using the seed phrase to import an account to Metamask."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can always import your account to Metamask if you're using any other web/mobile wallet. All you need to to make sure that you have a backup of your seedphrase.
 
-If you're using Matic Wallet then you can backup you seedphrase by going to the Settings and then clicking **Show Passphrase**.
+If you're using Metamask Wallet then you can backup you seedphrase by going to the Settings and then clicking **Show Passphrase**.
 
 If you don't have the seedphrase you will be unable to import your account to Metamask.
 
@@ -48,7 +47,7 @@ By default, only ETH is listed in Metamask. If you already have Matic tokens the
 
 Do keep extreme care of your seedphrase and keep backups, because unlike exchanges, you need to keep your seedphrase safe. If the seedphrase is lost, funds are not recoverable. Also do not ever share this seedphrase with anyone.
 
-### Sending MATIC tokens from Binance and other exchanges to the Metamask wallet
+### Sending FANDORA tokens from Binance and other exchanges to the Metamask wallet
 
 Most exchanges like Binance and others have an option to withdraw funds from your exchange account to your address on the Ethereum blockchain. Once you have setup an account in Metamask, you will see the address of your account.
 

@@ -7,9 +7,9 @@
     "message": "Blockchain Basics",
     "description": "The label for category Blockchain Basics in sidebar basics"
   },
-  "sidebar.basics.category.Polygon Basics": {
-    "message": "Polygon Basics",
-    "description": "The label for category Polygon Basics in sidebar basics"
+  "sidebar.basics.category.Fandora Basics": {
+    "message": "Fandora Basics",
+    "description": "The label for category Fandora Basics in sidebar basics"
   },
   "sidebar.develop.category.Nodes": {
     "message": "Nodes",
@@ -31,9 +31,9 @@
     "message": "Arkane",
     "description": "The label for category Arkane in sidebar develop"
   },
-  "sidebar.develop.category.Polygon Web Wallet": {
-    "message": "Polygon Web Wallet",
-    "description": "The label for category Polygon Web Wallet in sidebar develop"
+  "sidebar.develop.category.fandora Web Wallet": {
+    "message": "fandora Web Wallet",
+    "description": "The label for category fandora Web Wallet in sidebar develop"
   },
   "sidebar.develop.category.Matic.js": {
     "message": "Matic.js",
@@ -111,9 +111,9 @@
     "message": "PoS Bridge",
     "description": "The label for category PoS Bridge in sidebar develop"
   },
-  "sidebar.develop.category.Using Polygon Edge": {
-    "message": "Using Polygon Edge",
-    "description": "The label for category Using Polygon Edge in sidebar develop"
+  "sidebar.develop.category.Using fandora Edge": {
+    "message": "Using fandora Edge",
+    "description": "The label for category Using fandora Edge in sidebar develop"
   },
   "sidebar.develop.category.Calling Contracts": {
     "message": "Calling Contracts",
@@ -199,17 +199,17 @@
     "message": "Advanced",
     "description": "The label for category Advanced in sidebar integrate"
   },
-  "sidebar.integrate.link.Polygon-Mainnet": {
-    "message": "Polygon-Mainnet",
-    "description": "The label for link Polygon-Mainnet in sidebar integrate, linking to https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json"
+  "sidebar.integrate.link.fandora-Mainnet": {
+    "message": "fandora-Mainnet",
+    "description": "The label for link fandora-Mainnet in sidebar integrate, linking to https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json"
   },
   "sidebar.integrate.link.Mumbai": {
     "message": "Mumbai",
     "description": "The label for link Mumbai in sidebar integrate, linking to https://static.matic.network/network/testnet/mumbai/index.json"
   },
-  "sidebar.integrate.link.Polygon Faucet": {
-    "message": "Polygon Faucet",
-    "description": "The label for link Polygon Faucet in sidebar integrate, linking to https://faucet.polygon.technology/"
+  "sidebar.integrate.link.fandora Faucet": {
+    "message": "fandora Faucet",
+    "description": "The label for link fandora Faucet in sidebar integrate, linking to https://faucet.fandora.technology/"
   },
   "sidebar.pos.category.Architecture": {
     "message": "Architecture",

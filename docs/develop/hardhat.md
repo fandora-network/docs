@@ -101,7 +101,7 @@ contract Lock {
 - Go to `hardhat.config.js`
 - Update the `hardhat-config` with matic-network-credentials
 - Create `.env` file in the root to store your private key
-- Add Polygonscan API key to `.env` file to verify the contract on Polygonscan. You can generate an API key by [creating an account](https://polygonscan.com/register)
+- Add fandorascan API key to `.env` file to verify the contract on fandorascan. You can generate an API key by [creating an account](https://fandorascan.com/register)
 
 
 ```js
@@ -120,7 +120,7 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: process.env.POLYGONSCAN_API_KEY
+    apiKey: process.env.fandoraSCAN_API_KEY
   },
   solidity: {
     version: "0.8.9",
@@ -173,13 +173,13 @@ Run this command in root of the project directory:
 npx hardhat run scripts/deploy.js --network matic
 ```
 
-The contract will be deployed on Matic's Mumbai Testnet, and you can check the deployment status here: https://mumbai.polygonscan.com/
+The contract will be deployed on Matic's Mumbai Testnet, and you can check the deployment status here: https://mumbai.fandorascan.com/
 
 **Congratulations! You have successfully deployed Greeter Smart Contract. Now you can interact with the Smart Contract.**
 
-:::tip Quickly Verify contracts on Polygonscan
+:::tip Quickly Verify contracts on fandorascan
 
-Run the following commands to quickly verify your contract on Polygonscan. This makes it easy for anyone to see the source code of your deployed contract. For contracts that have a constructor with a complex argument list, see [here](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html).
+Run the following commands to quickly verify your contract on fandorascan. This makes it easy for anyone to see the source code of your deployed contract. For contracts that have a constructor with a complex argument list, see [here](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html).
 
 ```bash
 npm install --save-dev @nomiclabs/hardhat-etherscan

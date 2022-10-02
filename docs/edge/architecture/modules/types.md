@@ -1,10 +1,10 @@
 ---
 id: types 
 title: Types
-description: Explanation for the types module of Polygon Edge.
+description: Explanation for the types module of fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - architecture
   - module
@@ -23,7 +23,7 @@ The **Types** module implements core object types, such as:
 
 ## RLP Encoding / Decoding
 
-Unlike clients such as GETH, the Polygon Edge doesn't use reflection for the encoding.<br />
+Unlike clients such as GETH, the fandora Edge doesn't use reflection for the encoding.<br />
 The preference was to not use reflection because it introduces new problems, such as performance
 degradation, and harder scaling.
 
@@ -32,7 +32,7 @@ The **Types** module provides an easy-to-use interface for RLP marshaling and un
 Marshaling is done through the *MarshalRLPWith* and *MarshalRLPTo* methods. The analogous methods exist for
 unmarshalling.
 
-By manually defining these methods, the Polygon Edge doesn't need to use reflection. In *rlp_marshal.go*, you can find
+By manually defining these methods, the fandora Edge doesn't need to use reflection. In *rlp_marshal.go*, you can find
 methods for marshaling:
 
 * **Bodies**

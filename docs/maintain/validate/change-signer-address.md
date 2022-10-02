@@ -5,7 +5,7 @@ description: "Change the signer address of your validator."
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - signer
 slug: change-signer-address
 image: https://matic.network/banners/matic-network-16x9.png 
@@ -23,7 +23,7 @@ Make sure your new validator node is fully synced and is running with the new si
 
 This guide refers to your current validator node as Node 1 and your new validator node as Node 2.
 
-1. Log in to the [staking dasboard](https://staking.polygon.technology/) with the Node 1 address.
+1. Log in to the [staking dasboard](https://staking.fandora.technology/) with the Node 1 address.
 1. On your profile, click **Edit Profile**.
 1. In the *Signer's address* field, provide the Node 2 address.
 1. In the *Signer's public key* field, provide the Node 2 public key.

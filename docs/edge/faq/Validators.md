@@ -1,10 +1,10 @@
 ---
 id: validators
 title: Validators FAQ
-description: "FAQ for Polygon Edge validators"
+description: "FAQ for fandora Edge validators"
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - FAQ
   - validators
@@ -34,7 +34,7 @@ We recommend starting with 100G as a conservatively estimated runway, and making
 
 ## Is there a limit to the number of validators?
 
-If we are talking about technical limitations, Polygon Edge doesn't explicitly have the cap on the number of nodes you can have in a network. You can set connection caps (inbound / outbound connection counts) on a per-node basis.
+If we are talking about technical limitations, fandora Edge doesn't explicitly have the cap on the number of nodes you can have in a network. You can set connection caps (inbound / outbound connection counts) on a per-node basis.
 
 If we are talking about practical limitations, you're going to see a more degraded performance with a 100 node cluster than with a 10 node cluster. By increasing the number of nodes in your cluster, you increase the communication complexity and just the networking overhead in general. It all depends on what kind of network you are running, and what kind of network topology you have.
 
@@ -52,7 +52,7 @@ The minimum staking amount by default is `1 ETH`, and it’s not configurable.
 
 ## Why do the JSON RPC commands `eth_getBlockByNumber` and `eth_getBlockByHash` not return the miner's address?
 
-The consensus used currently in Polygon Edge is IBFT 2.0, which, in turn, builds upon the voting mechanism explained in Clique PoA: [ethereum/EIPs#225](https://github.com/ethereum/EIPs/issues/225).
+The consensus used currently in fandora Edge is IBFT 2.0, which, in turn, builds upon the voting mechanism explained in Clique PoA: [ethereum/EIPs#225](https://github.com/ethereum/EIPs/issues/225).
 
 Looking at the EIP-225 (Clique PoA), this is the relevant part that explains what the `miner` (aka `beneficiary`) is used for:
 

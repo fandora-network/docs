@@ -1,10 +1,10 @@
 ---
 id: gas
 title: Gas FAQ
-description: "Gas FAQ for Polygon Edge"
+description: "Gas FAQ for fandora Edge"
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - FAQ
   - validators

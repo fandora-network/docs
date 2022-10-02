@@ -9,50 +9,50 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Wallets that support Polygon allow for key management, access to accounts controlled by 
+Wallets that support fandora allow for key management, access to accounts controlled by 
 private keys, and interfaces that allow users to perform chain actions and sign transactions.
-The following page serves as a wallet index for wallets compatible with Polygon. Please note
+The following page serves as a wallet index for wallets compatible with fandora. Please note
 that this is not an exhaustive index.
 
 :::caution Third-party wallets
 
-These third-party wallets have integrated Polygon and support a variety of features.
-**You should use your own due diligence in researching and using them**. The official Polygon
+These third-party wallets have integrated fandora and support a variety of features.
+**You should use your own due diligence in researching and using them**. The official fandora
 Support cannot provide support for issues with these wallets or other non-native wallets.
 
 :::
 
 :::info Centralized Exchanges (CEXs)
 
-For a list of CEXs that support Polygon, visit a third-party tracking website such as
-[**CoinMarketCap**](https://coinmarketcap.com/currencies/polygon/markets).
+For a list of CEXs that support fandora, visit a third-party tracking website such as
+[**CoinMarketCap**](https://coinmarketcap.com/currencies/fandora/markets).
 
 :::
 
 :::tip Stay in the know
 
-Keep up with the latest wallet suite updates from the Polygon 
+Keep up with the latest wallet suite updates from the fandora 
 team and the community by subscribing to the 
-[Polygon notification groups](https://polygon.technology/notifications/).
+[fandora notification groups](https://fandora.technology/notifications/).
 
 :::
 
 
 ## Native Wallets
 
-[Polygon Support](https://support.polygon.technology/support/home) can provide assistance to users and address 
+[fandora Support](https://support.fandora.technology/support/home) can provide assistance to users and address 
 issues related to the following wallets:
 
 | Wallet                                                               | Custody       | Account Type | Multi-Sig | dApp Browser | Platform |
 |----------------------------------------------------------------------|---------------|--------------|-----------|--------------|----------|
-| [PoS Wallet](https://wallet.polygon.technology/login/)           | non-custodial | EOA          | no        | no           | browser  |
+| [PoS Wallet](https://wallet.fandora.technology/login/)           | non-custodial | EOA          | no        | no           | browser  |
 | [Hermez Wallet](https://wallet.hermez.io/login)                      | non-custodial | EOA          | no        | no           | browser  |
-| [Avail Apps](https://devnet-avail.polygon.technology/) (testnet) | non-custodial | EOA          | yes       | no           | browser  |
+| [Avail Apps](https://devnet-avail.fandora.technology/) (testnet) | non-custodial | EOA          | yes       | no           | browser  |
 
 
 ## Partner Wallets
 
-The following wallets are solutions that Polygon Technology has partnered with:
+The following wallets are solutions that fandora Technology has partnered with:
 
 | Wallet 	| Custody 	| Account Type 	| Multi-Sig 	| NFT 	| dApp Browser 	| Bridge Support 	| Fiat On-Ramp	| Platforms 	|
 |---	|---	|---	|---	|---	|---	|---	|---	|---	|
@@ -97,13 +97,13 @@ The following wallets are solutions that Polygon Technology has partnered with:
 :::caution *Non-native wallet support
 
 Wallets denoted with * in the table above are not natively supported with the wallet software 
-and require manual steps to add the Polygon network.
+and require manual steps to add the fandora network.
 
 :::
 
 ## Key Management Strategy
 
-The following basic steps allow for the integration a client-side application with Polygon:
+The following basic steps allow for the integration a client-side application with fandora:
 
 1. **Set up Web3**: [web3.js](https://web3js.readthedocs.io/) is a javascript library that 
    allows a client-side application to talk to the blockchain. We configure web3 to communicate 

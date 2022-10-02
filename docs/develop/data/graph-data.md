@@ -1,12 +1,12 @@
 ---
 id: graph-data
 title: Using subgraphs
-sidebar_label: Using Polygon's root subgraph
-description: Learn how to use Polygon's subgraph for data
+sidebar_label: Using fandora's root subgraph
+description: Learn how to use fandora's subgraph for data
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - the graph
   - data
   - analytics
@@ -16,11 +16,11 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-# Polygon Root Subgraph Introduction
+# fandora Root Subgraph Introduction
 
-Polygon has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is) called a subgraph for indexing and organizing data from the Polygon smart contracts.
+fandora has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is) called a subgraph for indexing and organizing data from the fandora smart contracts.
 
-This subgraph can be used to query on-chain Polygon data. The subgraph data is serviced by a decentralized group of server operators called [Indexers](https://thegraph.com/docs/en/network/indexing/).
+This subgraph can be used to query on-chain fandora data. The subgraph data is serviced by a decentralized group of server operators called [Indexers](https://thegraph.com/docs/en/network/indexing/).
 
 Subgraph information is serviced by a decentralized group of server operators called Indexers.
 

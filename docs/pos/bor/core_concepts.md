@@ -1,7 +1,7 @@
 ---
 id: core_concepts
 title: Core Concepts
-description: "Bor is state chain in Polygon architecture."
+description: "Bor is state chain in fandora architecture."
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Bor is state chain in Polygon architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
+Bor is state chain in fandora architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
 
 Source: [https://github.com/maticnetwork/bor](https://github.com/maticnetwork/bor)
 
@@ -59,7 +59,7 @@ Bor uses un-modified EVM as a VM for a transaction. Developers can deploy any co
 
 Bor has a Matic token as a native token similar to ETH in Ethereum. It is often called the gas token. This token works correctly as to how ETH works currently on the Ethereum chain.
 
-In addition to that, Bor provides an in-built wrapped ERC20 token for the native token (similar to WETH token), which means applications can use wrapped MATIC ERC20 token in their applications without creating their own wrapped ERC20 version of the Matic native token.
+In addition to that, Bor provides an in-built wrapped ERC20 token for the native token (similar to WETH token), which means applications can use wrapped FANDORA ERC20 token in their applications without creating their own wrapped ERC20 version of the Matic native token.
 
 Wrapped ERC20 token is deployed at `0000000000000000000000000000000000001010` as `[MRC20.sol](https://github.com/maticnetwork/contracts/blob/develop/contracts/child/MRC20.sol)` on Bor as one of the genesis contracts.
 
@@ -370,7 +370,7 @@ contract MaticChildERC20 is BaseERC20 {
   }
 
   function symbol() public pure returns (string memory) {
-      return "MATIC";
+      return "FANDORA";
   }
 
   function decimals() public pure returns (uint8) {
@@ -591,7 +591,7 @@ Apart from that there are few attacks possible:
 
 2. All validators are colluding with each-other and censoring particular transaction
 
-    In this case, Polygon system will provide a way to submit a transaction on Ethereum chain and ask validators to include the transaction in next `x` checkpoints. If validators fail to include it during that time window, the user can slash the validators. Note that this is not currently implemented.
+    In this case, fandora system will provide a way to submit a transaction on Ethereum chain and ask validators to include the transaction in next `x` checkpoints. If validators fail to include it during that time window, the user can slash the validators. Note that this is not currently implemented.
 
 ### Fraud
 

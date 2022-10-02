@@ -7,7 +7,7 @@ keywords:
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-Each validator uses two keys to manage validator related activities on Polygon:
+Each validator uses two keys to manage validator related activities on fandora:
 
 1. **Signer key**
 

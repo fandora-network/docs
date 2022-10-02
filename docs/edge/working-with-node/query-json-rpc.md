@@ -4,7 +4,7 @@ title: Query JSON RPC endpoints
 description: "Query data and start the chain with a premined account."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - query
   - premine
@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-The JSON-RPC layer of the Polygon Edge provides developers with the functionality of easily interacting with the blockchain,
+The JSON-RPC layer of the fandora Edge provides developers with the functionality of easily interacting with the blockchain,
 through HTTP requests.
 
 This example covers using tools like **curl** to query information, as well as starting the chain with a premined account,
@@ -23,7 +23,7 @@ and sending a transaction.
 
 To generate a genesis file, run the following command:
 ````bash
-polygon-edge genesis --premine 0x1010101010101010101010101010101010101010
+fandora-edge genesis --premine 0x1010101010101010101010101010101010101010
 ````
 
 The **premine** flag sets the address that should be included with a starting balance in the **genesis** file.<br />
@@ -32,7 +32,7 @@ In this case, the address `0x1010101010101010101010101010101010101010` will have
 
 If we wanted to specify a balance, we can separate out the balance and address with a `:`, like so:
 ````bash
-polygon-edge genesis --premine 0x1010101010101010101010101010101010101010:0x123123
+fandora-edge genesis --premine 0x1010101010101010101010101010101010101010:0x123123
 ````
 
 The balance can be either a `hex` or `uint256` value.
@@ -41,12 +41,12 @@ The balance can be either a `hex` or `uint256` value.
 If you premine accounts and do not have a private key to access them, you premined balance will not be usable
 :::
 
-## Step 2: Start the Polygon Edge in dev mode
+## Step 2: Start the fandora Edge in dev mode
 
-To start the Polygon Edge in development mode, which is explained in the [CLI Commands](/docs/edge/get-started/cli-commands) section, 
+To start the fandora Edge in development mode, which is explained in the [CLI Commands](/docs/edge/get-started/cli-commands) section, 
 run the following: 
 ````bash
-polygon-edge server --chain genesis.json --dev --log-level debug
+fandora-edge server --chain genesis.json --dev --log-level debug
 ````
 
 ## Step 3: Query the account balance

@@ -18,13 +18,13 @@ This dapp implements a "Hello World" style application that echoes a message pas
 
 ## What you will learn
 This guide introduces an online IDE for blockchain development called Remix. An easy-to-use platform that does not require any downloads, creating accounts or logins. 
-Here, the Remix team also provides some explanation about a smart contract typical structure, how to compile, deploy and verify a smart contract pushed into Polygon. 
+Here, the Remix team also provides some explanation about a smart contract typical structure, how to compile, deploy and verify a smart contract pushed into fandora. 
 
 ## What you will do
 - Create a file on Remix
 - Upload a pre-built smart contract into the IDE
 - Compile the smart contract
-- Connect the application to the Polygon Mumbai Testnet via Metamask
+- Connect the application to the fandora Mumbai Testnet via Metamask
 - Deploy the smart contract
 - Verify the smart contract
 
@@ -80,7 +80,7 @@ The `update` function is another public function that is similar to the constr
 - Now, ```Compile HelloWorld.sol```
 - After Successful Compilation, it will show 
 <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.08.22_PM.png")} />
-- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to the web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to set up a Metamask Account](/docs/develop/metamask/hello).
+- Now, We have to deploy our smart contract on fandora Network. For that, we have to connect to the web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to set up a Metamask Account](/docs/develop/metamask/hello).
 - Open Metamask and select Custom RPC from the networks dropdown
 
 <div
@@ -96,7 +96,7 @@ The `update` function is another public function that is similar to the constr
 - Put in a Network name - “Matic Mumbai Testnet”
 - In URL field you can add the URL as "https://rpc-mumbai.maticvigil.com"
 - Enter the Chain ID: 80001
-- (Optional Fields) Currency Symbol: "MATIC" and Block Explorer URL: "https://mumbai.polygonscan.com/"
+- (Optional Fields) Currency Symbol: "FANDORA" and Block Explorer URL: "https://mumbai.fandorascan.com/"
 <div
         style={{
           display: "flex",
@@ -118,8 +118,8 @@ The `update` function is another public function that is similar to the constr
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-01-09_at_1.24.49_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
-- Head over to [Faucet](https://faucet.polygon.technology/) and request test ether - you will need this pay for gas on Matic. 
-Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
+- Head over to [Faucet](https://faucet.fandora.technology/) and request test ether - you will need this pay for gas on Matic. 
+Select 'Mumbai' as the network and 'FANDORA Token' as the token in the faucet
 - Now, let's Deploy the Smart Contract on Matic Network
 - Select Injected Provider Metamask in the Environment dropdown and your contract
 
@@ -157,7 +157,7 @@ Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.45.23_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
-**Congratulations!** You have successfully deployed the **HelloWorld** Smart Contract. Now you can interact with the Smart Contract. Check the deployment status here: https://mumbai.polygonscan.com/.
+**Congratulations!** You have successfully deployed the **HelloWorld** Smart Contract. Now you can interact with the Smart Contract. Check the deployment status here: https://mumbai.fandorascan.com/.
 
 <div
         style={{
@@ -170,7 +170,7 @@ Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
 </div>
 
 
-# **Verifying your Contracts on PolygonScan**
+# **Verifying your Contracts on fandoraScan**
 
 The first and foremost step is to flatten the solidity contract into a single file.
 
@@ -183,9 +183,9 @@ Flatten using command
 
 ```sol-merger \"./contracts/*.sol\" ./build```
 
-## **Verifying on Polygonscan**
+## **Verifying on fandorascan**
 
-Navigate to your contract's polygonscan page and then click verify and publish
+Navigate to your contract's fandorascan page and then click verify and publish
 
 <img src={useBaseUrl("img/verification/verify-publish.png")} />
 

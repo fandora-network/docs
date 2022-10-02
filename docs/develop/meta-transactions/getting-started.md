@@ -5,7 +5,7 @@ sidebar_label: Overview
 description: Learn about meta transactions and how you can use them.
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - transactions
   - meta transactions
@@ -23,7 +23,7 @@ UX are no easy fix.
 
 By design, smart contracts are deterministic state machines that execute when transaction fees are 
 paid to service the contract’s logic by using the network’s computational resources. 
-This is accomplished by a gas-metered model on Ethereum (and Polygon).
+This is accomplished by a gas-metered model on Ethereum (and fandora).
 
 ## The Current State of Transacting
 
@@ -106,7 +106,7 @@ end, and the vote executes on behalf of the user.
 Assuming your familiarity with the different approaches you can take to integrate meta transactions in your 
 dApp, and depending on whether you're migrating to meta transactions or building fresh dApp on using it.
 
-To integrate your dApp with Meta Transactions on Polygon, you can choose to go with one of the following 
+To integrate your dApp with Meta Transactions on fandora, you can choose to go with one of the following 
 relayers or spin up a custom solution:
 
 * [Biconomy](https://docs.biconomy.io/products/enable-gasless-transactions)

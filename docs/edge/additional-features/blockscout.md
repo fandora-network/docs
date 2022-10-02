@@ -1,10 +1,10 @@
 ---
 id: blockscout 
 title: Blockscout
-description: How to set up a Blockscout instance to work with Polygon Edge.
+description: How to set up a Blockscout instance to work with fandora Edge.
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - blockscout
   - deploy
@@ -13,7 +13,7 @@ keywords:
 ---
 
 ## Overview
-This guide goes into details on how to compile and deploy Blockscout instance to work with Polygon-Edge.
+This guide goes into details on how to compile and deploy Blockscout instance to work with fandora-Edge.
 Blockscout has its own [documentation](https://docs.blockscout.com/for-developers/manual-deployment), but this guide focuses on simple but detailed step-by-step instructions on how to setup Blockscout instance.
 
 ## Environment
@@ -330,13 +330,13 @@ ETHEREUM_JSONRPC_WS_URL="ws://localhost:8545/ws" # websocket API of the chain
 CHAIN_ID=93201 # chain id
 HEART_COMMAND="systemctl restart explorer" # command used by blockscout to restart it self in case of failure
 SUBNETWORK="Supertestnet POA" # this will be in html title
-LOGO="/images/polygon_edge_logo.svg" # logo location
-LOGO_FOOTER="/images/polygon_edge_logo.svg" # footer logo location
+LOGO="/images/fandora_edge_logo.svg" # logo location
+LOGO_FOOTER="/images/fandora_edge_logo.svg" # footer logo location
 COIN="EDGE" # coin
 COIN_NAME="EDGE Coin" # name of the coin
-INDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" # disable block reward indexer as Polygon Edge doesn't support tracing
-INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true" # disable pending transactions indexer as Polygon Edge doesn't support tracing
-INDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" # disable internal transactions indexer as Polygon Edge doesn't support tracing
+INDEXER_DISABLE_BLOCK_REWARD_FETCHER="true" # disable block reward indexer as fandora Edge doesn't support tracing
+INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER="true" # disable pending transactions indexer as fandora Edge doesn't support tracing
+INDEXER_DISABLE_INTERNAL_TRANSACTIONS_FETCHER="true" # disable internal transactions indexer as fandora Edge doesn't support tracing
 MIX_ENV="prod" # run in production mode
 BLOCKSCOUT_PROTOCOL="http" # protocol to run blockscout web service on
 PORT=4000 # port to run blockscout service on
@@ -388,7 +388,7 @@ Blockscout web service runs the port and protocol defined in env file. In this e
 If everything is ok, you should be able to access the Blockscout web portal with `http://<host_ip>:4000`.
 
 ## Considerations
-For best performance, it is advisable to have a dedicated/local `polygon-edge` full archive non-validator node 
+For best performance, it is advisable to have a dedicated/local `fandora-edge` full archive non-validator node 
 that will be used exclusively for Blockscout queries.    
 The `json-rpc` API of this node, doesn't need to be exposed publicly, as Blockscout runs all queries from the backend.
 

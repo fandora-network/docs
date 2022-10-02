@@ -5,7 +5,7 @@ sidebar_label: Commitment and Nullifiers
 description: "Single and double transfer."
 keywords:
   - docs
-  - polygon
+  - fandora
   - nightfall
   - commitment
   - nullifier 

@@ -4,7 +4,7 @@ title: Bridge
 description: Work In Progress
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - bridge
 slug: bridge

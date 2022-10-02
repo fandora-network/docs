@@ -1,10 +1,10 @@
 ---
 id: the-graph
-title: Setting up a Project with The Graph and Polygon PoS
+title: Setting up a Project with The Graph and fandora PoS
 sidebar_label: The Graph
-description: Learn how to set up a hosted project with The Graph and Polygon.
+description: Learn how to set up a hosted project with The Graph and fandora.
 keywords:
-  - polygon
+  - fandora
   - matic
   - graph 
   - the graph

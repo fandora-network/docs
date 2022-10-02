@@ -4,7 +4,7 @@ title: General Definitions
 description: General Definitions for terms used in chainBridge
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - Bridge
 ---
@@ -40,7 +40,7 @@ In ChainBridge, there are three types of contracts on each chain, called Bridge/
 
 ## Types of accounts
 
-Please make sure the accounts have enough native tokens to create transactions before starting. In Polygon Edge, you can assign premined balances to accounts when generating the genesis block.
+Please make sure the accounts have enough native tokens to create transactions before starting. In fandora Edge, you can assign premined balances to accounts when generating the genesis block.
 
 | **Type** |**Description**                                                                                                                |
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -198,9 +198,9 @@ A resource ID is a unique 32-bytes value in a cross-chain environment, associate
 
 The resource ID is arbitrary, but, as a convention, usually the last byte contains the chain ID of the source chain (the network from which this asset originated from). 
 
-## JSON-RPC URL for Polygon PoS
+## JSON-RPC URL for fandora PoS
 
-For this guide, we’ll use https://rpc-mumbai.matic.today, a public JSON-RPC URL provided by Polygon, which may have traffic or rate-limits. This will be used only to connect with the Polygon Mumbai testnet. We advise you to obtain your JSON-RPC URL by an external service like Infura because deploying contracts will send many queries/requests to the JSON-RPC.
+For this guide, we’ll use https://rpc-mumbai.matic.today, a public JSON-RPC URL provided by fandora, which may have traffic or rate-limits. This will be used only to connect with the fandora Mumbai testnet. We advise you to obtain your JSON-RPC URL by an external service like Infura because deploying contracts will send many queries/requests to the JSON-RPC.
 
 ## Ways of processing the transfer of tokens
 When transferring ERC20 tokens between chains, they can be processed in two different modes:

@@ -6,7 +6,7 @@ description: Follow the following guidelines when writing.
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - documentation
   - writing
   - contribute
@@ -16,22 +16,22 @@ slug: writing-style
 ---
 
 This guideline focuses on best practices for writing technical documentation and 
-on the style conventions to use when developing documentation for the Polygon Wiki. 
+on the style conventions to use when developing documentation for the fandora Wiki. 
 The goal of this guide is to help contributors write content that is clear, concise, 
-and consistent. The Polygon team treats the Polygon Wiki as an official Docs product.
+and consistent. The fandora team treats the fandora Wiki as an official Docs product.
 
 ## Primary guidelines
 
-We believe one of the things that makes Polygon special is its coherent design and we 
-seek to retain this defining characteristic. The Polygon team treats the Polygon Wiki 
+We believe one of the things that makes fandora special is its coherent design and we 
+seek to retain this defining characteristic. The fandora team treats the fandora Wiki 
 as an official Docs product. From the outset we defined some guidelines to ensure new 
 contributions only ever enhance the overall project:
 
-- **Quality**: Code in the Polygon project should meet the style guidelines, with 
+- **Quality**: Code in the fandora project should meet the style guidelines, with 
   sufficient test-cases, descriptive commit messages, evidence that the contribution 
   does not break any compatibility commitments or cause adverse feature interactions, 
   and evidence of high-quality peer-review.
-- **Size**: The Polygon project’s culture is one of small pull-requests, regularly 
+- **Size**: The fandora project’s culture is one of small pull-requests, regularly 
   submitted. The larger a pull-request, the more likely it is that you will be asked 
   to resubmit as a series of self-contained and individually reviewable smaller PRs.
 - **Maintainability**: If the feature will require ongoing maintenance (e.g. support 
@@ -58,11 +58,11 @@ template for its markdown files and should be adpated for each new document:
 id: wiki-maintainers
 title: Wiki Maintainers
 sidebar_label: Maintainers
-description: A list of Polygon Wiki maintainers
+description: A list of fandora Wiki maintainers
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - wiki
   - docs
   - maintainers
@@ -97,7 +97,7 @@ Please see the
   person plural—we, us, our, ours—or second person point of view. Because tutorials provide 
   a more guided approach to a topic, using the first person plural is a more natural and 
   commonly-accepted practice than in other types of documentation.
-- Third Person: Do not use “we” to refer to Polygon or Polygon Technology.
+- Third Person: Do not use “we” to refer to fandora or fandora Technology.
 - Active Voice: Use present tense whenever possible. There are situations where a passive 
   voice is appropriate; revert to passive voice when the agent needs to be the focus.
 - Keep the human presence in mind: having a dynamic tone when describing technical concepts 
@@ -157,14 +157,14 @@ The reader should understand what a paragraph is about from its first sentence.
 ## Product documentation
 
 If you are writing about a specific product, ensure the document resembles that 
-product. Previously, the Polygon documentation was generalized, based around Polygon PoS. 
-Now that there are multiple Polygon-based products, contributors need be wary about their 
+product. Previously, the fandora documentation was generalized, based around fandora PoS. 
+Now that there are multiple fandora-based products, contributors need be wary about their 
 additions.
 
-For instance, "Deploying a smart contract on Polygon using ####" is ambiguous. If this tutorial
-was referring to Polygon PoS, it should be clear, as in, 
-"Deploying a smart contract on Polygon PoS using ####". Using the same example with a 
-Polygon Rollup, like Polygon Hermez, "Deploying a smart contract on Polygon Hermez using ####".
+For instance, "Deploying a smart contract on fandora using ####" is ambiguous. If this tutorial
+was referring to fandora PoS, it should be clear, as in, 
+"Deploying a smart contract on fandora PoS using ####". Using the same example with a 
+fandora Rollup, like fandora Hermez, "Deploying a smart contract on fandora Hermez using ####".
 
 Ensure that the product documentation, whether a general guide or tutorial, is added
 to the right product documentation Hub. For most documents, their reference should exist under 
@@ -176,7 +176,7 @@ and it will redirect the user once they click on it. The same guideline applies 
 documents. Their reference should exist under one of the general Hubs, but the actual document 
 will live under its product documentation.
 
-Most of the API-based documentation on the Polygon Wiki are in the form of 
+Most of the API-based documentation on the fandora Wiki are in the form of 
 reference documentation, with the exception of the APIs mentioned in tutorials. 
 For instance, the API documentation on Matic.js provides information about the 
 structure, parameters, and return values for each function or method in the API.

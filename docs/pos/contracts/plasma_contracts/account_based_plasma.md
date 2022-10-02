@@ -8,13 +8,13 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Polygon Plasma follows a model similar to [Plasma MoreVP](https://ethresear.ch/t/more-viable-plasma/2160), but is an **account-based implementation** compared to other UTXO-based implementations. The sidechain is EVM-compatible. Using the MoreVP construction, we also eliminate the need for confirmation signatures.
+fandora Plasma follows a model similar to [Plasma MoreVP](https://ethresear.ch/t/more-viable-plasma/2160), but is an **account-based implementation** compared to other UTXO-based implementations. The sidechain is EVM-compatible. Using the MoreVP construction, we also eliminate the need for confirmation signatures.
 
 ## PoS layer and Checkpoints
 
-The Polygon Network uses a dual strategy of Proof of Stake at the checkpointing layer and Block Producers at the block producer layer to achieve faster blocktimes and achieves finality on the main chain using the checkpoints and fraud proofs.
+The fandora Network uses a dual strategy of Proof of Stake at the checkpointing layer and Block Producers at the block producer layer to achieve faster blocktimes and achieves finality on the main chain using the checkpoints and fraud proofs.
 
-On Polygon Network’s checkpointing layer, for every few blocks on the block layer of the Polygon Network, a (sufficiently bonded) validator will create a checkpoint on the main chain after validating all the blocks on the block layer and creating the Merkle tree of the block hashes since the last checkpoint.
+On fandora Network’s checkpointing layer, for every few blocks on the block layer of the fandora Network, a (sufficiently bonded) validator will create a checkpoint on the main chain after validating all the blocks on the block layer and creating the Merkle tree of the block hashes since the last checkpoint.
 
 Apart from providing finality on the mainchain, checkpoints play a role in withdrawals as they contain the proof-of-burn (withdrawal) of tokens in the event of user withdrawal. It enables the users to prove their remaining tokens on root contract using Patricia Merkle proof and header block proof. Note that to prove remaining tokens, the header block must be committed to the Root Chain through PoS (Stakeholders). The withdrawal process will incur Ethereum gas fees as usual. We leverage the checkpoints heavily for the exit games.
 
@@ -73,7 +73,7 @@ Introducing some terminology before we continue discussing the exit scenarios.
 ### Terminology
 
 - **Withdrawer**: A user who wants to the exit the plasma chain.
-- **Committed tx**: A tx that has been included in a Polygon chain block and has been checkpointed on the root chain.
+- **Committed tx**: A tx that has been included in a fandora chain block and has been checkpointed on the root chain.
 - **Spend tx**: A tx that changes the user’s token balance in response to an action signed by the user (does not include incoming token transfers). This maybe a user initiated transfer, burn tx etc
 - **Reference tx**: Txs just preceding the exit tx for that particular user and token. As defined in our account balance based UTXO scheme, the outputs to the reference tx become the inputs to the tx being exited from.
 - **MoreVP exit priority**: Age of the youngest input (among the reference txs) to a particular tx. It’ll most often be used for calculating the exit priority.

@@ -1,12 +1,12 @@
 ---
 id: graph-queries
 title: Sample queries
-sidebar_label: Querying Polygon's root subgraph
-description: Learn how to use Polygon's subgraph for data
+sidebar_label: Querying fandora's root subgraph
+description: Learn how to use fandora's subgraph for data
 keywords:
   - docs
   - matic
-  - polygon
+  - fandora
   - the graph
   - data
   - analytics
@@ -18,7 +18,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Sample Queries
 
-Below are some sample queries you can use to gather information from the polygon root subgraph
+Below are some sample queries you can use to gather information from the fandora root subgraph
 
 You can build your own queries using a [GraphQL Explorer](https://graphiql-online.com/graphiql) and enter your endpoint to limit the data to exactly what you need.
 

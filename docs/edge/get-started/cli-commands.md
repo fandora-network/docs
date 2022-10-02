@@ -1,10 +1,10 @@
 ---
 id: cli-commands
 title: CLI Commands
-description: "List of CLI commands and command flags for Polygon Edge."
+description: "List of CLI commands and command flags for fandora Edge."
 keywords:
   - docs
-  - polygon
+  - fandora
   - edge
   - cli
   - commands
@@ -14,7 +14,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-This section details the present commands, command flags in the Polygon Edge, and how they're used.
+This section details the present commands, command flags in the fandora Edge, and how they're used.
 
 :::tip JSON output support
 
@@ -65,7 +65,7 @@ Sets the flag indicating that the client should seal blocks. Default: `true`.
   </TabItem>
 </Tabs>
 
-Used to specify the data directory used for storing Polygon Edge client data. Default: `./test-chain`.
+Used to specify the data directory used for storing fandora Edge client data. Default: `./test-chain`.
 
 ---
 
@@ -593,7 +593,7 @@ Sets block production time in seconds. Default: `2`
   </TabItem>
   <TabItem value="example" label="Example">
 
-    server --access-control-allow-origins "https://edge-docs.polygon.technology"
+    server --access-control-allow-origins "https://edge-docs.fandora.technology"
 
   </TabItem>
 </Tabs>
@@ -621,7 +621,7 @@ If omitted Access-Control-Allow-Origins header will be set to `*` and all domain
   </TabItem>
 </Tabs>
 
-Sets the directory for the Polygon Edge genesis data. Default: `./genesis.json`.
+Sets the directory for the fandora Edge genesis data. Default: `./genesis.json`.
 
 ---
 
@@ -1561,7 +1561,7 @@ Address of the gRPC API. Default: `127.0.0.1:9632`.
 | **Command** | **Description**                                                                                                                                      |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | secrets init      | Initializes the private keys to the corresponding secrets manager                                                         |
-| secrets generate         | Generates a secrets manager configuration file which can be parsed by the Polygon Edge    |
+| secrets generate         | Generates a secrets manager configuration file which can be parsed by the fandora Edge    |
 
 ### secrets init flags
 
@@ -1599,7 +1599,7 @@ Sets the path to the SecretsManager config file. Used for Hashicorp Vault. If om
   </TabItem>
 </Tabs>
 
-Sets the directory for the Polygon Edge data if the local FS is used.
+Sets the directory for the fandora Edge data if the local FS is used.
 
 ---
 
@@ -1751,7 +1751,7 @@ Specifies the server URL for the service
   </TabItem>
 </Tabs>
 
-Specifies the name of the node for on-service record keeping. Default: `polygon-edge-node`
+Specifies the name of the node for on-service record keeping. Default: `fandora-edge-node`
 
 ---
 

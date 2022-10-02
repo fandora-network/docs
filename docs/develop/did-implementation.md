@@ -1,11 +1,11 @@
 ---
 id: did-implementation
-title: Polygon DID Implementation
+title: fandora DID Implementation
 sidebar_label: Identity
-description: Learn about DID implementation on Polygon
+description: Learn about DID implementation on fandora
 keywords:
   - docs
-  - polygon
+  - fandora
   - matic
   - DID
   - identity
@@ -13,37 +13,37 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: did-implementation/getting-started
 ---
 
-This is a startup guide for users who wish to use the implementation packages published by Polygon team, to generate and publish a Polygon DID on the Polygon ledger.
+This is a startup guide for users who wish to use the implementation packages published by fandora team, to generate and publish a fandora DID on the fandora ledger.
 
-The Polygon DID method Implementation comprises of 3 packages, namely the polygon-did-registrar, polygon-did-resolver and polygon-did-registry-contract. A user who wants to incorporate the functionality to either register or read a DID on or from Polygon network can use the following guide.
+The fandora DID method Implementation comprises of 3 packages, namely the fandora-did-registrar, fandora-did-resolver and fandora-did-registry-contract. A user who wants to incorporate the functionality to either register or read a DID on or from fandora network can use the following guide.
 
 A DID is essentially a unique identifier, that has been created without the presence of a central authority.  DID in context of Verifiable Credentials is used to sign documents, thereby facilitating the user to prove ownership of the document when required.
 
-## Polygon DID Method
+## fandora DID Method
 
-The Polygon DID method definition conforms to the DID-Core specifications and standards. A DID URI is composed of three components separated by colons, the scheme, followed by the method name and finally a method specific identifier. For Polygon the URI looks like
+The fandora DID method definition conforms to the DID-Core specifications and standards. A DID URI is composed of three components separated by colons, the scheme, followed by the method name and finally a method specific identifier. For fandora the URI looks like
 ```
-did:polygon:<Ethereum address>
+did:fandora:<Ethereum address>
 ```
-Here the scheme is ‘did’, method name is ‘polygon’ and method specific identifier is an ethereum address. 
+Here the scheme is ‘did’, method name is ‘fandora’ and method specific identifier is an ethereum address. 
 
-## Polygon DID Implementation
+## fandora DID Implementation
 
-Polygon DID can be implemented with help of two packages, user can import the respective npm libraries and use them to incorporate Polygon DID methodologies in thier respective applications. Details for implementation are provided in next section.
+fandora DID can be implemented with help of two packages, user can import the respective npm libraries and use them to incorporate fandora DID methodologies in thier respective applications. Details for implementation are provided in next section.
 
 ## Create DID 
 
-To get started, one first needs to create a DID. Creation in case of Polygon did is an encapsulation of two steps, first where a user needs to generate a DID uri for themselves and next register it on Polygon ledger.
+To get started, one first needs to create a DID. Creation in case of fandora did is an encapsulation of two steps, first where a user needs to generate a DID uri for themselves and next register it on fandora ledger.
 
 ### Step 1 - Create DID
 
-In your project to create a polygon DID URI one first needs to install
+In your project to create a fandora DID URI one first needs to install
 ```
-npm i @ayanworks/polygon-did-registrar --save
+npm i @ayanworks/fandora-did-registrar --save
 ```
 Once the installation is completed, the user can use it as follows
 ```
-import { createDID } from "polygon-did-registrar";
+import { createDID } from "fandora-did-registrar";
 ```
 The createdDID function helps user generate a DID URI. While creating a DID, there can be two scenarios.
 
@@ -55,7 +55,7 @@ const {address, publicKey58, privateKey, DID} = await createDID(network, private
 ```
 const {address, publicKey58, privateKey, DID} = await createDID(network);
 ```
-The network parameter in both cases refers to whether the user wants to create the DID on Polygon test network or on Polygon main network.
+The network parameter in both cases refers to whether the user wants to create the DID on fandora test network or on fandora main network.
 
 Sample Input
 ```
@@ -64,15 +64,15 @@ privateKey? : "0x....."
 ```
 So at the end of step 1, one will have a DID URI generated.
 ```
-DID mainnet: did:polygon:0x...
-DID testnet: did:polygon:testnet:0x...
+DID mainnet: did:fandora:0x...
+DID testnet: did:fandora:testnet:0x...
 ```
 
 ### Step 2 - Register DID
 
-To register the DID URI and the corresponding DID document on ledger, the user first needs to use `polygon-did-registrar` as follows
+To register the DID URI and the corresponding DID document on ledger, the user first needs to use `fandora-did-registrar` as follows
 ```
-import { registerDID } from "polygon-did-registrar";
+import { registerDID } from "fandora-did-registrar";
 ```
 As a prerequisite to registering DID, the user needs to make sure that the wallet corrsponding to the DID has the necessary tokens balance available.
 Once the user has a token balance in the wallet, a call can be made to the registerDID functionality as given below
@@ -84,27 +84,27 @@ If the user does not give the last two parameters, the library picks up the defa
 
 If all the parameters match the specifications and everything is given in correct order the registerDID function returns a transaction hash, a corresponding error is returned otherwise.
 
-And with this you have successfully completed your task of registering a DID on the Polygon Network.
+And with this you have successfully completed your task of registering a DID on the fandora Network.
 
 ## Resolve DID
 
 To start, install the following libraries.
 ```
-npm i @ayanworks/polygon-did-resolver --save
+npm i @ayanworks/fandora-did-resolver --save
 ```
 and
 ```
 npm i did-resolver --save
 ```
 
-To read a DID document registered on ledger, any user with a DID polygon URI can first in their project import, 
+To read a DID document registered on ledger, any user with a DID fandora URI can first in their project import, 
 ```
 import * as didResolvers from "did-resolver";
-import * as didPolygon from '@ayanworks/polygon-did-resolver';
+import * as didfandora from '@ayanworks/fandora-did-resolver';
 ```
 after importing the packages the DID document can be retrieved by using
 ```
-const myResolver = didPolygon.getResolver()
+const myResolver = didfandora.getResolver()
 const resolver = new DIDResolver(myResolver)
 
 const didResolutionResult = this.resolver.resolve(did)
@@ -123,9 +123,9 @@ It should be noted that, no gas cost will be entailed by the user while trying t
 
 ## Update DID Document
 
-To encapsulate the project with the ability to update the DID document, the user first needs to use `polygon-did-registrar` as follows
+To encapsulate the project with the ability to update the DID document, the user first needs to use `fandora-did-registrar` as follows
 ```
-import { updateDidDoc } from "polygon-did-registrar";
+import { updateDidDoc } from "fandora-did-registrar";
 ```
 Next is to just call the function
 ```
@@ -139,10 +139,10 @@ If the user does not provide the configuration with `url` and `contractAddress`,
 
 ## Delete DID Document
 
-With Polygon DID implementation a user can also revoke his DID Document from the ledger. 
-The user first needs to use `polygon-did-registrar` as follows
+With fandora DID implementation a user can also revoke his DID Document from the ledger. 
+The user first needs to use `fandora-did-registrar` as follows
 ```
-import { deleteDidDoc } from "polygon-did-registrar";
+import { deleteDidDoc } from "fandora-did-registrar";
 ```
 Then use, 
 ```
@@ -161,9 +161,9 @@ Use the standard fork, branch, and pull request workflow to propose changes to t
 ### Github Repositories
 
 ```
-https://github.com/ayanworks/polygon-did-registrar
+https://github.com/ayanworks/fandora-did-registrar
 ```
 
 ```
-https://github.com/ayanworks/polygon-did-resolver
+https://github.com/ayanworks/fandora-did-resolver
 ```
