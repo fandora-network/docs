@@ -1,6 +1,5 @@
 <div align="Center">
 <h1>Fandora Wiki</h1>
-<h3> Previously Matic Network </h3>
 </div>
 
 <br>
